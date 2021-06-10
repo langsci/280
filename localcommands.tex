@@ -31,7 +31,7 @@
 
 
 
-\renewcommand{\barplot}[5][]{%
+\newcommand{\barplot}[5][]{%
   \begin{tikzpicture}
     \begin{axis}[
         xlabel={#2},
@@ -81,3 +81,4 @@
 \newcommand{\citevolp}[1]{(\citealt{#1} [this volume])}
 
 
+\newcommand{\fnref}[1]{Footnote~\ref{#1}}

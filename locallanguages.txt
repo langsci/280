@@ -1,2 +1,45 @@
-languages to index
-oneperline
+Akan
+Albanian
+Ancient Greek
+Arabic
+Austrian
+BCMS
+Bulgarian
+Cantonese
+Catalan
+Chinese
+Cyrillic
+Czech
+Dutch
+Finnish
+French
+German
+Germanic
+Hungarian
+Icelandic
+Italian
+Japanese
+Latin
+Macedonian
+Mauritian
+Old Church Slavonic
+Omaha-Ponca
+Persian
+Polish
+Portuguese
+Romance
+Romanian
+Russian
+Sakha
+Serbian
+Serbo-Croatian
+Shtokavian
+Sicilian
+Siouan
+Slavic
+Slavonic
+Slovak
+Slovenian
+Spanish
+Torlak
+Turkish
