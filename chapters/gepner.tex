@@ -2,432 +2,862 @@
 colorlinks,
 citecolor=brown,
 newtxmath
-]{langscibook}
+]{langscibook} 
+% \bibliography{localbibliography}
 
-\author{Ljudmila Geist\affiliation{University of Köln\,/\,University of Stuttgart}\orcid{0000-0001-7907-4958}}
-\title{New developments in the semantics of noun phrases in Slavic languages}
-\abstract{The paper gives a general overview of the theoretical approaches to the semantics and syntax of nominal phrases. It shows how the recent work on this topic in formal Slavistics has contributed to the further development of the theory. The following issues are addressed: What counts as reliable evidence for the assumption of the DP-layer in articleless Slavic languages? How do Slavic languages express the distinction between strong definiteness based on anaphoricity and weak definiteness based on situational uniqueness? What is the semantic concept behind definiteness contributed by NPs in the topic position? What is the meaning of special collective nouns such as Czech \textit{dvojice} ‘a group of two people’ and Russian complex numerical measure nouns such as \textit{strogrammovka} ‘a 100-gram glass’? What do nominal roots in Slavic languages denote before they enter different syntactic environments and how do different syntactic environments determine their interpretation? Is there evidence for the assumption of the functional projections NumP and ClassifierP in addition to NP and DP in Slavic languages?
+\author{Maria Gepner\affiliation{Bar Ilan University}}
+\title{Demonstratives, possessives, and quantifier expressions in articleless Russian}  
+\abstract{There is an ongoing debate in the literature as to whether there is a D-projection for NPs in languages without overt articles. \citet{Boskovic2005a,Boskovic2007,Boskovic2009, Boskovic2010} claims that there are no determiners in articleless Slavic languages. \citet{Pereltsvaig2007} and many others argue against this claim for Russian. \citeauthor{Pereltsvaig2007} assumes that Russian NPs have a DP projection and that demonstratives and possessives are D-level ele\-ments in Russian. The contribution of this paper is twofold: I will provide evidence that demonstratives and prenominal possessives in Russian are adjectives, not determiners, and that they occur within NP. However, these facts do not refute the hypothesis that there are functional projections in Russian, at least for some NPs. I will show that Russian has a non-adjectival grammatical expression -- \textit{každyj} `every' --  that semantically and syntactically behaves like a quantifier and plausibly occurs in some functional projection above NP level. Whether %or not
+this is a D-position and whether 
+%or not
+a D-projection is necessary for %a Russian nominal expression
+Russian nominal expressions remain open questions.
 
-\keywords{DP syntax, DP semantics, definiteness}
+\keywords{prenominal possessives, demonstratives, adjectives, determiners, DP-projection in Russian}
 }
 
+% \input{localpackages.tex}
+% \input{localcommands.tex}
+% \togglepaper[4]
 
 \begin{document}
-\shorttitlerunninghead{New developments in the semantics of noun phrases in Slavic languages}
+\shorttitlerunninghead{Demonstratives, possessives, and quantifier expressions}
 \maketitle
 
-%see or s. ?
+\section{Introduction}\label{introduction}
+This paper is devoted to the discussion of the syntactic category of demonstratives and prenominal possessives in Russian. In languages with overt articles marking (in)definiteness, these expressions are generally considered to be hosted by DP. Russian does not have articles of this kind. Some linguists argue that the absence of articles in a language signals the absence of a DP-projection for its NPs, and thus, the absence of determiners as a class of grammatical expressions \citep{Boskovic2005a,Boskovic2007,Boskovic2009,Boskovic2010}. Others \citep{Engelhardt.Trugman1998,Rappaport2002,Franks.Pereltsvaig2004,Trugman2005,Trugman2007,Pereltsvaig2007} have argued that demonstratives, prenominal possessives, and quantifier expressions occur in determiner position.
 
-\section{Introduction}
-The goal of this article is twofold: At a general level, its aim is to give an overview of the development of theoretical approaches to the semantics (and syntax) of nominal phrases since \citet{Abney1987} and to determine the current state of the art in this particular field. A second, more specific task is to set the scene for the contributions by the participants of the ``Semantics of Noun Phrases'' Workshop held on December 6, 2018 at the University of Göttingen as a part of the 13th Conference on ``Formal Description of \ili{Slavic} Languages'' (FDSL 13). The workshop focused on nominal categories and their interpretation and formal representation. As under the principle of compositionality the meaning of the whole is determined by the meanings of its syntactic parts, the papers address not only semantics but also the syntax of noun phrases. In this article I want to identify the main questions in the current research on noun phrases in \ili{Slavic} but also in other languages and show how the papers by the workshop participants can contribute to answering some of these questions.
+In this paper, I will discuss this question for Russian. I will examine the morphological and syntactic properties of demonstratives, possessives, and \textit{každyj} `every' and argue that while the first two are best analyzed as adjectives, \textit{každyj} is a quantifier filling a functional head position, although there is no direct evidence that it is a determiner.
 
-Since the formulation of the DP-hypothesis in \cite{Abney1987} and the introduction of D as a functional category for determiners, various functional projections between D and NP have been added to integrate nominal categories such as number and host numerals and attributive adjectives cross-linguistically (see \citealt{Alexiadou.Haegeman2007}; \citealt{Borer2005}; \citealt{Cheng.Sybesma1999}; \citealt{Cheng.Heycock2017}; \citealt{Zamparelli2000}; a.o). Many researchers agree upon at least the DP layers depicted in \figref{fig:gepner:1}.
+The literature extensively discusses the contrast between articleless languages (e.g. Serbo-Croatian), which allow for the movement of the leftmost element out of NP and languages with overt articles (e.g. English), in which this is not possible. In English, the movement of the leftmost element in the NP (determiners, possessors, and adjectives) is blocked (the \textsc{left branch condition}; \citealt{Ross1986}).\footnote{If not indicated otherwise, examples are from Russian or English.} 
 
-\begin{figure}
-\caption{DP-layers}
-   \begin{forest}
-   [DP [D] [NumP [Num] [CIP [Classifier] [NP] {\draw (.east) node[right]{$\longrightarrow$ descriptive content};}]{\draw (.east) node[right]{$\longrightarrow$ countability};}]{\draw (.east) node[right]{$\longrightarrow$ quantization};}]{\draw (.east) node[right]{$\longrightarrow$ reference};}
-    \end{forest}
-    \label{fig1}
-\label{fig:gepner:1}
-\end{figure}
+% Example 1
 
-Each layer is a host for a particular element that is endowed with a particular semantic function. The head D maps the whole phrase into an argument. The DP-layer hosts strong determiners such as definite articles and demonstratives. The Numeral Phrase NumP is responsible for quantization, i.e. it is the place where cardinals and other weak determiners and quantifiers can merge. The analysis of \cite{Borer2005}, but also \cite{Cheng.Heycock2017} and \cite{Cheng.Sybesma1999}, among others, posits a Classifier head responsible for countability. It is the host for classifiers in classifier languages and for plural morphology in languages without classifiers. The lowest layer, the NP, is projected by the noun introducing descriptive content.
-
-The internal semantic and syntactic architecture of DPs has traditionally been a topic of research in \ili{Slavic} languages as well. Although most \ili{Slavic} languages have no articles, the instantiation of definiteness in the D-layer has received a lot of discussion. Numeral and classifier layers have been assumed as well.
-
-In what follows, I will go through the layers of the DP and mention some current topics of debate which serve as connecting points for contributions in this volume. We start with the highest layer, the DP.
-
-\section{DP}
-\subsection{DP-layer: yes or no?}
-
-Since many \ili{Slavic} languages lack articles, the availability of the DP projection in those languages has been hotly disputed. The question is whether nominals in articleless \ili{Slavic} languages are DPs, as in the \ili{Germanic} or \ili{Romance} languages, or bare NPs (or possibly intermediate structures). There are three views: (i) According to the so-called Universal DP approach, adopted by \cite{Longobardi1994} and \cite{Matthewson1998}, among others, the structure of noun phrases in languages without articles is the same as in languages with articles such as English and \ili{German}: argument noun phrases are projected fully as DPs in both types. (ii) The proponents of the so-called Parameterized DP approach, among others \cite{Chierchia1998} and \cite{Baker2003}, claim that the structure of noun phrases in languages without articles differs radically from that of languages with articles: in the former type of language, noun phrases do not project a DP. The following table from \cite{Veselovska2014} lists the proponents of each theory in \ili{Slavic} linguistics.
-
-\begin{table}
-\centering
-\begin{tabularx}{\textwidth}{lQQ}
-\lsptoprule
-& Universal QP/DP/NP structure & Parameterized QP/DP/NP structure \tabularnewline
-\midrule
-\ili{Czech} & \citet{Veselovska1995,Veselovska2001} & \citet{Corver1990} \tabularnewline
-\midrule
-\ili{Russian} & \citet{Pereltsvaig2007,Pereltsvaig2013} &  \citet{Boskovic2005,Boskovic2008,Boskovic2009} \tabularnewline
-\midrule
-\ili{Serbo-Croatian} & \citet{Progovac1998}, \citet{Basic2004}, \citet{Caruso2012,Caruso2013} & \citet{Zlatic1997,Zlatic1998} \tabularnewline
-\midrule
-\ili{Polish} & \citet{Rutkowski2002} & \tabularnewline
-\lspbottomrule
-\end{tabularx}
-\caption{Universal vs. parameterized nominal projection \citep[13]{Veselovska2014}}
-\label{table:gepner:1}
-\end{table}
-
-(iii) \cite{Pereltsvaig2006} develops a new view on the structure of noun phrases: she assumes that verbs take arguments of various semantic types and syntactic sizes. In addition to generalized quantifiers of type $\stb{\stb{e, t}, t}$ and referential DPs of type $e$, they are able to take arguments of type $\stb{e, t}$ as well. Some heads, such as the \ili{Russian} cumulative prefix \textit{na-}, select only arguments that are NPs or NumPs of predicate type $\stb{e, t}$.
-
-Further evidence for the type $\stb{e, t}$ is the use of NPs as predicative complements of the copula verb \textit{be}. According to \cite{Partee1987}, constituent conjunction requires identical semantic types, and as adjectives are treated as type $\stb{e, t}$, the predicative NP \textit{millioner} `millionaire' in \REF{ex:gepner:1} must also be of type $\stb{e, t}$, i.e. a nonreferential predicative expression.
-
-\ea \label{ex:gepner:1}
-\gll On chotja i millioner, no očen' skromnyj. \\
-    he although and millionaire but very modest\\
-\glt `Although he is a millionaire, he is very modest.' \hfill (\ili{Russian})
-\z
-
-\noindent There is also a semantic argument in favor of a DP layer for some occurrences of noun phrases in \ili{Russian}. Normally, the DP is identified as the locus of referentiality. \cite{Borer2005}, for example, states that only DPs have referential indices and can be interpreted as arguments. In my work \citep{Geist2010}, I have shown that bare NPs in the topic position in \ili{Russian} are always referential and definite, see \REF{ex:gepner:2}. In the first clause, \textit{mal'čik} `boy' and \textit{devočka} `girl' introduce new discourse referents and the topical noun phrase \textit{devočka} in the second clause anaphorically picks out the same individual girl introduced in the first clause. If a non-definite use is intended, the NP \textit{devočka} must be accompanied by the indefiniteness marker \textit{odin} `one'.
-
-\ea \label{ex:gepner:2}
-\gll Ja uvidela mal'čika i devočku. Devočka nesla korzinku. \\
-    I saw boy and girl girl bore basket\\
-\glt `I saw a boy and a girl. The girl bore a basket.'\hfill (\ili{Russian})
-\z
-
-\noindent Provided that DPs are the locus of referentiality and bare nouns in \ili{Russian} can be used referentially at least in the topic position, it must be assumed that they may project a DP.
-
-Besides semantic evidence in favor of a DP level in \ili{Slavic}, there is some syntactic support in the literature (see the overview in \citealt{Pereltsvaig2013}). At least the following arguments have been mentioned: (i) a rigid order of prenominal adjectives, (ii) a split between light and heavy adjectival modifiers, and (iii) maximal interpretation of prenominal possessives. We will not discuss all these arguments but will look only at the last one, since it was addressed in the workshop.
-
-\cite{Kagan.Pereltsvaig2014} observe that the syntactic position of the possessive adjective relative to the numeral has an impact on the interpretation of the whole phrase, see \REF{ex:gepner:3}. In the unmarked order \REF{ex:gepner:3a}, where the possessive follows the numeral, the phrase is neither interpreted as maximal nor exhaustive: Dima may have more than five books. \cite{Kagan.Pereltsvaig2014} discuss the possible alternative marked order \REF{ex:gepner:3b} where the possessive precedes the numeral. Unlike \REF{ex:gepner:3a}, this phrase can only receive a maximal or exhaustive interpretation and presupposes that Dima has exactly five books. \cite{Kagan.Pereltsvaig2014} assume that the maximal interpretation in \REF{ex:gepner:3b} comes about as a result of the placement of the possessive in a syntactically high position in the DP-domain above the numeral in the NumP. The possessive adjective in \REF{ex:gepner:3a}, however, is placed low, in the NP-domain which is below NumP.
-
-\ea \label{ex:gepner:3}
-\ea
-\gll pjat' Diminyx knig \\
-    five Dima.\textsc{gen.pl} books\\ \hfill not maximal
-\glt `Dima’s five books' \label{ex:gepner:3a}
-\ex \gll Diminyx pjat' knig \\
- Dima.\textsc{gen.pl} five books\\ \hfill maximal/exhaustive
-\glt `Dima's five books' \hfill (\ili{Russian}) \label{ex:gepner:3b}
-\z \z
-
-\noindent But there is evidence that even NPs preceded by possessive adjectives without numerals can project full DPs. As \REF{ex:gepner:4} shows, nouns occurring with possessive adjectives can be used anaphorically: \textit{Petin kollega} in the second clause in \REF{ex:gepner:4} picks up the colleague introduced in the previous clause. Since anaphoric NPs must be DPs following \citet{Kagan.Pereltsvaig2014}, we would assume that the possessive adjective \textit{Petin} in \textit{Petin kollega} `Petja's colleague' is a modifier that applies at the high DP-level and hence indicates the presence of a zero D-head. \citeposst{Pereltsvaig2007} position is more radical, she analyzes the possessive adjective as a D-element.
-
-
-\ea \label{ex:gepner:4}
-\gll U Peti novyj kollega i u Niny tože. Petin kollega očen' molod. \\
-    with Petja new colleague and with Nina too Petja's colleague very young\\
-\glt `Petja has a new colleague and Nina, too. Petja's colleague is very young.'\\
-\glt \hfill (\ili{Russian})
-\z
-
-\noindent \citevolt{Gepner2021} investigates the morphological and syntactic properties of possessives but also demonstratives and the quantifier \textit{každyj} in \ili{Russian}. She examines whether these expressions can provide evidence for a DP-layer. She shows, based on their morphological and syntactic properties, that prenominal possessives and demonstratives behave as adjectives rather than determiners and argues that they do not fulfill the criteria for a D-element. NPs accompanied by them can occur in predicate positions as shown in \REF{ex:gepner:5} and in existential sentences, where typical DPs such as proper names are excluded.
-
-\ea \label{ex:gepner:5}
-\gll Ivan byl petinym kollegoj. \\
-    Ivan was Peter's.\textsc{ins} colleague.\textsc{ins}\\
-\glt `Ivan was Peter’s colleague.' \hfill (\ili{Russian})
-\z
-
-\noindent According to Gepner, the interpretation of the possessive adjective in the predicate NP such as \REF{ex:gepner:5} does not differ from the interpretation of possessive adjective in an argument NP such as \REF{ex:gepner:4}. She assumes that in both cases possessive adjectives modify the noun within NP, e.g., are always placed low in the structure. An exception is the quantifier \textit{každyj}. Despite patterning morphologically with adjectives, it has the syntax and semantics of a quantifier and behaves like a functional element outside the NP. Gepner leaves open in which functional layer \textit{každyj} is hosted. But is the interpretation of the possessive NP in \REF{ex:gepner:5} really the same as the interpretation of the possessive NP in \REF{ex:gepner:4}?
-
-There is an old observation that the interpretation of possessive NPs depends on their use as arguments or as predicates. \cite{Jespersen1965} discusses example \REF{ex:gepner:6} in English:
-
-\ea \label{ex:gepner:6} \ea The captain of the vessel was my brother. \label{ex:gepner:6a}
-\ex My brother was captain of the vessel.\label{ex:gepner:6b}
-\z \z
-
-\noindent Jespersen says that in \REF{ex:gepner:6a} \textit{my brother} in the predicate position means `one of my brothers', or leaves it unspecified whether the speaker has more than one brother, whereas \textit{my brother} in the argument position in \REF{ex:gepner:6b} has a maximal/unique or exhaustive interpretation `the speaker’s only brother'. To explain this difference in interpretation, \cite{Kagan.Pereltsvaig2014} would assume that the possessive adjective \textit{my} in \REF{ex:gepner:6b} is placed in the ``high'' DP-domain, which excludes the non-ex\-haustive interpretation. The placement of the possessive in the ``low'' NP-domain as in \REF{ex:gepner:6a} would only specify the relational meaning of \textit{brother} and have no restriction on the unique/non-unique interpretation. Under Gepner's analysis, however, \textit{my} would be integrated low in the NP-domain in both cases. The lack of non-maximal interpretation of the possessive NP in the argument position in \REF{ex:gepner:6b} should then be explained in a different way. The validity of both analyses should be compared in the future research.
-
-\subsection{DP-layer: two types of definites}
-
-Many languages such as \ili{German} and \ili{Mauritian} Creole differentiate between two types of definites \citep{Löbner2011,Schwarz2009,Schwarz2013,Jenks2015}. Definites that have a more complex form indicate an anaphoric link and are called ``strong definites''. Definites with a simpler form, the so-called ``weak definites'', express definiteness based on situational \textsc{uniqueness}. In standard \ili{German}, the contrast between the two forms is reflected in cases where a definite can contract with a preceding preposition. The contracted form is the weak form, indicating situational uniqueness while the non-contracted one is a strong form indicating an anaphoric use.
-
-
-\ea \label{ex:gepner:7}
-\ea
-\gll Hans ging zu dem Haus. \\
-    Hans went to the\textsubscript{strong} house\\ %\hfill strong
-\glt `Hans went to the house.' \label{ex:gepner:7a}
-\ex \gll Hans ging zum Haus. \\
- Hans went to-the\textsubscript{weak} house\\ %\hfill weak
-\glt `Hans went to the house.' \hfill (\ili{German}; \citealt[12]{Schwarz2009}) \label{ex:gepner:7b}
-\z \z
-
-\noindent \citet{Czardybon2017} shows that a similar distinction between anaphoric and situational definiteness is made in \ili{Polish}: The demonstrative \textit{ten} as a strong determiner can optionally be used to signal anaphoric definiteness, while weak bare NPs are used if definiteness is based on situational uniqueness. In \REF{ex:gepner:8a}, \textit{mȩżczyzna} `man' in its second occurrence is used anaphorically and is accompanied by \textit{ten}. In \REF{ex:gepner:8b}, the situationally unique NPs \textit{odległość} `distance', \textit{sufit} `ceiling’, and \textit{podłoga} `floor' are used without \textit{ten}, i.e., have a weak form.
-
-    \largerpage[-2] % To get ex. (8b) on next page
-
-\ea \label{ex:gepner:8}
-\ea
-\gll Widziałem jak do pokoju wchodził mȩżczyzna. Kiedy wszedłem obaczyłem że przy ornie stoi ten mȩżczyzna. \\
-    see.\textsc{pst}.1\textsc{sg} how in room.\textsc{loc} enter.\textsc{pst} man when enter.\textsc{pst}.1\textsc{sg} see.\textsc{pst}.1\textsc{sg} that at window.\textsc{loc} stand.\textsc{prs} \textsc{det} man\\
-\glt `I saw a man go into the room. When I entered I saw that the man was standing at the window.' \glt \hfill (\ili{Polish}; \citealt[96--97]{Szwedek1976}, cited from \citealt[50]{Czardybon2017})\label{ex:gepner:8a}
-\ex \gll [\dots] odległość od sufitu do podłogi wynosi 2,85 metra \\
- {} distance from ceiling.\textsc{gen} to floor.\textsc{gen} amount.3\textsc{sg.prs} 2.85 meter\\
-\glt `the distance from the ceiling to the floor amounts to 2.85 meters.' \\
-\glt \hfill (\ili{Polish}; \citealt[74]{Czardybon2017}) \label{ex:gepner:8b}
-\z
-\z
-
-\noindent Thus, \ili{Polish} obeys the standard correspondence between the form of the definite (strong vs. weak) and the use of definite descriptions (situationally unique vs. anaphoric).
-
-\citevolt{Simik2021} studies the two types of definiteness in \ili{Czech}. \ili{Czech} also uses bare NPs and NPs combined with a demonstrative for definite reference. However, as Šimík shows, strong demonstrative NPs are also able to refer to situationally unique objects in addition to weak bare NPs, unlike \ili{Polish}. To explain the division of labor between weak bare NPs and strong demonstrative NPs he distinguishes between two types of situational uniqueness: accidental uniqueness and inherent uniqueness. An object is inherently unique if it is unique in all relevant situations that are ``like'' the mentioned situation. An accidentally unique object is unique in the mentioned situation but need not be unique in other similar situations. Šimík discusses an example with the noun \textit{tabule} `blackboard'. The object referred to by this NP is typically unique in all classroom situations. By contrast, the object denoted by the NP \textit{book} can be unique in a particular situation but it need not be unique in other situations in which books are typically involved. Thus, the referent of \textit{the book} can only be accidentally unique. Accidentally unique objects in \ili{Czech} are referred to by strong demonstrative NPs, while inherently unique objects are referred to by weak bare NPs, see \tabref{table:gepner:2}.
-
-\begin{table}
-\centering
-\begin{tabularx}{\textwidth}{X|X|X|X|X}
-\lsptoprule
-\ili{Polish} & use &  anaphoric  &  \multicolumn{2}{c}{situationally unique} \tabularnewline \cline{2-5}
-\citep{Czardybon2017}  & form  &    strong form: demonstrative NP       & \multicolumn{2}{c}{weak form: bare NP}            \tabularnewline \hline
-\ili{Czech} & use &    anaphoric       &      accidentally unique     & inherently unique \tabularnewline \cline{2-5}
-\citeauthor{Simik2021} (this volume) & form & \multicolumn{2}{c|}{strong form: demonstrative NP} & weak form: bare NP \tabularnewline
-\lspbottomrule
-\end{tabularx}
-\caption{Two types of definiteness in Polish and Czech.}
-\label{table:gepner:2}
-\end{table}
-
-Šimík uses situation semantics and proposes an analysis in which inherent unique\-ness is taken to be a property of topic situations and accidental unique\-ness a property of demonstratives. He shows how other types of NPs such as generic, anaphoric, and non-specific indefinite NPs can be analyzed within this framework.
-
-\subsection{DP-layer: semantics of definiteness}
-
-If definiteness is what the DP-layer may contribute, the question is what the semantic concept or notion behind it is. Definiteness is often considered to correspond to \textsc{familiarity}:  The individual referred to by the definite expression has often been assumed to be familiar to the speaker and hearer, e.g. if the NP is used anaphorically \citep{Christophersen1939,Heim1982}. In the philosophical tradition, definiteness is assumed to correspond to uniqueness: a definite description conveys that there is exactly one individual in the situation that satisfies the description (\citealt{Chierchia1998,Dayal2004}; a.o.). Besides familiarity and uniqueness there are other less prominent notions of definiteness that we will not consider here. The two main notions of definiteness are in competition if we want to explain the use of the definite article in languages such as \ili{German} or English: most uses can be explained by both theories, but some occurrences receive a better account in the familiarity theory and the others by uniqueness.
-
-The common tenet is that languages without definite articles can convey the same meaning as definite descriptions do in languages with articles, albeit with different formal means. According to the classical view, bare NPs as themes obligatorily receive a definite interpretation in articleless \ili{Slavic} languages. In my work \cite{Geist2010} I explain and formalize this traditional belief using the notion of aboutness topic instead of theme, see \REF{ex:gepner:9}.
-
-%\ea \label{ex:gepner:9} \textit{Context:} `I saw a boy and a girl.'\\
-%\gll Devočka	 vošla   	v     dom. \\
-%    {(the)/(*a) girl}  came  	into {(the/a) house}\\
-%\glt `The girl entered the house.'\hfill (\ili{Russian}; \citealt[193]{Geist2010})
-%\z
-
-\ea \label{ex:gepner:9} \textit{Situation:} I saw a boy and a girl.\\
-\gll Devočka	 vošla   	v     dom. \\
-    girl  came  	into house\\
-\glt `The (*a) girl entered \{the/a\} house.'\hfill (\ili{Russian}; \citealt[193]{Geist2010})
-\z
-
-\noindent Given the situation in \REF{ex:gepner:9}, we can utter \textit{devočka vošla v dom}, where \textit{devočka} can only receive a definite referential interpretation; an indefinite interpretation (that it was another girl, not anaphorically related to the previously mentioned girl) is not available. In the topical use of the bare NP in \REF{ex:gepner:9}, familiarity and uniqueness coincide and it cannot be decided which notion of definiteness can better capture the definite interpretation.
-
-In very recent work, \cite{Simik.Demian2020} provide experimental evidence that bare singular NPs as topics in \ili{Russian} do not convey uniqueness. They test two scenarios via pictures: In the first picture there is a locomotive and a unique disconnected carriage. In the second picture there is a locomotive and two carriages, one of them is disconnected.
-
-The authors show that \ili{Russian} speakers can use sentence \REF{ex:gepner:10} with \textit{vagon} `carriage' as topic to describe both pictures, although the second picture violates uniqueness.
-
-\ea \label{ex:gepner:10}
-\gll Vagon    otcepilsja \\
-    carriage  disconnected\\
-\glt `The carriage got disconnected.'\hfill (\ili{Russian}; \citealt[15]{Simik.Demian2020})
-\z
-
-\noindent From this they conclude that definiteness contributed by topical definiteness is not based on uniqueness.
-
-The investigation by \citevolt{Seres.Borik2021} is in line with \citeposst{Simik.Demian2020} observations. They have the intuition that alleged uniqueness contributed by bare NPs as topics can be overridden in appropriate contexts such as \REF{ex:gepner:11}. However, definiteness conveyed by the definite article for topical definites in English contributes strong uniqueness and cannot be overridden.
-
-\ea \label{ex:gepner:11}
-\ea
-\gll Direktor našej školy pojavilsja v tok-šou. \\
-    director.\textsc{nom} our school.\textsc{gen} appeared in talkshow\\
-\glt `The director of our school appeared in a talkshow.'
-\ex
-\gll Drugoj direktor \minsp{(} našej) školy vystupil na radio. \\
- other director.\textsc{nom} {} our school.\textsc{gen} spoke on radio\\
-\glt  `The other director (of our school) spoke on the radio.`\\
-\glt \hfill (\ili{Russian}; \citevolalt{Seres.Borik2021})
+\ea\label{whosefather}
+    \ea[*]{Whose$_i$ did you see [t$_i$ father]?}
+    \ex[*]{Which$_i$ did you buy [t$_i$ car]?}
+    \ex[*]{That$_i$ he saw [t$_i$ car].}
+    \ex[*]{Beautiful$_i$ he saw [t$_i$ houses].}
+    \ex[*]{How much$_i$ did she earn [t$_i$ money]?}
 \z\z
 
-\noindent To account for the difference between \ili{Russian} and English, \citeauthor{Seres.Borik2021} assume that the kind of definiteness expressed by bare nominals in \ili{Russian} is better captured in terms of pragmatic strengthening than the uniqueness presupposition. While uniqueness contributed by the definite article is semantic in nature and can be formally represented by the iota operator, this representation is not appropriate for the purely pragmatic definiteness contributed by topicality of bare NPs in articleless languages. Following \citet{Heim2011}, \citeauthor{Seres.Borik2021} propose that bare nominal phrases in articleless \ili{Russian} are born indefinite. Definiteness can be achieved by pragmatic strengthening of an indefinite and can have different sources: `ontological' (or `situational') uniqueness, topicality and/or familiarity/anaphoricity. All these can be seen as sources for the familiarity of the object. Thus, familiarity rather than uniqueness in the narrow sense underlies definiteness contributed by the topical use of bare NPs.
+\noindent \citet{Boskovic2005a} shows that a number of Slavic languages that do not have overt articles, namely Serbo-Croatian, Polish, and Czech, allow for the movement of non-constituents out of NP.
 
-To conclude, the experimental findings by \cite{Simik.Demian2020} and the investigation of uniqueness by \citeauthor{Seres.Borik2021} suggest that languages differ not only in the means that contribute to the expression of definiteness, but also in the type of concept of definiteness. Definite articles do not contribute the same type of definiteness as topicality in articleless languages.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Numeral phrase: numerals and collectivity}
+% Example 2
 
-In addition to ordinary numerals, \ili{Slavic} languages have a special class, the so-called collective numerals. Collective numerals can be nominalized and denote groups of $n$ members of $x$, see \ili{Czech} \textit{dvojice} `twosome = a group of two people'. Since such collectives range over sets they have been called \textsc{set collectives}. \citevolt{Docekal.Simik2021} address the behavior of set collectives in comparison to collectives denoted by collective nouns such as \textit{skupina} `group' in \ili{Czech}. The latter type of collectives ranges over atomic entities and has been called \textsc{atom collectives}.
+\ea\label{serbo-croatian}
+    \ea \gll Čijeg$_i$ si vidio [t$_i$ oca]?\\
+    whose are seen {}{} father\\
+    \glt `Whose father did you see?'
+    \ex \gll Kakva$_i$ si kupio [t$_i$ kola]?\\
+    what.kind.of are bought {}{} car\\
+    \glt `What kind of a car did you buy?'
+    \ex \gll Ta$_i$ je vidio [t$_i$ kola].\\
+    that is seen {}{} car\\
+    \glt `That car, he saw.'
+    \ex \gll Lijepe$_i$ je vidio [t$_i$ kuće].\\
+    beautiful is seen {}{} houses\\
+    \glt `Beautiful houses, he saw'
+    \ex \gll Koliko$_i$ je zaradila [t$_i$ novca]?\\
+    how.much is earned {}{} money\\
+    \glt `How much money did she earn?' \hfill (Serbo-Croatian; \citealt{Boskovic2005a})
+\z\z
 
-Although collections are composed of a plurality in both types of collectives, they differ in the accessibility of the members of that plurality. The difference becomes apparent in combinations with the determiner \textit{each} and the binominal \textit{each}. The two uses of \textit{each} are illustrated in \REF{ex:gepner:12}.
+\noindent \citeauthor{Boskovic2005a} shows that the two Slavic languages that do have overt articles -- Bulgarian and Macedonian -- behave like English, disallowing %the 
+left branch extraction. %process.
 
-\ea \label{ex:gepner:12} \ea Each [\textsubscript{\textsc{pp}} of the three girls] has bought three books. \hfill (determiner \textit{each})\label{ex:gepner:12a}
-\ex Two girls have bought [\textsubscript{\textsc{np}} three books] each. \hfill (binominal \textit{each})\label{ex:gepner:12b}
-\z \z
+% Example 3
 
-\noindent \citeauthor{Docekal.Simik2021} show that the determiner \textit{každý} `each' cannot distribute over the members of collectives regardless of type. Binominal \textit{každý}, on the other hand, can combine with set collectives yielding distribution over members of the collection, while it is excluded with atom collectives.
+\ea\label{Bulgarian}
+    \ea[*]{\gll Kakva$_i$ prodade Petko [t$_i$ kola]?\\
+    what.kind.of sold Petko {}{} car\\
+    \glt Intended: `What kind of a car did Petko sell?'
+}
+    \ex[*]{\gll Čija$_i$ xaresva Petko [t$_i$ kola]?\\
+    whose likes Petko {}{} car\\
+    \glt Intended: `Whose car does Petko like?'
+}
+    \ex[*]{\gll Novata$_i$ prodade Petko [t$_i$ kola].\\
+    new.the sold Petko {}{} car\\
+    \glt Intended: `The new car, Petko sold.' \hfill (Bulgarian; \citealt{Boskovic2005a})
+}
+\z\z
 
-\begin{table}
-\centering
-\begin{tabularx}{\textwidth}{Qcc}
+% Example 4
+
+\ea\label{Macedonian}       
+    \ea[*]{\gll Kakva$_i$ prodade Petko [t$_i$ kola]?\\
+    what-kind-of sold Petko {}{} car\\
+    \glt Intended: `What kind of a car did Petko sell?'
+}
+    \ex[*]{\gll Čija$_i$ ja bendisuva Petko [t$_i$ kola]?\\     
+    whose it like Petko {}{} car\\
+    \glt Intended: `Whose car does Petko like?'
+}
+    \ex[*]{\gll Novata$_i$ ja prodade Petko [t$_i$ kola].\\
+    new-the it sold Petko {}{} car\\
+    \glt Intended: `The new car, Petko sold.' \hfill (Macedonian; \citealt{Boskovic2005a}) 
+}
+\z\z
+
+\noindent \citet{Boskovic2005a} accounts for this phenomenon by claiming that articleless languages do not have a D-level in their noun phrase structure. Moreover, \citeauthor{Boskovic2005a} argues that all the grammatical expressions that are traditionally analyzed as determiners in languages that have overt articles (e.g. demonstratives, possessives) are adjectives in articleless languages.
+
+\REF{Russian} shows the examples in \REF{Bulgarian} replicated in Russian. The situation is not as straightforward as in Serbo-Croatian.
+
+% Example 5
+
+\ea\label{Russian}      %NH: added question marks
+    \ea[?]{\label{otec} \gll Č'ego$_i$ ty videl t$_i$ otca?\\
+    whose you saw {} father\\
+    \glt `Whose father did you see?'
+}
+    \ex[]{\label{kakajamasyna} \gll Kakuju$_i$ ty kupil t$_i$ mašynu?\\
+    %what
+    which you bought {} car\\
+    \glt `What kind of car did you buy?'}
+    \ex[?]{\label{etamasyna} \gll Ėtu$_i$ on videl t$_i$ mašynu.\\
+    this he saw {} car\\
+    \glt `He saw THIS car.'
+}
+    \ex[?]{\label{krasivyjedoma} \gll Krasivyje$_i$ my videli t$_i$ doma!\\
+    beautiful we saw {} houses\\
+    \glt `What beautiful houses we saw!'
+}
+    \ex[]{\label{dengi} \gll Skol'ko$_i$ ona zarabotala t$_i$ deneg?\\
+    how.much she earned {} money\\
+    \glt `How much money did she earn?'} 
+\z\z
+
+\noindent \REF{kakajamasyna} and \REF{dengi} are unconditionally acceptable. \REF{otec}, \REF{etamasyna}, and \REF{krasivyjedoma} require intonational support (the moved element is strongly stressed) and contextual support. These examples thus still contrast with the examples in Bulgarian, Macedonian, and English, which are completely ungrammatical. 
+
+We see that Russian does not block the movement of the leftmost element out of NP providing \textit{prima facie} evidence that the analysis for Serbo-Croatian should hold for Russian, too, i.e. that demonstratives and possessives are adjectives and that Russian NPs do not have functional projections in their structure.
+
+In the rest of this paper, I will discuss these issues more deeply. In section \sectref{adjectives}, I will provide evidence in support of the adjectival analysis of demonstratives and prenominal possessives in Russian, %despite some morphological differences between them and standard lexical adjectives.
+although they display a number of morphological differences as compared to standard lexical adjectives.
+
+In \sectref{sec:3_kazdyj}, \textit{každyj} `every' will be discussed. I will show that \textit{každyj}, %despite
+while patterning morphologically with adjectives, has the syntax and semantics of a quantifier. This suggests that, despite its adjectival morphology, it is hosted by a functional projection higher than NP, and that at least some Russian NPs have a functional projection.
+
+In the final section, I will discuss the implications of this account and show what further research questions it opens up.   
+%
+%       Section 2
+%
+\section{Demonstratives and prenominal possessives are adjectives}\label{adjectives}
+
+%Despite the fact that 
+Notwithstanding that -- with respect to the left branch condition -- Russian behaves like articleless Serbo-Croatian and not like English, some linguists have claimed that Russian has a D-level and that, analogously to English, demonstratives and possessives are hosted by a D-projection and are not contained within NP. 
+
+I will first discuss the morphological data and claims made by \citet{Babyonyshev1997} and \citet{Pereltsvaig2007} that demonstratives and possessives do not have adjectival morphology and should thus be analyzed as determiners. I will then discuss the distributional facts that provide evidence that demonstratives and possessives are adjectives, not determiners.  
+
+\subsection{Declensional paradigm}
+
+\citet{Babyonyshev1997} and \citet{Pereltsvaig2007} claim that demonstratives and pre\-nominal possessives do not have adjectival morphology. This is taken as evidence that these expressions do not have the syntax and semantics of adjectives.  
+
+\citeauthor{Babyonyshev1997} compares the declensional paradigm of prenominal possessives to that of demonstratives, taking for granted that demonstratives are determiners. 
+
+% Example 6
+
+\ea\label{babyonyshev}
+    \ea \gll ėtot-$\varnothing$ Vanin-$\varnothing$ krasiv-yj dom\\
+    this-\textsc{m.sg.nom} Vanja-\textsc{poss.m.sg.nom} beautiful-\textsc{m.sg.nom} house.\textsc{m.sg.nom}\\
+    \glt `this beautiful house of Vanja's'
+    \ex \gll ėt-u Vanin-u krasiv-uju knigu\\
+    this-\textsc{f.sg.acc} Vanja-\textsc{poss.f.sg.acc} beautiful-\textsc{f.sg.acc} book.\textsc{f.sg.acc}\\
+    \glt `this beautiful book of Vanja's' \hfill \citep[206]{Babyonyshev1997}
+\z\z
+
+\noindent However, as I will show below, there is no reason to assume that demonstratives are determiners.
+
+\citet{Pereltsvaig2007} claims that, morphologically, demonstratives and prenominal possessives relate to \textsc{short form morphology adjectives} (SFM). She argues that, throughout the whole declensional paradigm, demonstratives and possessives often do not pattern with \textsc{long form morphology prenominal adjectives} (LFM), which indicates that these grammatical expressions are not adjectives, but originate outside of NP. 
+
+Both SFM and LFM adjectives are syntactically and semantically adjectives. They differ in two respects: first, morphologically, SFM adjectives retained only the nominative case form; second, in terms of distribution, SFM adjectives can be used only predicatively, not attributively, as \REF{sfm_predicative}
+shows; LFM adjectives can occur attributively as well as predicatively, as in \REF{lfm_attpred}. The morphological paradigm of LFM adjectives includes all the six cases (see \tabref{tab1:paradigm}).
+
+% Example 7
+
+\ea\label{sfm_predicative}
+    \ea[]{\gll Ėtot park krasiv osen'ju.\\
+    this park beautiful.\textsc{sfm} autumn\\
+    \glt `This park is beautiful in autumn.'}
+    \ex[*]{\gll Ėtot krasiv park naxoditsja okolo našego doma.\\
+    this beautiful.\textsc{sfm} park situated near our house\\
+    \glt Intended: `This beautiful park is situated near our house.'
+}
+\z\z
+
+% Example 8
+
+\ea\label{lfm_attpred}
+    \ea \gll Ėtot krasivyj park naxoditsja okolo našego doma.\\
+    this beautiful.\textsc{lfm} park situated near our house\\
+    \glt `This beautiful park is situated near our house.'
+    \ex \gll Roza -- krasivyj cvetok.\\
+    rose {}{} beautiful.\textsc{lfm} flower\\
+    \glt `The rose is a beautiful flower.'
+    \ex \gll Nataša byla molodoj i krasivoj.\\
+    Nataša was young and beautiful\\
+    \glt `Nataša was young and beautiful.'
+\z\z
+
+\noindent If we look at \tabref{tab1:paradigm} (based on \citealt{Pereltsvaig2007} but extended to include SFM and LFM adjectives), we see that demonstratives and prenominal possessives demonstrate a split: they pattern morphologically with SFM adjectives in the nominative and (partially) in the accusative, but with LFM adjectives in all other oblique cases.
+
+% Table 1
+
+\begin{sidewaystable}\caption{Declension of prenominal possessives and demonstratives}
+\label{tab1:paradigm}
+\begin{tabularx}{\textwidth}{X|X|XXX|X} 
+  \lsptoprule
+    &            &                      SG                &            &                                    & PL\\
+    &            &                      Masculine &                     Neuter    &         Feminine        &\\
+  \midrule
+  Nominative&     LFM         &       \textit{krasivyj} `pretty'    & \textit{krasivoe}   & \textit{krasivaja}   & \textit{krasivye}\\
+  &     SFM         &       \textit{krasiv} `pretty'    & \textit{krasivo}   & \textit{krasiva}   & \textit{krasivy}\\
+  &               DEM         &       \textit{ėtot} `this'        & \textit{ėto}       & \textit{ėta}       & \textit{ėti}\\
+  &               PP          &       \textit{mamin} `mom's'       & \textit{mamino}    & \textit{mamina}    & \textit{maminy}\\
+  \midrule 
+  Genitive&       LFM         &       \textit{krasivogo}          & \textit{krasivogo} & \textit{krasivoj}  & \textit{krasivyx}\\
+  &               DEM         &       \textit{ėtogo}              & \textit{ėtogo}     & \textit{ėtoj}      & \textit{ėtix}\\
+  &               PP          &       \textit{maminogo}           & \textit{maminogo}  & \textit{maminoj}   & \textit{maminyx}\\
+  \midrule
+  Dative&         LFM         &       \textit{krasivomu}          & \textit{krasivomu} & \textit{krasivoj}  & \textit{krasivym}\\
+  &               DEM         &       \textit{ėtomu}              & \textit{ėtomu}     & \textit{ėtoj}      & \textit{ėtim}\\
+  &               PP          &       \textit{maminomu}           & \textit{maminomu}  & \textit{maminoj}   & \textit{maminym}\\
+  \midrule
+  Accusative&     LFM         &       \textit{krasivogo/krasivyj} & \textit{krasivoje} & \textit{krasivoju} & \textit{krasivyx/krasivye}\\
+  &               DEM         &       \textit{ėtogo/ėtot}         & \textit{ėto}       & \textit{ėtu}       & \textit{ėtix/ėti}\\
+  &               PP          &       \textit{maminogo/mamin}     & \textit{mamino}    & \textit{maminu}    & \textit{maminyx/maminy}\\
+  \midrule 
+  Instrumental&   LFM         &       \textit{krasivym}           & \textit{krasivym}  & \textit{krasivoj}  & \textit{krasivymi}\\
+  &               DEM         &       \textit{ėtim}               & \textit{ėtim}      & \textit{ėtoj}      & \textit{ėtimi}\\
+  &               PP          &       \textit{maminym}            & \textit{maminym}   & \textit{maminoj}   & \textit{maminymi}\\
+  \midrule
+  Prepositional&  LFM         &       \textit{krasivom}           & \textit{krasivom}  & \textit{krasivoj}  & \textit{krasivyx}\\
+  &               DEM         &       \textit{ėtom}               & \textit{ėtom}      & \textit{ėtoj}      & \textit{ėtix}\\
+  &               PP          &       \textit{maminom}            & \textit{maminom}   & \textit{maminoj}   & \textit{maminyx}\\
+  \lspbottomrule
+\end{tabularx}
+\end{sidewaystable}
+
+Demonstratives and possessives thus pattern with SFM adjectives in some cases and in others with LFM adjectives. Since both these groups are adjectives semantically and syntactically, this declension pattern cannot be used to claim that demonstratives and prenominal possessives do not have adjectival morphology. It is true that demonstratives and possessives in nominative case can occur attributively, despite the fact that SFM adjectives cannot, but morphology is not a clear indication of syntactic category in Russian. 
+
+\citet{Pereltsvaig2007} herself claims that morphology is not indicative of a syntactic category. She claims that in Russian, words like \textit{podležaščee} `grammatical subject' and \textit{skazuemoe} `predicate' morphologically look like adjectives but function as nouns syntactically and semantically. 
+In \sectref{sec:3_kazdyj}, I will show that \textit{podležaščee} and \textit{skazuemoe} are not the only cases in Russian where adjectival morphology coincides with non-adjectival syntax and semantics:  \textit{každyj} `every' has adjectival morphology but is a quantifier semantically and syntactically.  
+
+% Subsection 2.2
+
+\subsection{Evidence that demonstratives and prenominal possessives are adjectives}
+
+Closer examination of the distribution of possessives and demonstratives strong\-ly suggests that they are adjectives. We begin by looking at determiners in English to define what properties we would expect Russian D-level elements to have, if they exist.
+
+\subsubsection*{Prediction 1: Determiners do not co-occur.}
+
+% Example 9
+
+\ea\ea[*]{this some man}
+\ex[*]{the every student}
+\z\z
+
+\noindent The sentences in \REF{determiners} seem to challenge this generalization.
+
+% Example 10
+
+\ea\label{determiners}
+    \ea the two students; every two students\label{twostudents}
+    \ex his every step\label{hisstep}
+\z\z
+
+\noindent In \REF{twostudents}, determiners precede a numeral; numerals are generally assumed to be hosted outside NP. However, \citet{Landman2003,Landman2004} and \citet{Rothstein2013,Rothstein2017} convincingly show that numerals are better analyzed as adjectives that denote cardinal properties of plural individuals. They assume that, in the absence of a lexical determiner, the numeral raises out of the NP into a position in the D-shell in English. If there is a lexical determiner, the numeral stays inside the DP and is interpreted as an adjectival predicate. So, while numerals do not normally permute with other adjectives \REF{fiftylions}, they can do so in the presence of a determiner, as shown in \REF{thefiftylions}. 
+
+% Example 11
+
+\ea
+    \ea[*]{Ferocious fifty lions were shipped to the Artis zoo.}\label{fiftylions}
+    \ex[]{The ferocious fifty lions were shipped to the Artis zoo.\label{thefiftylions}\\} \hfill \citep[217]{Landman2003}
+\z\z
+
+\noindent Following this, in \REF{twostudents}, there is only one determiner (\textit{the} and \textit{every}, respectively), and numerals are interpreted as adjectives.\footnote{\citet{Landman2004} argues that in \textit{every two students}, \textit{every} and \textit{two} form one complex determiner. In any case, there is only one determiner in the sentence, not two determiners that co-occur.}
+
+\REF{hisstep} is not a productive pattern, as \REF{false} shows, thus we assume that `his every step' and `his every word' are lexicalized in English and are thus not a counter\-example to the claim that determiners do not co-occur.\footnote{An alternative explanation for \textit{his every step/book/word} could be that \textit{every} forms a complex determiner with the possessive pronoun. However, as is shown in (\ref{somestep12},\ref{thatstep12}), other determiners do not follow this grammatical pattern.}
+
+% Example 12
+
+\ea\label{false}
+    \ea[*]{His every book}
+    \ex[*]{His every student}
+    \ex[*]{His some step}\label{somestep12}
+    \ex[*]{His that step}\label{thatstep12}
+\z\z
+
+\subsubsection*{Prediction 2: Determiners do not permute with adjectives.}
+
+\noindent Adjectives and determiners are hosted by different projections: determiners are part of DP, adjectives originate within NP. We do not expect to find permutations between different types of expressions.
+
+% Example 13
+
+\ea[*]{Beautiful this girl}
+\z
+
+\subsubsection*{Prediction 3: Determiners are infelicitous in predicate positions.}
+
+Bare determiners are not expected to be grammatical as predicates since they denote functions and are not semantic predicates. We will look at each of these predictions and check whether they are borne out for demonstratives and prenominal possessives in Russian. 
+
+% Subsubsection 2.2.1 
+
+\subsubsection{Demonstratives and possessives co-occur}
+
+Demonstratives and possessives can co-occur with each other and with \textit{každyj} `every'.
+
+% Example 14
+
+\ea\label{statja}
+\ea\label{etastatja}
+    \gll Ėta mamima stat'ja imela uspex.\\
+    this.\textsc{f.sg} mom.\textsc{poss.f.sg} article.\textsc{f.sg} had success\\
+    \glt [Literally: This [mom's article] was a success]
+    \glt `This article of my mother's was a success.'
+\ex\label{kazdajastatja}
+    \gll Každaja mamina stat'ja imela uspex.\\
+    every mom.\textsc{poss.f.sg} article.\textsc{f.sg} had success\\
+    \glt [Literally: every [mom’s-article] was a success.' (NOT the article of every mother)]
+    \glt `Every article of my mother's was a success.' 
+\ex\label{kazdajaeta}
+    \gll Každaja ėta stat'ja imela uspex.\\
+    every this.\textsc{f.sg} article.\textsc{f.sg} had success\\
+    \glt `Every article (out of these) was a success.'
+\z\z
+
+\noindent If we assume that demonstratives and prenominal possessives are determiners, then the data in \REF{statja} is surprising: they should not be able to co-occur. English translations of the Russian examples provide extra support for this generalization: in English, *\textit{this mom's article, *every mom's article}, and *\textit{every this article} are ungrammatical. Moreover, \textit{každyj} `every', being a quantifier (the details will be discussed in \sectref{sec:3_kazdyj}), is not expected to take other determiners as its complement. This suggests that demonstratives and prenominal possessives are not determiners. They are better analyzed as adjectives -- more than one adjective can modify the same noun, and adjectives can be part of an NP complement of a quantifier. 
+
+% Subsubsection 2.2.2
+
+\subsubsection{Demonstratives and possessives permute with adjectives}
+
+\citet{Pereltsvaig2007} %argues that the default word order in Russian NPs is
+argues for the following word order in Russian: demonstrative -- prenominal possessive -- (property) adjective -- noun. She shows that a property adjective cannot precede [demonstrative $+$ prenominal possessive]:
+
+% Example 15
+
+\ea\label{Vanja}
+    \ea[*]{\gll Krasivyj ėtot Vanin dom.\\
+    beautiful.\textsc{m.sg} this.\textsc{m.sg} Vanja.\textsc{poss.m.sg} house.\textsc{m.sg}\\
+    \glt Intended: `This house of Vanja's is beautiful.'}      %NH: translations added
+    \ex[*]{\gll Šerstjanoe ėto Vanino pal'to.\\
+    woolen.\textsc{n.sg} this.\textsc{n.sg} Vanja.\textsc{poss.n.sg} coat.\textsc{n.sg}\\
+    \glt Intended: `This coat of Vanja's is woolen.'}
+\z\z
+
+\noindent However, the facts are more complex than \citeauthor{Pereltsvaig2007} suggests. If a demonstrative shifts to the left periphery, prenominal possessives can permute with adjectives:
+
+% Example 16
+
+\ea
+    \ea \gll ėta Mašina šerstjanaja jubka\label{masinajubka1}\\
+    this Maša.\textsc{poss.f.sg.nom} woolen skirt.\textsc{f.sg.nom}\\
+    \glt `this woolen skirt of Maša's'
+    \ex\label{masinajubka2} \gll ėta šerstjanaja Mašina jubka\\
+    this woolen Maša.\textsc{poss.f.sg.nom} skirt.\textsc{f.sg.nom}\\
+    \glt `this woolen skirt of Maša's'
+\z\z
+
+\noindent However, when either a demonstrative or a possessive occurs (but not both), either of them can permute with adjectives:
+
+% Example 17
+
+\ea\label{razgovor}
+    \ea \gll Dlinnyj ėtot razgovor vymotal ego.\\
+    long.\textsc{sg.m.nom} this.\textsc{sg.m.nom} conversation.\textsc{sg.m.nom} exhausted him\\
+    \glt `This long conversation exhausted him.'
+    \ex \gll Ėtot dlinnyj razgovor vymotal ego.\\
+    this.\textsc{sg.m.nom} long.\textsc{sg.m.nom} conversation.\textsc{sg.m.nom} exhausted him\\
+    \glt `This long conversation exhausted him.'
+\z\z
+
+% Example 18
+
+\ea\label{rabota}
+    \ea \gll Mamina novaja rabota svjazana s putešestvijami.\\
+    mom.\textsc{poss.f.sg} new job connected with travelling\\
+    \glt `Mom's new job involves travelling.'
+    \ex \gll Novaja mamina rabota svjazana s putešestvijami.\\
+    new mom.\textsc{poss.f.sg} job connected with travelling\\
+    \glt `Mom's new job involves travelling.'
+\z\z
+
+\noindent This suggests that only one permutation is allowed. We assume that demonstratives and possessives both occur in the left periphery of the adjectival field with the demonstrative naturally at the outer edge. If either a possessive or a demonstrative occurs, but not both, a lower adjective can permute with the left periphery adjective as in \REF{razgovor} and \REF{rabota}. However, if the demonstrative and possessive both occur, an adjective can only permute with the lower left peripheral element, the possessive, as in \REF{masinajubka2}.\footnote{At the moment, I do not have an explanation for why the permutation between the two left peripheral elements (the order \textsc{poss-dem}) is not allowed.} It is, however, impossible to have two permutations, either the possessive permuting with the demonstrative to give the order \textsc{poss-dem} and then have the property adjective permute with the demonstrative to give \textsc{poss-adj-dem}, or to have the adjective permute first with the possessive and then with the demonstrative to give \textsc{adj-dem-poss}.
+
+Moreover, demonstratives and possessives can permute with numerals -- another piece of evidence showing that demonstratives and prenominal possessives do not behave like determiners:
+
+% Example 19
+
+\ea
+    \ea \gll Ėti tri slučaja xorošo zadokumentirovany.\\
+    this.\textsc{pl.nom} three case.\textsc{sg.gen} well documented\\
+    \glt `These three cases are well documented.'
+    \ex \gll Tri ėti slučaja xorošo zadokumentirovany.\\
+    three this.\textsc{pl.nom} case.\textsc{sg.gen} well documented\\
+    \glt `These three cases are well documented.'
+\z\z
+
+% Example 20
+
+\ea
+    \ea \gll Dva papinyx velosipeda stojali na balkone.\\
+    two dad.\textsc{poss.pl.gen} bicycles stood on balcony\\
+    \glt `Two of Dad's bicycles were on the balcony.'
+    \ex \gll Papiny dva velosipeda stojali na balkone.\\
+    dad.\textsc{poss.pl.nom} two bicycles stood on balcony\\
+    \glt `Dad's two bicycles were on the balcony.'
+\z\z
+
+\noindent If, following \citet{Khrizman2016}, we assume that in Russian, numerals are born as adjectival predicates that denote cardinal properties, the above permutation facts are explained, since adjectives can permute.
+
+Demonstratives and possessives can permute with adjectives and numerals. These data might lead us to assume that Russian grammar allows for permutations that are not available in other languages (and, as we saw, some linguists explain these data by claiming that Russian does not have a D-level in its noun phrase structure). However, \textit{každyj} `every' behaves as we would expect from a grammatical expression hosted higher than NP -- it cannot permute either with demonstratives and possessives or with any other adjectives. This suggests that \textit{každyj} is a functional head generated outside NP, unlike demonstratives and possessives which are left peripheral within the NP. We return to a discussion of \textit{každyj} in \sectref{sec:3_kazdyj}.
+
+% Example 21
+
+\ea
+    \ea[*]{\gll mamina každaja stat'ja\\
+    mom.\textsc{poss.f.sg} every.\textsc{f.sg} article.\textsc{f.sg}\\
+    \glt Intended: `every article of mom's'}      %NH: translations added
+    \ex[*]{\gll ėta každaja stat'ja\\
+    this.\textsc{f.sg} every.\textsc{f.sg} article.\textsc{f.sg}\\
+    \glt Intended: `this every article'}
+    \ex[*]{\gll novaja každaja stat'ja\\
+    new.\textsc{f.sg} every.\textsc{f.sg} article.\textsc{f.sg}\\
+    \glt Intended: `every new article'}
+\z\z
+
+%\noindent We return to a discussion of \textit{každyj} in \sectref{sec:3_kazdyj}.
+
+\noindent So far we have seen that the first two of our three predictions about the grammatical behavior of determiners are not borne out: prenominal possessives and demonstratives can co-occur with each other and \textit{každyj} `every'; demonstratives and possessives can permute with adjectives. Thus, the adjectival analysis seems to better account for the grammatical behavior of demonstratives and possessives.
+
+In the next subsection we look at the third prediction, which concerns the possibility of demonstratives and prenominal possessives occurring in predicate position.
+
+% Subsubsection 2.2.3
+
+\subsubsection{Evidence that possessives and demonstratives are grammatical in predicative positions}\label{subsubsec:evidence}
+
+In general, we would not expect bare determiners to appear in predicate position. Predicates denote sets. In a sentence like \textit{My mother’s bicycle is black}, the adjectival predicate \textit{black} or \textit{be black} denotes a set and the sentence asserts that my mother’s bicycle is a member of that set. Within the framework of the theory of generalized quantifiers \citep{BarwiseCooper1981}, a determiner is a function from sets to generalized quantifiers (sets of sets), or more intuitively, a relation between sets. With this, we would not expect determiners to appear in predicate position, since it makes no sense to predicate a relation between sets of an individual. 
+
+However, demonstratives and possessives are grammatical in predicative positions in Russian both when they appear bare and in combination with a noun.
+
+% Subsubsubsection 2.2.3.1
+
+\subsubsubsection{Bare demonstratives and possessives as copula predicates}
+
+If we assume that demonstratives and prenominal possessives are determiners, we would predict that they should be ungrammatical as predicates when they occur bare -- analogously to \textit{every}/\textit{some}/\textit{the}/\textit{this} etc. in English. 
+
+However, in Russian, bare demonstratives and possessives can occur as predicates.
+
+% Example 22
+
+\ea
+    \ea \gll Vanino pal'to bylo ėto.\\
+    Vanja.\textsc{poss.n.sg} coat.\textsc{n.sg} was this.\textsc{n.sg}\\
+    \glt `Vanja's coat was this one.'
+    \ex \gll Ėto pal'to bylo Vanino.\\
+    this.\textsc{n.sg} coat.\textsc{n.sg} was Vanja.\textsc{poss.n.sg}\\
+    \glt `This coat was Vanja's.'
+\z\z
+
+\noindent \citet{Pereltsvaig2007} does not consider these data to be an argument in support of the adjectival analysis. She claims that demonstratives and prenominal possessives are not directly predicative, they are part of an NP with a phonologically null noun (following the syntactic analyses of \citealt{Babby1975} and \citealt{Bailyn1994} of LFM and SFM adjectives in Russian: they claim that SFM adjectives are directly predicative, while LFM adjectives are used attributively with a null noun).
+
+What the extension of \citeposst{Babby1975} and \citeposst{Bailyn1994} analysis shows us is that demonstratives and possessives behave exactly like all other LFM adjectives: they can occur attributively and predicatively (if you like, with a null noun). Thus, this cannot be taken as evidence that they are not adjectives. 
+
+Moreover, \citet{Partee.Borschev2003} show that possessives in this position are used attributively (i.e. with a null noun) only when they occur in the instrumental case. When they take the nominative case they are predicates of type $\stb{e,t}$. Let us look at this claim in more detail. 
+
+Adjectives, nominals, and demonstratives with prenominal possessives can take both instrumental or nominative case when they occur as predicates:
+
+% Example 23
+
+\ea
+    \ea \gll Ėto pal'to bylo Vaninym/Vanino.\\
+    this coat was Vanja.\textsc{poss.m.sg.ins/nom}\\
+    \glt `This coat was Vanja's coat.'
+    \ex \gll Nataša byla krasivoj/krasivaja i nadmennoj/nadmennaja.\\
+    Nataša was pretty.\textsc{f.sg.ins/nom} and arrogant.\textsc{f.sg.ins/nom}\\
+    \glt `Nataša was pretty and arrogant.'
+\z\z
+
+\noindent \citeauthor{Partee.Borschev2003} show that when a possessive pronoun occurs as a predicate in the instrumental case, combining it with a nominal expression is grammatical. On the other hand, when the possessive pronoun occurs as a predicate in the nominative case, it cannot combine with nominals: 
+
+% Example 24 
+
+\ea
+    \ea \gll Ėta strana byla kogda-to mojej \minsp{(} stranoj).\label{stranoj}\\
+    this country was {long ago} my.\textsc{poss.ins} {} country.\textsc{ins}\\
+    \glt `This country was once mine.'
+    \ex \gll Ėta strana byla kogda-to moja \minsp{(*} strana).\label{mojastrana}\\
+    this country was {long ago} my.\textsc{poss.nom} {} country.\textsc{nom}\\
+    \glt `This country was once mine.'
+\z\z
+
+    \largerpage[-1]
+
+\noindent \citeauthor{Partee.Borschev2003} argue that, in examples like \REF{stranoj}, the possessive is part of an NP with a null noun, but in \REF{mojastrana} it is a predicate of type $\stb{e,t}$, \textit{contra} \citet{Pereltsvaig2007}.
+
+My informants find \textit{bare} demonstratives as predicates quite marginal. On the other hand, prenominal possessives behave as predicted by \citet{Partee.Borschev2003}:
+
+% Example 25
+
+\ea
+    \ea \gll Ėta kniga byla kogda-to mamina \minsp{(*} kniga).\label{maminakniga}\\
+    this book was {long ago} mom.\textsc{poss.nom} {} book.\textsc{nom}\\
+    \glt `This book was once my mom's book.'
+    \ex \gll Ėta kniga byla kogda-to maminoj \minsp{(} knigoj).\label{maminojknigoj}\\
+    this book was {long ago} mom.\textsc{poss.ins} {} book.\textsc{ins}\\
+    \glt `This book was once my mom's book.'
+\z\z
+
+\noindent It seems to be the case that the split we found in \sectref{introduction} between cases where the possessive patterns morphologically with SFM and cases where it patterns with LFM adjectives has semantic effect when bare demonstratives and possessives occur as copular predicates. In \REF{maminakniga}, the possessive has the morphology of SFM adjectives and is semantically a predicative expression. In \REF{maminojknigoj}, \textit{maminoj} morphologically patterns with LFM adjectives and can combine with a noun. Despite the fact that different declensional paradigms signal different semantic interpretation in this specific position, both SFM and LFM adjectives are semantically and syntactically adjectives. Thus, demonstratives and possessives pattern with adjectives in their grammatical behavior. They do not behave like determiners, which are simply ungrammatical as sentential predicates. 
+
+% Subsubsubsection 2.2.3.2
+
+\subsubsubsection{Demonstratives and possessives under the scope of measure operators}
+
+It is still possible to try and argue that demonstratives and possessives head DPs, and that in predicative position, with a null N as complement, they shift from arguments to predicates, as is assumed in English examples like \textit{The guests are the boys from my class} (e.g., \citealt{Partee1987}). In this section, we argue against this analysis for Russian.
+
+If we were to assume that demonstratives and prenominal possessives are hosted by a D-projection, then there would be two possible interpretations for the DP that they are part of: the DP either denotes an individual of type $e$ or a generalized quantifier of type $\stb{\stb{e,t}, t}$. As argued in \citet{Landman2003}, generalized quantifiers cannot be `lowered' to a predicative type and are, consequently, infelicitous in predicative positions:
+
+% Example 26
+
+\ea[*]{A singer is every boy.}
+\z
+
+\noindent This effectively rules out analyzing possessives and demonstratives as heading DPs of type $\stb{\stb{e,t}, t}$ in Russian, since then we would not expect them to be able to lower to the predicate type $\stb{e,t}$.
+Expressions of type $e$ denoting an individual can shift to predicative interpretations of type $\stb{e,t}$ denoting the property of being that individual (with the type shifting operation \textsc{ident} of \citealt{Partee1987}). If prenominal possessives and demonstratives are determiners and can occur as predicates when combined with a noun, then they have an interpretation as an expression of type $e$, which can be shifted with \citeauthor{Partee1987}'s operation to a predicate of type $\stb{e,t}$. 
+
+Against this background, let us look at two measure prefixes in Russian. \citet{Filip2005} analyzes the prefixes \textit{na-} and \textit{po-} as measure phrases and claims that their nominal arguments are predicative NPs with non-specific indefinite interpretation. \textit{Na-} and \textit{po-} first combine with a property-denoting nominal argument (of type $\stb{e,t}$) and only after this grammatical operation the expression is able to combine with a verbal root. 
+
+% Example 27
+
+\ea\label{napo-demonstratives}
+    \ea\label{navaril} \gll Ivan navaril varen'ja.\\
+    Ivan {\textsc{na}.boil} jam.\textsc{gen}\\
+    \glt `Ivan made a lot of jam.'
+    \ex\label{pojel} \gll Ivan pojel varen'ja.\\
+    Ivan {\textsc{po}.eat} jam.\textsc{gen}\\
+    \glt `Ivan ate some jam.'
+\z\z
+
+\noindent Both in \REF{navaril} and in \REF{pojel} the mass predicate \textit{varen'ja} `jam.\textsc{gen}' combines with a measure operator. \textit{Na-} incorporates a measure function that identifies quantities of jam that are large relative to the context. \textit{Ivan navaril varen'ja} `Ivan \textsc{na}.make a lot of jam' denotes a maximal event of cooking a lot of jam with Ivan being the agent of the event.\footnote{Note that this event can consist of multiple events of cooking some small amount of jam and then these smaller events get accumulated into a bigger maximal event \citep{Filip.Rothstein2006}.} \textit{Po-} incorporates a measure function that identifies quantities of jam that are greater than null, but small: in \REF{pojel}, Ivan ate some jam, not a lot of it.
+
+Demonstratives and possessives can occur under the scope of the prefixes \textit{na-} and \textit{po-}. 
+
+% Example 28
+
+\ea\label{pirogi_kotlet}
+    \ea \gll My najelis' Natašinyx pirogov.\\
+    we {\textsc{na}.eat} Nataša.\textsc{poss.pl.gen} pies.\textsc{pl.gen}\\     %NH: got rid of 'ona otličnyj povar.'
+    \glt `We ate a lot of Nataša's pies.'
+    \ex \gll On s udovol'stviem pojel maminyx kotlet.\\
+    he with pleasure {\textsc{po}.eat} mom.\textsc{poss.pl.gen} chops\\
+    \glt `He ate some of mom's chops with pleasure.'
+\z\z 
+
+% Example 29
+
+\ea\label{novosti} 
+    \ea \gll Mama nasmotrelas' ėtix novostej i teper' bespokoitsja za nas.\\
+    mom {\textsc{na}.watched} this.\textsc{pl.gen} news and now is.worried for us\\
+    \glt `My mother has watched the news and now she is worried about us.'
+    \ex \gll My pojeli ėtix kotlet i otravilis'.\\
+    we {\textsc{po}.ate} this.\textsc{pl.gen} chops.\textsc{gen} and got.poisoned\\
+    \glt `We ate some of these chops and this made us sick.'
+\z\z
+
+\noindent It is worth mentioning that the possessives and demonstratives do not undergo a change of meaning when they occur in this position. In \REF{pirogi_kotlet}, \textit{Natašinyx} `Nataša's' and \textit{maminyx} `mom's' can describe either the pies and chops cooked or possessed by the women. This does not differ from the interpretation of possessives in argument position. The same holds for \REF{novosti}:  demonstratives are used in their true demonstrative meaning. This contradicts the claim in \citet{Kagan.Pereltsvaig2014} that if a demonstrative occurs in predicative position, it undergoes a meaning shift, loses its demonstrative meaning, and is equivalent to `such' or `of this type'. 
+
+I assume with \citet{Filip2005} that the prefixes in \REF{pirogi_kotlet} and \REF{novosti} operate on the demonstrative/possessive plus noun, which is a predicate of type $\stb{e,t}$. Now, if we need to assume that demonstratives and possessives are D-level elements, then we must assume that they are part of a DP of type $e$ denoting an individual and shifted by \textsc{ident} to type $\stb{e,t}$. But then we would expect that the same shift could felicitously shift normal nominal expressions of type $\stb{e,t}$ under the scope of the measure prefixes \textit{na-} and \textit{po-}. This prediction is not borne out. Proper names that inherently denote individuals are infelicitous under the scope of measure prefixes with indefinite interpretation.
+
+% Example 30
+
+\ea\label{nasmotret} 
+    \ea[*]{\gll My nasmotrelis' Nataši.\\
+    we {\textsc{na}.watched} Nataša.\textsc{gen}\\
+    \glt Intended: `We watched Nataša a lot.'
+    }
+    \ex[*]{\gll My poslušali Nataši.\\
+    we {\textsc{po}.listen} Nataša.\textsc{gen}\\
+    \glt Intended: `We listened to Nataša for a while.'}
+\z\z 
+
+\noindent The infelicity of proper names in this position shows that the suggestion that, maybe, demonstratives and prenominal possessives can occur under the scope of measure prefixes because some shifting operation is untenable.\footnote{It has been brought to my attention by an anonymous reviewer that for some speakers some proper names \emph{can} occur under the scope of measure prefixes:
+\ea
+    \ea[]{\label{tsvetajeva} \gll My načitalis' Mariny Cvetaevoj.\\
+    we {\textsc{na}.read} Marina.\textsc{gen} Cvetaeva.\textsc{gen}\\
+    \glt `We read a lot of Marina Cvetaeva's poems.'}
+    \ex[?]{\label{vojnaimir} \gll My počitali {Vojny i mira}.\\
+    we {\textsc{po}.read} {War and peace}.\textsc{gen.sg}\\
+    \glt `We read `War and Peace' for a while (probably, some pages).'}
+\z\z 
+\noindent For my informants, the combination of \textit{po-} and a proper name in the genitive is infelicitous. \REF{tsvetajeva} is felicitous, but has a very specific interpretation: it denotes poems written by Cvetaeva. Only a very restricted group of proper names can occur in this position: authors of works of art. They can be reinterpreted as a set of the author's creations and can thus shift independently from an argument of type $e$ to a predicative expression of type $\stb{e,t}$. As such a shift is not freely available for proper names (see \REF{nasmotret}), these data cannot be considered a counterexample to the argument in \sectref{subsubsec:evidence}.
+}
+These expressions can occur as predicates because they are adjectives and originate within NP, not DP.
+
+% Subsubsection 2.2.4
+
+\subsubsection{Evidence from existential sentences}
+
+In English, DPs with demonstratives and possessives are definite expressions. They are infelicitous in existential sentences, a standard test for definiteness \citep{Milsark1977,Bach1987}.
+
+% Example 31
+
+\ea\label{standard_definiteness}
+    \ea[]{\label{standard_a} There is a pig in the garden.}
+    \ex[]{\label{standard_b} There were three sailors standing on the corner.}
+    \ex[]{\label{standard_c} There are many solutions to this problem.}
+    \ex[*]{\label{standard_d} There is every tiger in the garden.}
+    \ex[*]{\label{standard_e} There are all solutions to this problem.}
+    \ex[*]{\label{standard_f} There are my mom's portraits in every room of our house.}
+    \ex[*]{\label{standard_g} There are these genes in human beings.}
+\z\z 
+
+\noindent If we assume that demonstratives and possessives in Russian are determiners, then we would expect them to be associated with definiteness and be ungrammatical in existential contexts. However, this prediction is not borne out. Both demonstratives and prenominal possessives can occur in existential sentences. \REF{32_a} and \REF{32_b} contrast with the infelicitous \REF{standard_f} and \REF{standard_g}, respectively.
+
+% Example 32
+
+\ea 
+    \ea\label{32_a} \gll V každoj komnate našego doma est' mamin portret.\\
+    in every room our house is/are mom.\textsc{poss.m.sg} portrait\\
+    \glt `There is a portrait of my mother in every room of our house.'
+    \ex\label{32_b} \gll Est' ėti geny i u čeloveka.\\
+    is/are these genes and at humans\\
+    \glt `Humans also have these genes.'
+\z\z
+
+\noindent \citet{Paduceva2000} claims that in Russian, too, the subjects of this kind of existential sentences are indefinite NPs. If so, it must be the case that demonstratives and prenominal possessives in this position are (part of) indefinite NPs, which they are if they are adjectives modifying a noun within NP, but not if they are determiners mapping nouns onto either expressions of type $e$ or $\stb{\stb{e,t}, t}$.                                             
+% Subsubsection 2.2.5 
+
+\subsubsection{In sum}
+
+In this section we have given several arguments that show that demonstratives and possessives do not behave like determiners and that their grammatical behavior is better explained within the adjectival analysis. Demonstratives and prenominal possessives can co-occur, they permute with adjectives, they are felicitous in predicative positions, and they are felicitous in existential sentences. Even morphologically they pattern with adjectives: either SFM or LFM adjectives. However, a match in the morphological paradigm does not seem to be a necessary condition -- there are expressions in Russian in which adjectival morphology coincides with non-adjectival syntax and semantics.
+
+If we only look at demonstratives and possessives, it seems promising to extend to Russian also  \citeposst{Boskovic2005a} claim that in articleless Serbo-Croatian there is no DP-projection and, thus, all the expressions that are determiners in languages with articles are adjectives. 
+However, this does not seem to be the case. In the next section, we will look at \textit{každyj} `every'. I will provide evidence that it combines adjectival morphology with the syntax and semantics of a quantifier. Consequently, I will claim that at least some NPs in Russian have a functional projection.
+%
+%        Section 3
+%
+\section{\textit{Každyj} `every' is a quantifier}\label{sec:3_kazdyj}
+
+\textit{Každyj} `every' is a good example of an expression for which participating in an adjectival morphological paradigm is no clue to its syntactic or semantic category. \textit{Každyj} patterns with LFM adjectives throughout its whole declensional paradigm (see \tabref{tab:2_kazdyj}).
+
+% Table 2
+\begin{sidewaystable}\caption{Declensional paradigm of \textit{krasivyj} and \textit{kazdyj}}\label{tab:2_kazdyj}
+\begin{tabularx}{\textwidth}{X|XXX|X}
 \lsptoprule
- & \textit{skupina sportovců} & \textit{dvojice sportovců} \tabularnewline
- & `group of athlets' & `a group of two athletes' \tabularnewline
- & (atom collectives) & (set collectives) \tabularnewline
+&                   SG                  &               &                                       & PL\\
+&                   Masculine                   & Neuter                & Feminine              &\\
 \midrule
-distribution over members with determiner \textit{každý} & $*$ & $*$ \tabularnewline
+Nominative&     \textit{krasivyj} `pretty'   & \textit{krasivoe}     & \textit{krasivaja}     & \textit{krasivye}\\ 
+&               \textit{každyj} `every'      & \textit{každoe}       & \textit{každaja}       & \textit{každye}\\ 
 \midrule
-distribution over members with binominal \textit{každý}  & $*$ & $\checkmark$ \tabularnewline
+Genitive&       \textit{krasivogo}           & \textit{krasivogo}     & \textit{krasivoj}      & \textit{krasivyx}\\
+&               \textit{každogo}             & \textit{každogo}       & \textit{každoj}        & \textit{každyx}\\ 
+\midrule
+Dative&         \textit{krasivomu}           & \textit{krasivomu}     & \textit{krasivoj}      & \textit{krasivym}\\ 
+&               \textit{každomu}             & \textit{každomu}       & \textit{každoj}        & \textit{každym}\\
+\midrule
+Accusative&     \textit{krasivogo/krasivyj}  & \textit{krasivoe}      & \textit{krasivuju}     & \textit{krasivyx/krasivye}\\
+&               \textit{každogo/každyj}      & \textit{každoe}        & \textit{každuju}       & \textit{každyx/každye}\\
+\midrule
+Instrumental&   \textit{krasivym}            & \textit{krasivym}      & \textit{krasivoj}      & \textit{krasivymi}\\
+&               \textit{každym}              & \textit{každym}        & \textit{každoj}        & \textit{každymi}\\
+\midrule
+Prepositional&  \textit{krasivom}            & \textit{krasivom}      & \textit{krasivoj}      & \textit{krasivyx}\\
+&               \textit{každom}              & \textit{každom}        & \textit{každoj}        & \textit{každyx}\\
 \lspbottomrule
 \end{tabularx}
-\caption{Atom collectives and set collectives}
-\label{table:gepner:3}
-\end{table}
+\end{sidewaystable}
 
-Thus, binominal \textit{každý} serves as a diagnostic to test the accessibility of the members of collections and to distinguish between the two types of collectives: while the individual members of set collectives are at least weakly accessible, members of atom collectives are completely inaccessible and atomic from the outside.
+However, syntactically and semantically, \textit{každyj} does not behave like an adjective. 
 
-The authors model the complex interaction of determiner \textit{každý} and binominal \textit{každý} with set and atom collectives within the Plural Compositional Discourse Representation Theory (PCDRT). The main idea of the formalization is this: while determiner \textit{každý} distributes over both the restrictor and the nuclear scope, binominal \textit{každý} only distributes over the distributive share denoted by the NP it is attached to, remaining neutral with respect to the collectivity and cumulativity of the material outside of its scope. This explains its compatibility with set collectives and its incompatibility with atom collectives.
+We have already observed above that \textit{každyj}, unlike demonstratives and possessives, cannot permute with adjectives.
 
-\section{Classifier phrase}
-\subsection{Types of classifiers}
+% Example 33
 
-The typological literature on the mass/count distinction commonly distinguishes between classifier and non-classifier languages. In classifier languages such as \ili{Chinese}, nouns cannot be directly combined with a numeral and need the help of a classifier, the so-called individual or natural unit classifier \citep{Krifka1989, Krifka1995}, as in \REF{ex:gepner:13}.
+\ea 
+    \ea[]{\gll každaja novaja rabota\\
+    every new job\\
+    \glt `every new job'}
+    \ex[*]{\gll novaja každaja rabota\\
+    new every job\\}
+\z\z
 
-\ea \label{ex:gepner:13}
-\gll san zhi bi \\
-    three \textsc{cl} pencil\\
-\glt `three pencils'\hfill (\ili{Chinese})
+\noindent \textit{Každyj} cannot permute with numerals. It can only occur in the left periphery. 
+
+% Example 34
+
+\ea 
+    \ea[]{\gll Vrač rekomendoval kormit' rebënka každye tri časa.\\
+    doctor recommended {to feed} baby every three hours\\
+    \glt `The doctor recommended to feed the baby every three hours.'}
+    \ex[*]{\gll Vrač rekomendoval kormit' rebënka tri každye časa.\\
+    doctor recommended {to feed} baby three every hour\\} 
+\z\z
+
+\noindent \textit{Každyj} co-occurs with demonstratives and prenominal possessives and cannot permute with either of them.
+
+% Example 35
+
+\ea 
+    \ea[]{\gll Každaja mamina stat'ja imela uspex.\\
+    every mom.\textsc{poss.f.sg} article.\textsc{f.sg} had success\\
+    \glt `Every article of my mother's was a success.'}
+    \ex[]{\gll Každaja ėta stat'ja imela uspex.\\
+    every this.\textsc{f.sg} article.\textsc{f.sg} had success\\
+    \glt `Every article (out of these) was a success.'}
+    \ex[*]{\gll mamina každaja/ėta každaja\\
+    mom.\textsc{poss.f.sg} every/this.\textsc{f.sg} every\\}
+\z\z 
+
+\noindent \REF{krasnyetufli} shows that, unlike adjectives, \textit{každyj} cannot be a copular predicate. \REF{molodyjeljudi} shows that, unlike nouns modified by adjectives, NPs containing \textit{každyj} cannot be copular predicates either.
+
+% Example 36
+
+\ea\label{krasnyetufli} 
+    \ea[]{\gll Ėti krasnye tufli --- novye.\\
+    this.\textsc{pl} red.\textsc{pl} shoe.\textsc{pl} {} new.\textsc{pl}\\
+    \glt `These red shoes are new.'}
+    \ex[*]{\gll Ėti novye studenty --- každyj.\\
+    this.\textsc{pl} new.\textsc{pl} student.\textsc{pl} {} every.\textsc{sg}\\}
+\z\z
+
+% Example 37
+
+\ea\label{molodyjeljudi}
+    \ea[]{\gll Ėti molodye ljudi --- novye studenty professora Petrova.\\
+    this.\textsc{pl} young.\textsc{pl} people {} new.\textsc{pl.nom} student.\textsc{pl.nom} professor.\textsc{gen} Petrov.\textsc{gen} \\
+    \glt `These young people are new students of professor Petrov.'}
+    \ex[*]{\gll Ėti molodye ljudi --- každyj student professora Petrova.\\
+    this.\textsc{pl} young.\textsc{pl} people {} every.\textsc{sg.m.nom} student.\textsc{sg.m.nom} professor.\textsc{gen} Petrov.\textsc{gen}\\}
+\z\z
+
+\noindent Adjectives in Russian get nominalized: they retain adjectival morphology but syntactically function as nominals. These nominalized adjectives can pluralize (as in \REF{38_a}) and be modified by other adjectives (as in \REF{38_b} and \REF{38_c}) and numerals (as in \REF{38_a}).
+
+% Example 38
+
+\ea\label{38_a}
+    \ea \gll V ėtom predloženii dva skazuemyx.\\
+    in this sentence two predicates.\textsc{adj.pl.gen}\\
+    \glt `There are two predicates in this sentence.'
+    \ex\label{38_b} \gll Dlja krest'janina vesennjaja posevnaja byla i ostaëtsja glavnoj zabotoj.\\
+    for peasant spring seeding.\textsc{adf.f.nom} was and remains major concern\\
+    \glt `The spring seeding process was and remains the peasant's main concern.'
+    \ex\label{38_c} \gll Na vtorom ėtaže naxodilas' prostornaja učitel'skaja.\\
+    on second floor {was.situated} spacious teacher's.\textsc{adj.sg.f.nom}\\
+    \glt `A spacious teachers' room was situated on the second floor.'
+\z\z 
+
+\noindent When \textit{každyj} appears bare, the only possible interpretation for it is `every person' (similar to \textit{everyone} and \textit{everybody} in English). 
+
+% Example 39
+
+\ea \gll Každyj \minsp{*(} mig) nesët v sebe smysl i krasotu.\\
+every {} moment carries in itself meaning and beauty\\
+\glt `Every moment is full of sense and beauty.'
 \z
 
-\noindent According to \cite{Cheng.Sybesma1999}, count classifiers in \ili{Chinese} primarily serve to name the unit in which the entity denoted by the noun naturally occurs. Classifier languages are contrasted with non-classifier languages such as \ili{Slavic} languages, which have count nouns that can be directly combined with numerals, as in \REF{ex:gepner:14}.
+\noindent When \textit{každyj} appears bare, it cannot pluralize or be modified by adjectives.
 
-\ea \label{ex:gepner:14}
-\gll pjat' stolov \\
-    five tables.\textsc{gen.pl}\\
-\glt `five tables'\hfill (\ili{Russian})
-\z
+% Example 40
 
-\noindent But non-classifier languages can also use a type of classifier which occurs in combination with mass nouns, see \REF{ex:gepner:15}:
+\ea 
+    \ea[*]{\gll Každye nesut v sebe smysl i krasotu.\\
+    every.\textsc{pl} carry in itself meaning and beauty\\
+    \glt Intended: Everyone carries meaning and beauty in themselves.}
+    \ex[*]{\gll Talantlivyj každyj nesët v sebe smysl i krasotu.\\
+    talented every carries in self meaning and beauty\\
+    \glt Intended: Everyone talented carries meaning and beauty in themselves.}
+\z\z 
 
-\ea \label{ex:gepner:15}
-\gll tri 	litra 	vina \\
-    three	liter.\textsc{gen.sg}	wine.\textsc{gen.sg}\\
-\glt `three liters of wine'\hfill (\ili{Russian})
-\z
+\noindent So, syntactically, \textit{každyj} does not pattern with adjectives. It behaves like a functional element hosted outside NP. 
+Semantically, \textit{každyj} denotes a relation between sets, like \textit{every} in English: in \REF{41_ekzamen} it expresses the subset relation between the set of students and the set of individuals who passed the exam.  This means that \textit{každyj student} `every student' is a generalized quantifier that denotes the set of all sets of which \textit{every student} is a member. 
 
-\noindent However, classifiers of the type in \REF{ex:gepner:15} considerably differ from \ili{Chinese} classifiers in their status (lexical vs. grammatical) and function (measuring vs. counting). \cite{Cheng.Sybesma1999} and \cite{Li2013} argue that individual classifiers in \ili{Chinese} have the status of a grammatical category. Their function is that of counting, which has to be distinguished from measuring. According to \cite{Rothstein2010}, ``Counting puts entities (which already count as `one') in correspondence with the natural numbers, while measuring assigns a (plural) individual a value on a dimensional scale'' \citep[386]{Rothstein2010}. The numeral `five' in the counting context \REF{ex:gepner:14} provides a property of a plural entity in the denotation of N, expressing how many atomic units the plurality has. Rothstein argues that measure classifiers such as in \REF{ex:gepner:15} should rather be considered a lexical category for measuring. In \REF{ex:gepner:15} `liter' combines with a numeral and together they form a measure predicate. In the syntactic composition, this predicate applies to sets of quantities expressed by the mass noun `wine' and assigns a value to it on a measure scale calibrated in liters.
+% Example 41
 
-Theories of the mass/count distinction suggest that languages have grammatical classifiers only if they have no number morphology. Thus, count nouns and grammaticalized classifiers should be in complementary distribution (e.g., \citealt{Borer2005, Chierchia2010}). \cite{Khrizman2016} shows that this complementarity does not hold in \ili{Russian}. In addition to number morphology, \ili{Russian} has three grammaticalized classifiers \textit{štuka} `item', \textit{čelovek} `person', and \textit{golova} `head', which optionally occur in numeral constructions with plural, see \REF{ex:gepner:16}.
+\ea\label{41_ekzamen}
+    \ea[]{\label{41_a} \gll Každyj student sdal ėtot ekzamen.\\
+    every student passed this exam\\
+    \glt `Every student passed this exam.'}
+    \ex[*]{\label{41_b} \gll On/oni byl/byli ne dovolen/dovolny rezul'tatom.\\
+    he/they was/were not satisfied.\textsc{sg.m/pl} result.\textsc{ins}\\
+    \glt Intended: `He was/they were not satisfied with the result.'}
+\z\z 
 
-\ea \label{ex:gepner:16}
-\gll pjat' \minsp{(} štuk) jaic\\
-    five {} item.\textsc{gen.pl} egg.\textsc{gen.pl}\\
-\glt `five eggs'\hfill (\ili{Russian}; \citealt{Khrizman2016})
-\z
+\noindent We cannot use a pronoun to refer to individual students, as \REF{41_b} shows, because generalized quantifiers are quantifiers, not referential expressions.  
 
-\noindent According to \cite{Khrizman2016}, such classifiers differ from \ili{Chinese}-type individual classifiers and should rather be analyzed as a special class of measure words. They denote functions that map quantities of entities onto the value on a scale calibrated in natural units in the sense of \cite{Krifka1989,Krifka1995}.
+Despite the fact that \textit{každyj} `every' has adjectival morphology, it is semantically and syntactically a quantifier, not an adjective. Consequently, it has to be hosted by a functional projection higher than NP. I conclude that there is at least one non-adjectival element that originates outside NP in Russian. 
+%
+%       Section 4
+%
+\section{Further issues and conclusion}\label{conclusion}
 
+In this paper I have claimed that there is good reason to assume that demonstratives and prenominal possessives in Russian are adjectives, generated and interpreted within NP, not DP. They can permute with adjectives, occur in predicative positions, co-occur with each other, and be preceded by numerals. This kind of grammatical behavior cannot be explained if one assumes that demonstratives and possessives are determiners. I have argued further that demonstratives and possessives do have adjectival morphology, albeit a combination of LFM and SFM morphology, and that in any case, adjectival morphology is not an indication of adjectival syntactic status since \textit{každyj} participates in the full LFM morphological paradigm but is clearly a quantifier and not an adjective.  
 
+There is one aspect in which prenominal possessives (but not demonstratives) do show behavior which is not characteristic of adjectives: they are apparently able to provide an argument for event nominals as in \REF{42_nedovoltstvo}.
 
-\subsection{Diminutive suffixes as classifiers}
+% Example 42
 
-So far we have characterized classifiers that are morphologically free morphemes. However, in some languages the classifying function can also be performed by suffixes as bound morphemes.  As \cite{DeBelder2008} shows, the diminutive suffix in \ili{Dutch} turns mass nouns into count nouns, hence it functions as a classification device, yet it is compatible with overt morphological plural marking, see \REF{ex:gepner:17}.
+\ea\label{42_nedovoltstvo} 
+    \ea[]{\label{42_a} \gll Mamino postojannoe vyraženie nedovol'stva\\
+    mom.\textsc{poss.n.sg.nom} constant.\textsc{n.nom} expression.\textsc{n.nom} displeasure.\textsc{n.gen}\\
+    \glt `mom's constant expression of displeasure' \hfill \citep[205]{Babyonyshev1997}}
+    \ex[*]{\label{42_b} \gll Ėto postojannoe vyraženie nedovol'stva\\
+    this.\textsc{n.sg.nom} constant.\textsc{n.nom} expression.\textsc{n.nom} displeasure.\textsc{n.gen}\\
+    \glt Intended: `this constant expression of displeasure'}
+\z\z
 
-\ea \label{ex:gepner:17}
-\gll veel brod-je-s\\
-   many bread-\textsc{dim-pl} \\
-\glt `many rolls'\hfill (\ili{Dutch}; \citealt[2]{DeBelder2008})
-\z
+\noindent Examples like \REF{42_a} have, in the past, formed part of an argument that prenominal possessives need to be analyzed as determiners  \citep[e.g.][]{Babyonyshev1997}, analogously to \textit{John’s performance of the symphony}, where \textit{John’s} has been analyzed as a determiner satisfying an argument of the event nominal \textit{performance}. 
 
-\noindent In \ili{Russian}, diminutive suffixes such as -\textit{ka} may also perform a classifier function if combined with a mass noun, see \REF{ex:gepner:18}.
+However, as we have seen, prenominal possessives behave like adjectives both semantically and syntactically. It is thus incumbent on the semanticist to provide an account which will explain the data in \REF{42_nedovoltstvo}. One such account is provided in \citet{Gepner2021a} where it is claimed that prenominal possessives are adjectives that modify a relation via saturating an argument of this relation. While it is beyond the scope of this paper to review that account here, we justify this approach by noting other cases of interaction between modifiers and argument modification. \citet{Landman2000} proposes an analysis of subject oriented adverbs like \textit{reluctantly} in which the adverb modifies a relation between the event argument of the verb and an argument of the verb. \citet{Partee.Borschev1999} show that \textit{favorite} can express a relation between an individual and an N denotation. This suggests that complex relations involving argument saturation are possible between adjectives and the nouns they modify.
 
-\ea \label{ex:gepner:18}
-\ea
-\gll železo -- železka -- dve železki \\
-iron {} iron.\textsc{dim.f} {} two iron.\textsc{dim.pl}\\
-\glt `iron -- a piece of iron -- two pieces of iron'
-\ex
-\gll  šokolad -- šokoladka -- dve šokoladki\\
-chocolate {}	chocolate.\textsc{dim.f} {} two chocolate.\textsc{dim.pl}\\
-\glt `chocolate -- a bar of chocolate -- two bars of chocolate' \hfill (\ili{Russian})
-\z \z
+We saw in \sectref{sec:3_kazdyj} that the fact that prenominal possessives and demonstratives are adjectives does not mean that noun phrases in Russian do not have a DP projection. There is evidence that there exists at least one non-adjectival expression that has to be hosted by a projection higher than NP: the quantifier \textit{každyj} `every'. In contrast to demonstratives and prenominal possessives, \textit{každyj} behaves like a grammatical expression hosted by a higher functional projection: it must be in the left periphery in the noun phrase, it does not allow for permutations, and it is infelicitous in predicative positions, just like the English quantifier \textit{each}. Further research is required to check whether there are other quantifiers in Russian which have the same properties. Possible candidates are \textit{mnogie} `many (people)' and \textit{nemnogie} `few (people)'. These two expressions have adjectival morphology, can occur bare or with a nominal; e.g. \textit{mnogie kompanii} `many companies' and \textit{nemnogie universitety} `few universities'. 
+The fact that \textit{každyj} `every' is a functional element and originates outside NP is not enough to claim that it has to be hosted by DP. Moreover, it cannot be taken for granted that all NPs in Russian must have a functional projection. \textit{Prima facie} evidence that this does not have to be the case comes from the conjunction examples in \REF{konferencija}. 
 
+Following \citet{Partee1987}, we assume that only expressions of the same semantic type can be coordinated. If we could freely coordinate \textit{každyj} `every' with other nominal expressions, it would provide \textit{prima facie} evidence that all nominal expressions in Russian have a functional projection of the same type. However, the examples in \REF{konferencija} show that this is not the case. The sentences in \REF{konferencija} are not strongly infelicitous. However, native speakers try to `make them better' by replacing \textit{každyj} by \textit{vsё} `all', which also has very different semantic properties in English (see \citealt{Dowty1987, Dowty.Brody1984}).
 
-\noindent In \REF{ex:gepner:18}, -\textit{ka} has a function identical to the function of unit classifiers in \ili{Chinese}. First,  it turns an uncountable noun into a countable one: while \textit{železo} and \textit{šokolad} are mass nouns, \textit{železka} and \textit{šokoladka} denote countable units, which are compatible with numerals and plural formation. Second, being a suffix, -\textit{ka} has the status of a grammatical morpheme. Third, besides determining countability, -\textit{ka} also triggers a gender shift of the noun: the noun becomes feminine. This feature qualifies \textit{ka}- for being a syntactic functional head, the Classifier head.
+% Example 43
 
-\citevolt{Khrizman2021} addresses other formations with the suffix -\textit{ka}, complex numerical measure nouns in \ili{Russian} such as \textit{stogrammovka} `a 100-gram glass' or \textit{dvuxlitrovka} `a two-liter-jar'. In colloquial \ili{Russian}, such morphologically complex nouns are productively constructed out of a numeral and a measure noun as shown in \REF{ex:gepner:19}.
+\ea\label{konferencija}
+    \ea[?]{\gll Každyj student i dekan byli na konferencii.\\
+    every student and dean were on conference\\
+    \glt `Every student and the dean were at the conference.'
+    }
+    \ex[?]{\gll Každyj student i tri prepodavatelja byli na konferencii.\\
+    every student and three teachers were on conference\\
+    \glt `Every student and three teachers were at the conference.'
+    }
+    \ex[?]{\gll Každyj student i Mašiny odnoklassniki byli na konferencii.\\
+    every student and Maša.\textsc{poss.pl} classmates were on conference\\
+    \glt `Every student and Maša's classmates were at the conference.'
+    }
+\z\z 
 
-\ea \label{ex:gepner:19}
-\gll sto- 	grammov- 	ka 		vodki\\
-  hundred.\textsc{nom}-	gram.\textsc{gen.pl}-	ka 					vodka.\textsc{gen} \\
-\glt `a 100-gram glass of vodka'\hfill (\ili{Russian}; \citevolalt{Khrizman2021})
-\z
+\noindent At this stage of the research it remains an open question whether a D-projection is necessary for a Russian nominal expression.
 
-\noindent \citeauthor{Khrizman2021} shows that complex measure nouns with -\textit{ka} are count nouns as they can be pluralized and modified by numerals. Such measure nouns denote containers, i.e., actual objects. For example, \textit{stogrammovka} in \REF{ex:gepner:19} refers to objects which weigh 100 grams. The nature of the object is determined by context (a 100-ml bottle/tube, a 100-gram package/bar etc.). Khrizman analyzes such nouns within \citeposst{Rothstein2017} theory of counting and measuring. This approach treats complex measure nouns as predicates denoting sets of discrete entities with certain measure properties, e.g. properties of having a value on a dimensional scale calibrated in certain units. For instance, \textit{stogrammovka} denotes a set of disjoined entities (jars, bottles etc.), which have the property of having the value 100 on a weight scale calibrated in gram units. The suffix -\textit{ka} in the formation of measure nouns contributes a shift from a measure interpretation to a container interpretation, thus its function is similar to container nouns (e.g. glass).
-
-\sloppypar{\citeauthor{Khrizman2021}'s analysis has an important implication for the theory of noun phrases. It has been argued in the literature that all count nouns originate from mass nouns and bare count nouns should be derived from mass nouns via lexically concealed individuating operators \citep{Krifka1989, Krifka1995, Rothstein2017, Sutton.Filip2016}. Diminutive suffixes like -\textit{ka} could then be seen as a morphological realization of such operators.}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{NP}
-
-Now we move on to the lowest layer of the DP, the NP-layer. What does the head of the NP denote? There has been a surge of interest in this question in the literature that has led to many different views. According to \cite{Chierchia1998}, languages vary in what their NPs are able to denote. The syntax-semantics mapping is not universally fixed and, in some languages, nouns can denote kinds (or masses), in others they denote objects, but there are also languages where some nouns denote objects and others denote kinds. This view was questioned in \cite{Borer2005}. She argues that the basic interpretation of a noun crosslinguistically is a non-countable interpretation as mass (sometimes also interpreted as kind). A non-countable noun can achieve countability by combining with functional heads in the syntax. This basic idea was further developed by \cite{Borik.Espinal2012, Borik.Espinal2015} and applied to \ili{Russian} in \cite{Borik.Espinal2012}. They assume that bare nouns in \ili{Russian} as in \REF{ex:gepner:20} primarily denote properties of kinds of individuals that share the property denoted by the noun. If they occur in an argument position as topics they are interpreted as definite and form a DP that refers directly to a kind.
-
-\ea \label{ex:gepner:20}
-\gll Slon skoro budet zanesen v Krasnuju Knigu esli na nego ne perestanut ochotit'sja.\\
-   elephant soon will listed in red book if on him not stop hunt\\
-\glt `The elephant will soon be listed in the IUCN Red List if people don’t stop hunting it.'\hfill (\ili{Russian}; \citealt[137]{Borik.Espinal2012})
-\z
-
-\noindent Syntactically, the kind-referring DP has the simple structure in \REF{ex:gepner:21a}. \citeauthor{Borik.Espinal2012} argue that kind-denoting nouns are definite and numberless. In their syntactic structure, D is the locus of the iota operator. If the bare noun is used to refer to a concrete individual as in \REF{ex:gepner:22}, it must be shifted into the object domain and receive number. This shift from kinds to objects is performed by the realization operator \cnst{r} of \cite{Carlson1977}. \cnst{r} is specified by number in NumP, see \REF{ex:gepner:21b}. No NumP is involved in the composition of a definite kind interpretation.
-
-\ea \label{ex:gepner:21}
-\ea  {[\textsubscript{DP} D   [\textsubscript{NP} N]]}   \hfill kind \label{ex:gepner:21a}
-\ex   {[\textsubscript{DP} D  [\textsubscript{NumP} NUM\textsubscript{[–PL]} [\textsubscript{NP} N]]]} \hfill individual object \label{ex:gepner:21b}
-\z \z
-
-\ea \label{ex:gepner:22}
-\gll Slon podošel k vode.\\
-  elephant came to water\\
-\glt `The elephant came to the water.'\hfill (\ili{Russian})
-\z
-
-\noindent \citevolt{Kwapiszewski.Fuellenbach2021} use the work of \citeauthor{Borik.Espinal2012} as the point of departure for their analysis of the DP-structure in \ili{Polish}. They argue that bare noun counterparts of \textit{slon} in \REF{ex:gepner:20} are definite and numberless in \ili{Polish}, just as in other languages. Following \citeauthor{Borik.Espinal2012}, the authors assume that bare NPs in \ili{Polish} denote properties of kinds, which must be bound by the iota operator in D to license direct reference to kinds. Number projection is not available in their syntactic representation. In noun phrases referring to object instances of kinds as in \REF{ex:gepner:22}, the number projection is available and it is responsible for the derivation of individual instances of kinds.
-
-However, \citeauthor{Kwapiszewski.Fuellenbach2021} show that \citeauthor{Borik.Espinal2012}'s approach is incompatible with the theory of intersective kind modification by \cite{McNally.Boleda2004}, who analyze modifiers such as \textit{Bengal} in \REF{ex:gepner:23} as intersective modifiers of kinds. Since \citeauthor{Borik.Espinal2012} consider nouns to be singleton sets of kinds, such a treatment of modification is impossible.
-
-\ea \label{ex:gepner:23}
-\gll Tygrys bengalski jest na skraju wymarcia.\\
- tiger.\textsc{nom} Bengal.\textsc{m} is on verge extinction.\textsc{gen} \\
-\glt `The Bengal tiger is on the verge of extinction.'
-\glt \hfill (\ili{Polish}; \citevolalt{Kwapiszewski.Fuellenbach2021})
-\z
-
-\noindent To solve this problem, the authors introduce a subkind operator (\cnst{sk}) into the semantics and link it to the functional head Classifier in the syntax. Thus \textit{tygrys} `tiger' in \REF{ex:gepner:23} has the following structure:
-
-\ea \label{ex:gepner:24} [\textsubscript{DP} \textsc{$+$def} [\textsubscript{NumberP} \textsc{$-$plural} [\textsubscript{ClassifierP}   \cnst{sk} [\textsubscript{NP} tygrys ]]]]   \hfill subkind reading
-\z
-
-\noindent \citeauthor{Kwapiszewski.Fuellenbach2021} assume that \textit{tygrys} in \REF{ex:gepner:24} refers to a subkind rather to an object, the classifier head is specified as a \cnst{sk}. Thus, the classifier head can have different functions:  deriving subkinds of a kind by the \cnst{sk} or deriving object instances of a kind by the realization operator (\cnst{r}). The authors propose the following structure for definite object-denoting and subkind-denoting NPs in \ili{Polish}:
-
-\begin{figure}[ht]
-\caption{The structure of a DP in Polish \citevolp{Kwapiszewski.Fuellenbach2021}}
-   \begin{forest}
-   [DP [\textsc{[$+$def]}] [NumP [\textsc{[$-$plural]}] [ClassifierP [{[}\cnst{r}{]}/{[}\cnst{sk}{]}] [NP] ]]]
-    \end{forest}
-    \label{fig2}
-\end{figure}
-
-If the \cnst{sk} is introduced in the classifier head, the NP denotes a set of subkinds and a kind-modifying adjective such as \textit{bengalski} `Bengal' can intersectively modify the subkinds. All in all, this work substantiates the assumption of the functional layers DP, NumP, and ClassifierP besides NP in \ili{Polish}.
-
-\section{Conclusions}
-
-To conclude, the contributions in this volume address different theoretical issues which have been under controversial discussion in the literature. The contributors develop and improve the theory of NP structure, relativize some previous assumptions, and show how languages without articles specify the NP structure, assumed to be universal in natural language. The main findings can be summarized as follows:
-
-\begin{itemize}
-    \item Although prenominal possessive adjectives in \ili{Russian} are not determiners, they have been assumed to be placed in the high DP-domain if the NP occurs in an argument position. Since NPs with possessives can also occur in predicate positions, where referential DPs are normally excluded, the question arises whether the possessive is hosted lower in the structure in this case. Alternatively, it can be assumed that possessives are always integrated low in the NP, see \citevolt{Gepner2021}. Under this analysis, the exhaustive interpretation of the NP with possessive in an argument position requires a different explanation. These two analyses should be compared in future research.
-    \item Generally, weak and strong definiteness has been assumed to correspond to anaphoric vs. situational uniqueness, respectively. The example of \ili{Czech} shows that the boundary between the two types of definiteness may alternatively lie within situational uniqueness dividing situational uniqueness into accidental and inherent uniqueness, see \citevolt{Simik2021}.
-    \item Languages without articles have been assumed to express definiteness by topicality. However, definiteness contributed by topicality seems to be different from definiteness contributed by the definite article in languages that have it. While topicality indicates familiarity, the definite article indicates uniqueness, see  \citevolt{Seres.Borik2021}.
-    \item In the formation of collectives in \ili{Polish}, we have to distinguish between two types with respect to the accessibility of its members: set collectives formed of collective numerals and atom collectives formed of collective nouns such as \textit{group}. While the individual members of the set collectives are at least weakly accessible, the members of the atom collectives are completely inaccessible and atomic from the outside. The binominal \textit{každý} is sensitive to this distinction, see \citevolt{Docekal.Simik2021}.
-    \item The nominalizing suffix -\textit{ka} in \ili{Russian}, also used as a diminutive suffix, can serve as a classifier turning non-countable expressions such as measure expressions but also mass nouns into countable nouns. This function renders it similar to classifiers in \ili{Chinese}, see \citevolt{Khrizman2021}.
-    \item Nouns in articleless \ili{Slavic} languages, in particular \ili{Polish}, can be analyzed as being numberless and denoting properties of kinds. They can refer to a kind if combined with a iota operator in D. But they can be turned into object level denotation or subkind denotation by the classifier head and then be combined with a numeral in NumP, see \citevolt{Kwapiszewski.Fuellenbach2021}.
-\end{itemize}
-
-The workshop contributors present their generalizations and analyses developed for single languages: \ili{Russian}, \ili{Polish}, or \ili{Czech}. Future research should show whether these generalizations extend to other \ili{Slavic} languages as well and what implications this has for the theory of the universal structure of NPs.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Abbreviations}
 
 \begin{tabularx}{.5\textwidth}{@{}lX@{}}
-\textsc{cl}&{classifier}\\
-\textsc{det}&{determiner}\\
-\textsc{dim}&{diminutive}\\
-\textsc{f}&{feminine}\\
+\textsc{1/2/3}&first/second/third person\\
+\textsc{acc}&{accusative}\\
+\textsc{adj}&{adjective}\\
 \textsc{gen}&{genitive}\\
 \textsc{ins}&{instrumental}\\
-\textsc{loc}&{locative}\\
-\textsc{m}&{masculine}\\
+\textsc{lfm}&{long form morphology}\\
 \end{tabularx}%
 \begin{tabularx}{.5\textwidth}{@{}lX@{}}
+\textsc{m/f/n}&{masculine/feminine/neuter}\\
 \textsc{nom}&{nominative}\\
 \textsc{pl}&{plural}\\
-\textsc{prs}&{present}\\
-\textsc{pst}&{past}\\
-\textsc{sg}&{singular}\\
-\textsc{1}&{first person}\\
-\textsc{3}&{third person}\\
-&\\
+\textsc{poss}&{possessive}\\
+\textsc{sfm}&{short form morphology}\\
+\textsc{sg}&singular\\
 \end{tabularx}
 
-\section*{Acknowledgments}
-I am grateful to the organizers of the FDSL 13 conference in 2018 in Göttingen, especially Uwe Junghanns, for giving me the opportunity to hold the workshop on the semantics of noun phrases. The research for this paper was funded by the \ili{German} Research Foundation (DFG), via the project grant number GE 2136/3-1, project ``The fine structure of the \ili{Russian} noun phrase: A comparative perspective'' (\url{https://gepris.dfg.de/gepris/projekt/445439335}).
+\section*{Acknowledgements}
+I would like to thank Susan Rothstein for valuable advice and discussion, Fred Landman for his insightful comments, and Keren Khrizman for her kind help with the judgments. I am also grateful for comments provided by the audience at FDSL 13 (2018) and by the anonymous reviewers. This work was supported by Bar-Ilan Presidential Ph.D. Fellowship, the Rotenstreich Fellowship and the Israel Science Foundation Grant no 962/18 to Susan Rothstein.  
 
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
