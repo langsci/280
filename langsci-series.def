@@ -22,6 +22,7 @@
 \newcommand{\mi}{mi}
 \newcommand{\nc}{nc}		%Niger Congo
 \newcommand{\ogs}{ogs}		%Open Generative Syntax
+\newcommand{\ogl}{ogl}      %  Open Germanic Linguistics
 \newcommand{\osl}{osl}		%Open Slavic Linguistics
 \newcommand{\pmwe}{pmwe}		%Phraseology and Multi-Word Expressions
 \newcommand{\rcg}{rcg} %
@@ -320,9 +321,10 @@
 
             \bigskip
 
-            Editor: Gabriele Pallotti\\
+            Editor: 
+            Amanda Edmonds, Université Côte d'Azur\\
             Associate editors:
-            Amanda Edmonds, Université de Montpellier;
+            Gabriele Pallotti, University of Modena and Reggio Emilia
             Ineke Vedder, University of Amsterdam
 
             \bigskip
@@ -408,9 +410,9 @@
             \begin{enumerate}
             \item Côté, Marie-Hélène, Remco Knooihuizen and John Nerbonne (eds.).  The future of dialects.
             \item Schäfer, Lea. Sprachliche Imitation: Jiddisch in der deutschsprachigen Literatur (18.–20. Jahrhundert).
-            Press.
             \item Juskan, Martin. Sound change, priming, salience: Producing and perceiving variation in Liverpool English.
             \item Dellert, Johannes. Information-theoretic causal inference of lexical flow.
+            \item Zimmer, Christian (ed.). German(ic) in language contact: Grammatical and sociolinguistic dynamics.
             \item Tahmasebi, Nina, Lars Borin, Adam Jatowt, Yang Xu and Simon Hengchen (eds.). Computational approaches to semantic change.
             \end{enumerate}
             }
@@ -468,6 +470,31 @@
 
 
             }
+\fi
+\ifx\lsSeries\ogl
+	\newcommand{\lsSeriesTitle}{Open Germanic Linguistics}
+	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
+	\renewcommand{\lsISSNelectronic}{} %online
+	\renewcommand{\lsISSNprint}{} %Print
+	\renewcommand{\lsSeriesText}{
+            {\large  Open Germanic Linguistics
+            
+            \bigskip
+            
+            Editors: 
+            Michael T. Putnam,
+            B. Richard Page,
+            Laura Catharine Smith
+            
+            \bigskip
+            
+            In this series:
+            
+            \begin{enumerate}
+            \item Lemke, Robin. Experimental investigations on the syntax and usage of fragments.
+            \end{enumerate}
+ }
+         }
 \fi
 \ifx\lsSeries\ogs
 	\newcommand{\lsSeriesTitle}{Open Generative Syntax}
@@ -530,6 +557,7 @@
             \item Marušič, Franc, Petra Mišmaš  \& Rok Žaucer (eds.).  Advances in formal Slavic linguistics 2017.
             \item Blümel, Andreas, Jovana Gajić, Ljudmila Geist, Uwe Junghanns \&  Hagen Pitsch (eds.). Advances in formal Slavic linguistics 2018.
             \item Dočekal, Mojmír \& Marcin Wągiel (eds.). Formal approaches to number in Slavic and beyond.
+            \item Wągiel, Marcin. Subatomic quantification. 
             \end{enumerate}
             }
 \fi
@@ -542,7 +570,7 @@
 
             \bigskip
 
-            \textbf{Series editors}\\
+            Series editors:
                 Agata Savary (University of Tours, Blois, France),
                 Manfred Sailer (Goethe University Frankfurt a.\,M., Germany),
                 Yannick Parmentier (University of Lorraine, France),
