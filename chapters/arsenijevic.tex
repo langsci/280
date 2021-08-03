@@ -1,12 +1,9 @@
- \documentclass[output=paper,
-colorlinks,
-citecolor=brown,
-newtxmath
-]{langscibook}
+ \documentclass[output=paper]{langscibook}
 
 \author{Boban Arsenijević\orcid{0000-0002-1124-6319}\affiliation{University of Graz}}
-\title{Situation relatives: Deriving causation, concession, counterfactuality, condition, and purpose}
-\abstract{Building on previous work on the syntax and semantics of subordinate clauses, \cite{Arsenijevic2006} argues that all subordinate clauses are derived by a generalized pattern of relativization. One argument in the clause is abstracted, turning the clause into a predicate over the respective type. This predicate combines with an argument of that type in another expression and figures as its modifier. The traditional taxonomy of subordinate clauses neatly maps onto the taxonomy of arguments -- from the arguments selected by the verb to the temporal argument, or the argument of comparison. One striking anomaly is that five traditional clause types -- conditional, counterfactual, concessive, causal, and purpose clauses -- are best analyzed as involving abstraction over the situation argument. In this paper, I present a situation-relative analysis of the five types of subordinate clauses, where their distinctive properties range in a spectrum predicted by their compositional makeup. I argue that they all restrict the situation argument selected by a speech act, attitude, or content predicate of the matrix clause, and hence effectively restrict this predicate. This gives the core of their meaning, while their differences are a matter of the status of an implication component common for all five types, the presupposition of truth for the subordinate and matrix clause, and an implicature of exhaustive relevance of the former. Predictions of the analysis are formulated, tested, and confirmed on data from English and Serbo-Croatian.
+\title[Situation relatives]
+      {Situation relatives: Deriving causation, concession, counterfactuality, condition, and purpose}
+\abstract{Building on previous work on the syntax and semantics of subordinate clauses, \citet{Arsenijevic2006} argues that all subordinate clauses are derived by a generalized pattern of relativization. One argument in the clause is abstracted, turning the clause into a predicate over the respective type. This predicate combines with an argument of that type in another expression and figures as its modifier. The traditional taxonomy of subordinate clauses neatly maps onto the taxonomy of arguments -- from the arguments selected by the verb to the temporal argument, or the argument of comparison. One striking anomaly is that five traditional clause types -- conditional, counterfactual, concessive, causal, and purpose clauses -- are best analyzed as involving abstraction over the situation argument. In this paper, I present a situation-relative analysis of the five types of subordinate clauses, where their distinctive properties range in a spectrum predicted by their compositional makeup. I argue that they all restrict the situation argument selected by a speech act, attitude, or content predicate of the matrix clause, and hence effectively restrict this predicate. This gives the core of their meaning, while their differences are a matter of the status of an implication component common for all five types, the presupposition of truth for the subordinate and matrix clause, and an implicature of exhaustive relevance of the former. Predictions of the analysis are formulated, tested, and confirmed on data from English and Serbo-Croatian.
 
 \keywords{relativization, subordinate clauses, Serbo-Croatian, situation semantics}
 }
@@ -14,7 +11,7 @@ newtxmath
 
 
 \begin{document}
-\shorttitlerunninghead{Situation relatives}
+\SetupAffiliations{mark style=none}
 \maketitle
 
 %--------------------------------
@@ -121,7 +118,7 @@ Let me begin by observing a striking parallel between four of the five clause ty
 \centering
 \begin{tabularx}{.45\textwidth}{cccX}
     \lsptoprule
-    $p$ & $q$ & $p\rightarrow q$ & conditional \\
+    $p$ & $q$ & $p\rightarrow q$ & conditional \\\midrule
     $\cnst{f}$ & $\cnst{f}$ & $\cnst{t}$ & counterfactual \\
     $\cnst{t}$ & $\cnst{t}$ & $\cnst{t}$ & causal \\
     $\cnst{f}$ & $\cnst{t}$ & $\cnst{t}$ & concessive \\
@@ -167,7 +164,7 @@ Counterfactual clauses are well known to presuppose that the condition does not 
 \ex It would've been better if I had never been born at all.\label{ex:Unreal1-c}
 \z\z
 
-\noindent Like in conditional clauses, the subordinate clause in counterfactuals is a restrictive relative targeting a generic topic situation in the matrix clause. As a consequence, this combination too amounts to asserting the implication (not staying late implies missing the deadline, studying implies passing the test, not being born implies higher desirability). In addition to effectively expressing the antecedent of the implication, the subordinate clause carries a presupposition that it is false in the actual situation. Exhaustive relevance of the antecedent for the result is not a necessary ingredient. It does, however, figure as a prominent interpretation: when the antecedent of the asserted implication is presupposed to be the only relevant one for the given result, this leads to the implicature that the result is false in the actual situation (if only one kind of situations is relevant for another to obtain and it fails, then a situation of the latter kind likely does not obtain). The implicature, however, may be cancelled (the sentences in \REF{ex:Unreal1-a}-\REF{ex:Unreal1-b} allow for the respective continuations: \textit{... But eventually, he missed it anyway; ... Without studying -- she still somehow managed}), except when the semantics of the sentence prevents cancellation (such is, e.g., the effect of the comparison between sets of situations in \REF{ex:Unreal1-c}, which excludes the possibility that the result obtains; one cannot sensibly continue this example with: \textit{... But it nevertheless turned out to be better than it is.}).
+\noindent Like in conditional clauses, the subordinate clause in counterfactuals is a restrictive relative targeting a generic topic situation in the matrix clause. As a consequence, this combination too amounts to asserting the implication (not staying late implies missing the deadline, studying implies passing the test, not being born implies higher desirability). In addition to effectively expressing the antecedent of the implication, the subordinate clause carries a presupposition that it is false in the actual situation. Exhaustive relevance of the antecedent for the result is not a necessary ingredient. It does, however, figure as a prominent interpretation: when the antecedent of the asserted implication is presupposed to be the only relevant one for the given result, this leads to the implicature that the result is false in the actual situation (if only one kind of situations is relevant for another to obtain and it fails, then a situation of the latter kind likely does not obtain). The implicature, however, may be cancelled (the sentences in (\ref{ex:Unreal1-a}--\ref{ex:Unreal1-b}) allow for the respective continuations: \textit{... But eventually, he missed it anyway; ... Without studying -- she still somehow managed}), except when the semantics of the sentence prevents cancellation (such is, e.g., the effect of the comparison between sets of situations in \REF{ex:Unreal1-c}, which excludes the possibility that the result obtains; one cannot sensibly continue this example with: \textit{... But it nevertheless turned out to be better than it is.}).
 
 \subsection{Concessive clauses}
 
@@ -455,7 +452,7 @@ Indeed, exactly these two clause types -- and only they -- require subjunctively
     \glt `He would break the glass in order to jump into the room.'
 \z
 
-\noindent Examples in \REF{ex:Counter-verb-a}--\REF{ex:Counter-verb-b} and in \REF{ex:Unreal-m-verb} illustrate the ban on any other form than the conditional in the matrix clause of a counterfactual.
+\noindent Examples in (\ref{ex:Counter-verb-a}--\ref{ex:Counter-verb-b}) and in \REF{ex:Unreal-m-verb} illustrate the ban on any other form than the conditional in the matrix clause of a counterfactual.
 
 \ea\label{ex:Unreal-m-verb}
 \ea[]{\gll Da je jakna suva, obukao bih je.\\

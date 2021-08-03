@@ -1,11 +1,8 @@
-\documentclass[output=paper,
-colorlinks,
-citecolor=brown,
-newtxmath
-]{langscibook}
+\documentclass[output=paper]{langscibook}
 
 \author{Arkadiusz Kwapiszewski\orcid{0000-0002-2957-0862}\affiliation{University of Oxford} and Kim Fuellenbach\orcid{0000-0003-4836-1617}\affiliation{University of Oxford}}
-\title{Reference to kinds and subkinds in Polish}
+\title[Reference to kinds and subkinds in Polish]
+      {Reference to kinds and subkinds in Polish}
 
 \abstract{This paper investigates the syntax and semantics of direct kind reference in Polish. Taking \cite{Borik.Espinal2012,Borik.Espinal2015} as our point of departure, we argue that kind-referring nominals in Polish have the same properties as their counterparts in English, Spanish, and Russian. Specifically, they are definite and numberless. Even though Polish does not realize definiteness overtly, we present evidence from pronominal co-reference and object topicalization to show that Polish kind nominals are definite. We then point to a previously unaddressed contradiction regarding modified kinds. \citeauthor{Borik.Espinal2012}'s assumption that bare nouns denote singleton sets of kinds is incompatible with the intersective approach to kind modification \citep{McNally.Boleda2004,Wagiel2014}. To circumvent this issue, we introduce a subkind operator \cnst{sk} into the semantics, linking it to the projection of a subkind phrase in the syntax. This allows us to account for some novel data involving kind modifiers (e.g. \textit{Bengal}) and kind classifiers (e.g. \textit{kind of}). Tentatively, we suggest that the subkind head is a type of a more general classifier head \citep{Borer2005, Picallo2006, Kratzer2007}.
 
@@ -14,7 +11,7 @@ newtxmath
 
 
 \begin{document}
-\shorttitlerunninghead{Reference to kinds and subkinds in Polish}
+\SetupAffiliations{mark style=none}
 \maketitle
 
 % Section 1 - Introduction
@@ -242,7 +239,7 @@ We start by briefly outlining \citeauthor{Borik.Espinal2012}'s theory in \sectre
 
 Traditionally, number is assumed to take one of a small set of values. In the context of European languages, and English in particular, nominals are typically assumed to be either singular or plural. In line with \citet{Borik.Espinal2012, Borik.Espinal2015}, we depart from this traditional view and argue that nominals may additionally be numberless, i.e. they may lack the number projection altogether. We thus distinguish three possibilities for the valuation of number: \textsc{singular}, \textsc{plural}, and \textsc{numberless} (corresponding to indefinite singular, bare plural and definite kinds, respectively).
 
-Definite kinds are argued to be numberless rather than singular because they resist number-marking and do not permit the insertion of kind classifiers such as \textit{kind of}, \textit{species of}, and \textit{type of} without the addition of number. Support comes, among others, from \ili{Spanish}, where kind-referring subjects are grammatical only in the absence of any overt expression of number; see \REF{ex:neveradefsg} vs. \REF{ex:neveradefpl}--\REF{ex:neverasubkind}.\footnote{Although the definite subject takes a singular determiner in \REF{ex:neveradefsg}, we follow \citeauthor{Borik.Espinal2012} in assuming that this is simply a default morphophonological realization and that the feature singular is neither syntactically nor semantically present in this DP.}
+Definite kinds are argued to be numberless rather than singular because they resist number-marking and do not permit the insertion of kind classifiers such as \textit{kind of}, \textit{species of}, and \textit{type of} without the addition of number. Support comes, among others, from \ili{Spanish}, where kind-referring subjects are grammatical only in the absence of any overt expression of number; see \REF{ex:neveradefsg} vs. (\ref{ex:neveradefpl}--\ref{ex:neverasubkind}).\footnote{Although the definite subject takes a singular determiner in \REF{ex:neveradefsg}, we follow \citeauthor{Borik.Espinal2012} in assuming that this is simply a default morphophonological realization and that the feature singular is neither syntactically nor semantically present in this DP.}
 Direct reference to the kind `fridge' is blocked not only by plural inflection and overt numerals \REF{ex:neveradefpl}, but also by kind classifiers \REF{ex:neverasubkind}, which require number to project.
 
 \ea \label{ex:nevera}
@@ -382,7 +379,7 @@ The simplest way to bring out the tension between intersective kind modification
 \z \z
 
 \noindent
-The derivation in \REF{ex:inter_deriv} is slightly more complex, as it involves modification by the classifying adjective \textit{bengalski} `Bengal'. It begins with the definitions of \sib{tygrys} and \sib{bengalski}, both of which denote simple properties of kinds \REF{ex:inter_deriv_1}--\REF{ex:inter_deriv_2}. These properties are subsequently conjoined in \REF{ex:inter_deriv_3} and bound by the $\iota$ operator in \REF{ex:inter_deriv_4}. The result, a kind-level individual, has the appropriate semantic type to combine with the kind-level predicate \textit{być na skraju wymarcia} `to be on the verge of extinction' in \REF{ex:subkind_2} above.
+The derivation in \REF{ex:inter_deriv} is slightly more complex, as it involves modification by the classifying adjective \textit{bengalski} `Bengal'. It begins with the definitions of \sib{tygrys} and \sib{bengalski}, both of which denote simple properties of kinds (\ref{ex:inter_deriv_1}--\ref{ex:inter_deriv_2}). These properties are subsequently conjoined in \REF{ex:inter_deriv_3} and bound by the $\iota$ operator in \REF{ex:inter_deriv_4}. The result, a kind-level individual, has the appropriate semantic type to combine with the kind-level predicate \textit{być na skraju wymarcia} `to be on the verge of extinction' in \REF{ex:subkind_2} above.
 
 \ea \label{ex:inter_deriv}
 
@@ -576,7 +573,7 @@ African.\textsc{nom} {} kind.\textsc{nom} { } species.\textsc{nom} { } type.\tex
 \noindent
 In light of this result, consider the final contrast between \REF{ex:attributive_modifier_1} and \REF{ex:attributive_modifier_2}, with and without the classifying adjective. The former licenses definite reference to `African elephant', while the latter admits only indefinite subkind reference, similarly to their English translations. This asymmetry can be explained if \sib{rodzaj słonia} in \REF{ex:attributive_modifier_2} corresponds to a plural set of subkinds, which does not satisfy the uniqueness presupposition on the $\iota$ operator, thereby excluding the definite reading. But if we first conjoin \sib{rodzaj słonia} with \sib{afrykański}, the result might well be a singleton set, rendering definite subkind reference licit in \REF{ex:attributive_modifier_1}.
 
-In sum, while abandoning intersective kind modification removes the contradiction pointed out in \sectref{sec:problem-intersec}, the hypothesis that classifying adjectives have the semantic type $\stb{\stb{e^k,t},\stb{e^k,t}}$ and that they lexicalize the \cnst{sk} operator runs afoul of the empirical facts in \REF{ex:predicative_modifier}-\REF{ex:attributive_modifier}. For this reason, we hold on to \citeposst{McNally.Boleda2004} and \citeposst{Wagiel2014} assumption that kind modifiers are simple properties of kinds (contra \citealt{Borik.Espinal2018}). In the next section, we show how to reconcile this assumption with the theory of definite numberless kinds. Tightening the link between syntactic structure and interpretation, our proposal links the appearance of the \cnst{sk} operator to the projection of a \textsc{SubkindP(hrase)} in the syntax.
+In sum, while abandoning intersective kind modification removes the contradiction pointed out in \sectref{sec:problem-intersec}, the hypothesis that classifying adjectives have the semantic type $\stb{\stb{e^k,t},\stb{e^k,t}}$ and that they lexicalize the \cnst{sk} operator runs afoul of the empirical facts in (\ref{ex:predicative_modifier}--\ref{ex:attributive_modifier}). For this reason, we hold on to \citeposst{McNally.Boleda2004} and \citeposst{Wagiel2014} assumption that kind modifiers are simple properties of kinds (contra \citealt{Borik.Espinal2018}). In the next section, we show how to reconcile this assumption with the theory of definite numberless kinds. Tightening the link between syntactic structure and interpretation, our proposal links the appearance of the \cnst{sk} operator to the projection of a \textsc{SubkindP(hrase)} in the syntax.
 
 \subsection{A structural approach to kind modification}
 \label{sec:structural-approach}
@@ -602,7 +599,7 @@ This structure incorporates a syntactic projection labelled SubkindP. This proje
 \z \z
 
 \noindent
-By postulating the syntactic Subkind head, which translates as the semantic \cnst{sk} operator, we have achieved several things. Firstly, we have resolved the contradiction inherent in the derivations in \REF{ex:def_deriv}--\REF{ex:inter_deriv} above. Furthermore, we have done so while maintaining a simple intersective semantics for kind modifiers à la \citet{McNally.Boleda2004}.
+By postulating the syntactic Subkind head, which translates as the semantic \cnst{sk} operator, we have achieved several things. Firstly, we have resolved the contradiction inherent in the derivations in (\ref{ex:def_deriv}--\ref{ex:inter_deriv}) above. Furthermore, we have done so while maintaining a simple intersective semantics for kind modifiers à la \citet{McNally.Boleda2004}.
 
 An outstanding question concerns the prenominal vs. postnominal status of \ili{Polish} adjectives. Classifying (kind-level) adjectives tend to follow the noun in \ili{Polish}, but they can also precede it, e.g. \textit{słoń afrykański} vs. \textit{?afrykański słoń} `African elephant'. This contrasts with modifying (object-level) adjectives, which obligatorily precede the noun, e.g. \textit{czerwony robot} vs. \textit{*robot czerwony} `red robot'. Given the structure in \REF{ex:structure_1}, we must find a way of linearizing the noun to the left of the classifying adjective. One way of achieving this result is via head movement. For an approach postulating head movement of N to some functional projection above SubkindP, see \citet{Rutkowski.Progovac2005} and \citet{Rutkowski2012}.
 
@@ -624,7 +621,7 @@ African.\textsc{nom} { } kind.\textsc{nom} { } species.\textsc{nom} { } type.\te
 \z
 
 \noindent
-Furthermore, if the structural approach is on the right track, it appears that we must allow the Subkind head to be recursive. A recursive application of the \cnst{sk} operator is clearly necessary to derive such examples as \REF{ex:recursive_1}, \REF{ex:recursive_2}, and \REF{ex:recursive_3}, all of which refer to subkinds of subkinds.\footnote{We thank an anonymous reviewer for raising the issue of recursive subkind derivation, and for asking us to discuss examples \REF{ex:recursive_2} and \REF{ex:recursive_3} specifically.} At a sufficiently abstract level of representation, the examples in \REF{ex:recursive_1}--\REF{ex:recursive_3} share the same underlying structure, with two Subkind projections inserted between the NP and the DP layers.
+Furthermore, if the structural approach is on the right track, it appears that we must allow the Subkind head to be recursive. A recursive application of the \cnst{sk} operator is clearly necessary to derive such examples as \REF{ex:recursive_1}, \REF{ex:recursive_2}, and \REF{ex:recursive_3}, all of which refer to subkinds of subkinds.\footnote{We thank an anonymous reviewer for raising the issue of recursive subkind derivation, and for asking us to discuss examples \REF{ex:recursive_2} and \REF{ex:recursive_3} specifically.} At a sufficiently abstract level of representation, the examples in (\ref{ex:recursive_1}--\ref{ex:recursive_3}) share the same underlying structure, with two Subkind projections inserted between the NP and the DP layers.
 
 \ea \label{ex:recursive_1}
 \ea \gll
@@ -725,7 +722,7 @@ The main argument pursued in this paper concerns the incompatibility between \ci
 
 In addition to that, we have made the tentative suggestion that SubkindP is a type of a more general Classifier projection, the latter assumed already in \citet{Borer2005}, \citet{Picallo2006}, and \citet{Kratzer2007}. By transferring the Carlsonian realization operator \cnst{r} from the number to the Classifier head, we did away with the need for type-shifting in the semantics. Instead, we have provided a uniform structure for all cases of reference to subkinds, whether achieved through number, classifying adjectives and/or kind classifiers: all of these constructions involve the projection of a Classifier[\textsc{sk}] on top of the NP.
 
-We summarize the whole system directly below. In \REF{def:definiteness_repeat}--\REF{def:np_repeat}, we list the semantic denotations of all the elements which enter into our analysis.
+We summarize the whole system directly below. In (\ref{def:definiteness_repeat}--\ref{def:np_repeat}), we list the semantic denotations of all the elements which enter into our analysis.
 
 \ea \textsc{definiteness} \label{def:definiteness_repeat}\\
      \sib{\textsc{d[$+$def]}} $=$ $\lambda P.\iota x[P(x)]$
