@@ -15,7 +15,7 @@
 % Acknowledgements and comments:
 
 % - Olav's email from 30.5.
-
+\vspace*{-1\baselineskip}
 \section{Introduction}\label{simik:sec:intro}
 
 In this paper I investigate the meaning and distribution of two kinds of nominal phrases (NPs) in \ili{Czech}: \textsc{bare NPs} and \textsc{demonstrative NPs}. A bare NP, illustrated by \textit{garáž} `garage' in \REF{simik:ex:bare-dem-a}, is an NP without any determiners such as quantificational determiners, demonstratives, or indefinite markers. A demonstrative NP, illustrated by \textit{ta garáž} `\textsc{dem} garage', is an NP introduced by a demonstrative.\footnote{A comprehensive discussion of the \ili{Czech} demonstrative system can be found in \citet{Berger1993}. For recent discussion couched in the formal approach, see \citet{Simik2016} (I use ``formal'' as shorthand for generative/formal-semantic). Notice also that I gloss the \ili{Czech} demonstrative \textit{ten/ta/to} `\textsc{dem.m/f/n}' as \textsc{dem}, as it does not perfectly correspond to either `this' or `that' (it is primarily anaphoric and also largely neutral with respect to proximity).}$^,$\footnote{I distinguish between ``contexts'', which involve explicitly uttered material that precedes the target utterance (I only provide English translations), and ``situations'', which only describe the setting in which the target utterance is made.}
@@ -43,17 +43,17 @@ I went to.the garage\\\hfill\textsc{weak definite article}
 \gll Ich ging zu der Garage.\\
 I went to the garage\\\hfill\textsc{strong definite article}
 \glt `I went to the garage.'
-\z\z
+\z\z\largerpage[2]
 
 \noindent In this paper, I zoom in onto the situational uniqueness function and show that not all situationally unique referents are referred to by bare NPs in \ili{Czech}. In some cases, a demonstrative NP is needed. I will argue that bare NPs refer to objects that are inherently unique (relative to some situation), while demonstrative NPs refer to objects that are accidentally unique (relative to some situation). I will also argue that the notion of inherent uniqueness is akin to genericity and can in fact subsume generic reference. Finally, I will suggest that anaphoric reference is inherently accidental. The contrast between inherent and accidental uniqueness therefore has the potential to replace the more commonly assumed unique vs. anaphoric contrast. A full exposition of this general claim must be left for future research, however.
 
-The paper is organized as follows. In \sectref{simik:sec:observation}, I present the relevant contrast between bare and demonstrative NPs in \ili{Czech} and suggest -- informally at first -- that it could be understood in terms of inherent and accidental uniqueness. These two concepts are formalized in \sectref{simik:sec:proposal}, which also provides some background on situation semantics and an explicit syntax and semantics of bare and demonstrative NPs in \ili{Czech}. In \sectref{simik:sec:evidence}, I focus on presenting additional evidence in favor of the correlation between the NP types and the uniqueness types. An outline of how the analysis could be extended to generic, anaphoric, and non-specific NPs is presented in \sectref{simik:sec:extension}. In \sectref{simik:sec:summary}, I summarize the results and give a brief research outlook.
+The paper is organized as follows. In \sectref{simik:sec:observation}, I present the relevant contrast between bare and demonstrative NPs in \ili{Czech} and suggest -- informally at first~-- that it could be understood in terms of inherent and accidental uniqueness. These two concepts are formalized in \sectref{simik:sec:proposal}, which also provides some background on situation semantics and an explicit syntax and semantics of bare and demonstrative NPs in \ili{Czech}. In \sectref{simik:sec:evidence}, I focus on presenting additional evidence in favor of the correlation between the NP types and the uniqueness types. An outline of how the analysis could be extended to generic, anaphoric, and non-specific NPs is presented in \sectref{simik:sec:extension}. In \sectref{simik:sec:summary}, I summarize the results and give a brief research outlook.
 
 % % % % \largerpage[-3] % Step 2 to get all of ex. (4) on one page
 
 \section{Initial observation}\label{simik:sec:observation}
 
-Let us start with two simple situations and NPs used in them. Example \REF{simik:ex:blackboard} involves a classroom situation \textsc{s}$_1$ with a single blackboard in it, as is usual. As one would expect, the blackboard, being unique in that particular situation, is referred to by a bare NP. Example \REF{simik:ex:kramsky} involves a simple conversation situation \textsc{s}$_2$, which happens to have a single book in it. Despite the uniqueness of the book, a demonstrative NP is appropriate.
+Let us start with two simple situations and NPs used in them. Example \REF{simik:ex:blackboard} involves a classroom situation \textsc{s}$_1$ with a single blackboard in it, as is usual. As one would expect, the blackboard, being unique in that particular situation, is referred to by a bare NP. Example \REF{simik:ex:kramsky} involves a simple conversation situation \textsc{s}$_2$, which happens to have a single book in it. Despite the uniqueness of the book, a demonstrative NP is appropriate.\largerpage
 
 \eanoraggedright \textit{Situation} \textsc{s}$_1$: Teacher (T) with pupils in a classroom. T addresses one of the students:\label{simik:ex:blackboard}
 \begin{xlist}
@@ -61,9 +61,7 @@ Let us start with two simple situations and NPs used in them. Example \REF{simik
 erase.\textsc{imp} {} blackboard {} {} \textsc{dem} blackboard please\\
 \glt `Erase the blackboard, please.'}
 \end{xlist}
-\z
-
-\eanoraggedright \textit{Situation} \textsc{s}$_2$: A and B are having a conversation, A is holding a book (the only book in the situation), B says (without any salient pointing gesture and without having talked about the book ever before):\label{simik:ex:kramsky}
+\ex \textit{Situation} \textsc{s}$_2$: A and B are having a conversation, A is holding a book (the only book in the situation), B says (without any salient pointing gesture and without having talked about the book ever before):\label{simik:ex:kramsky}
 \begin{xlist}
 \exi{B}[]{\gll \minsp{\{} Dej / Ukaž\} mi \minsp{\{} tu knihu / \minsp{\#} knihu\}.\\
 {} give.\textsc{imp} {} show.\textsc{imp} me {} \textsc{dem} book {} {} book\\
@@ -75,7 +73,7 @@ erase.\textsc{imp} {} blackboard {} {} \textsc{dem} blackboard please\\
 
 % % % % \largerpage[-1] % Looks a bit nicer: Before, a hyphen was at the very beginning of page v, now it's only on its second line. The shape of the following pages is not affected.
 
-An objection that instantly comes to mind when considering \REF{simik:ex:kramsky} is that the reference to the book by \textit{tu knihu} `\textsc{dem} book' involves deixis. This view is supported by the fact that a slight pointing gesture or even just a peek towards the referent naturally, albeit not necessarily, accompanies the utterance (\ref{simik:ex:kramsky}B). But an account in terms of deixis also has problems. Deictic demonstratives normally carry prosodic prominence and single out an object out of a set of objects all of which satisfy the same nominal description, as in \textit{I want \textsc{this} book, not \textsc{that} book.} In \REF{simik:ex:kramsky}, there is no such motivation for the use of a demonstrative, as the referent is the only book in the situation. Also, prosodic prominence is on \textit{knihu} `book', not the demonstrative. Finally, it is good to point out that (\ref{simik:ex:kramsky}B) can be uttered even if the conversation takes place via a videoconference and where B saw, at some previous point of the conversation, that A has a book, but, at the time of uttering (\ref{simik:ex:kramsky}B), B no longer has visual access to it (and hence cannot point to it). All of these concerns render a treatment in terms of deixis problematic.\footnote{An anonymous reviewer is not convinced by these arguments (although s/he does not express her/himself to those presented later). S/he claims, for instance, that demonstration could be achieved without visual access to the referent, suggesting an analogy from sign language where demonstration can be achieved by pointing to an abstract index in a signing space. See \citet[Ch. 5]{Ahn2019} for a recent discussion.} Moreover, in \sectref{simik:sec:evidence}, I will provide examples where deixis fares even worse, as the referent is not even present in the utterance situation.
+An objection that instantly comes to mind when considering \REF{simik:ex:kramsky} is that the reference to the book by \textit{tu knihu} `\textsc{dem} book' involves deixis. This view is supported by the fact that a slight pointing gesture or even just a peek towards the referent naturally, albeit not necessarily, accompanies the utterance (\ref{simik:ex:kramsky}B). But an account in terms of deixis also has problems. Deictic demonstratives normally carry prosodic prominence and single out an object out of a set of objects all of which satisfy the same nominal description, as in \textit{I want \textsc{this} book, not \textsc{that} book.} In \REF{simik:ex:kramsky}, there is no such motivation for the use of a demonstrative, as the referent is the only book in the situation. Also, prosodic prominence is on \textit{knihu} `book', not the demonstrative. Finally, it is good to point out that (\ref{simik:ex:kramsky}B) can be uttered even if the conversation takes place via a videoconference and where B saw, at some previous point of the conversation, that A has a book, but, at the time of uttering (\ref{simik:ex:kramsky}B), B no longer has visual access to it (and hence cannot point to it). All of these concerns render a treatment in terms of deixis problematic.\footnote{An anonymous reviewer is not convinced by these arguments (although s/he does not express her/himself to those presented later). S/he claims, for instance, that demonstration could be achieved without visual access to the referent, suggesting an analogy from sign language where demonstration can be achieved by pointing to an abstract index in a signing space. See \citet[Ch. 5]{Ahn2019} for a recent discussion.} Moreover, in \sectref{simik:sec:evidence}, I will provide examples where deixis fares even worse, as the referent is not even present in the utterance situation.\largerpage[1.75]
 
 The reader will have noticed that I marked the inappropriate NP uses by {\#} rather than by *. The implication is that the versions with the inappropriate NPs successfully convey a meaning -- in fact, the meaning indicated by the translation -- but are not felicitous in the situation. We can learn a bit about the source of their infelicity by inspecting the additional implications they carry. Let us turn to \REF{simik:ex:blackboard} first. The use of a demonstrative NP -- \textit{tu tabuli} `\textsc{dem} blackboard' -- implies that the teacher is in an affective state. It would be appropriate in a situation where the teacher asked the student to erase the blackboard repeatedly and got annoyed by the student's inactivity. In other words, the demonstrative in \REF{simik:ex:blackboard} is an instance of the so-called \textsc{affective demonstrative}.\footnote{Affective demonstratives (term due to \citealt{Liberman2008}) are cross-linguistically common. For some discussion, see \citet{Mathesius1926}, \citet{Simik2016} (\ili{Czech}); \citet{Rudin2021} (\ili{Bulgarian} and \ili{Macedonian}); \citet{Lakoff1974}, \citet{Liberman2008} (English); \citet{Potts.Schwarz2010} (English, \ili{German}); \citet{Davis.Potts2010} (English, \ili{Japanese}).}
 
@@ -83,7 +81,7 @@ Let us now consider \REF{simik:ex:kramsky}. Again, certain adjustments to the si
 
 The reader should bear in mind that the examples in this paper often lend themselves to accommodation processes of the kind discussed above and that accommodating a certain inference may license the use of an NP that is marked as inappropriate.
 
-\section{Proposal}\label{simik:sec:proposal}
+\section{Proposal}\label{simik:sec:proposal}\largerpage[1.75]
 
 \subsection{Background on situation semantics}
 
@@ -119,9 +117,7 @@ For any property $P$, entity $x$, and situation $s_0$, such that $P(s_0)(x)=1$,\
 $x$ is \textsc{inherently uniquely identifiable} in $s_0$ iff\\
 $\forall s\big[s\approx s_0\rightarrow\exists!y[P(s)(y)]\big]$\\
 All situations that are like $s_0$ are such that there is exactly one entity with property $P$ in those situations.
-\z
-
-\ea \textit{Accidental uniqueness}\label{simik:def:acc-uniq}\\
+\ex \textit{Accidental uniqueness}\label{simik:def:acc-uniq}\\
 For any property $P$, entity $x$, and situation $s_0$, such that $P(s_0)(x)=1$,\\
 $x$ is \textsc{accidentally uniquely identifiable} in $s_0$ iff\\
 $\exists!z\big[P(s_0)(z)\big]\wedge\neg\forall s\big[s\approx s_0\rightarrow\exists!y[P(s)(y)]\big]$\\
@@ -160,7 +156,7 @@ and presupposes \fbox{$\exists!z\big[P(s_{\cnst{t}})(z)\big]\wedge\neg\forall s'
 
 There are many ways of incorporating inherent vs. accidental uniqueness into the representation of NPs or the clauses they are contained in. In what follows, I will sketch one possible analysis, where inherent uniqueness is taken to be a property of topic situations (rather than NPs) and accidental uniqueness a property of demonstratives. The advantage of this view is that it gives us enough flexibility in the treatment of bare NPs, which are known to be underspecified with respect to their referential properties -- depending on the context and various grammatical properties, they can correspond to definite as well as indefinite NPs.\footnote{The literature on (\ili{Slavic}) bare NPs is vast. The traditional underspecification view is represented for instance by \citet{Chierchia1998} or \citet{Geist2010}. But see also \citet{Dayal2004,Dayal2011}, who treats almost all bare NPs in articleless \ili{Slavic} languages essentially as definites.}
 
-\subsubsection{Bare NPs and inherent uniqueness}\label{simik:sec:bare-nps-inherent}
+\subsubsection{Bare NPs and inherent uniqueness}\label{simik:sec:bare-nps-inherent}\largerpage
 
 I follow the spirit of \citeposstpg{Heim2011}{1006} suggestion, supported by the experimental results of \citet{Simik.Demian2020}, and assume that bare NPs contribute no definiteness-related presupposition (such as uniqueness or maximality). Contrary to \citet{Heim2011}, however, I treat argumental bare NPs not as existential quantifiers, but as referential expressions.\footnote{I assign ``referentiality'' a weak (but commonly assumed) sense, namely ``being of type $e$''. Being referential thus implies nothing about being presuppositional or familiar.} As demonstrated in \figref{simik:fig:bare-NP}, I take the basic predicative (property-type) NP to be shifted by a Skolemized choice function \textbf{f}$_1$, whose index is mapped to a situation. The choice function itself is existentially bound in the immediate scope of the situation it is relativized to. I take this to be a default process -- in the lack of any explicit indicators of how the choice function should be interpreted (i.e., determiners or indefinite markers), its scope is tied to the scope of its situation binder. This approach makes some non-trivial predictions, which, however, cannot be explored here for space reasons (though see \sectref{simik:sec:non-sp} for some basic discussion).\footnote{For a choice-functional approach to \ili{Slavic} indefinites, including the use of Skolemization, see \citet{Yanovich2005} or \citet{Geist2008}. My proposal is in principle compatible with theirs, the only difference lies in the nature of the Skolem argument. I take the situation-type Skolem argument to be a kind of default that can be overridden by using various determiners, esp. so-called indefinite markers.} The corresponding compositional meaning is spelled out in \REF{simik:comp:bare-NP}. The choice function picks out some entity that is a blackboard in situation $g(1)$. If this situation is the topic situation ($s_{\cnst{t}}$), then the whole bare NP will refer to some blackboard in the topic situation. If the topic situation is our classroom situation, then the NP will refer to the unique blackboard in that situation.
 
@@ -218,7 +214,7 @@ My analysis of demonstrative NPs is parallel to what I proposed for bare NPs; se
 
 Let us now go through a number of examples illustrating the effect of NP type on uniqueness type, while at the same time doing away with the caveats associated with our initial examples. In order to minimize confounding factors, I will consider one example where the topic/resource situation is held constant and where the referent differs, \sectref{simik:sec:same-sit}, and another one where the referent description is held constant, but the topic/resource situation differs (minimally), \sectref{simik:sec:diff-ref}. I conclude with an example where the NP type (bare vs. demonstrative) steers the discourse participants' attention to two different topic/resource situations, \sectref{simik:sec:np-choice}.
 
-\subsection{Same situation, different referent}\label{simik:sec:same-sit}
+\subsection{Same situation, different referent}\label{simik:sec:same-sit}\largerpage
 
 Consider example \REF{simik:ex:comp-book}, involving an office desk situation and two student assistants, both familiar with the situation. The example shows that reference to the single computer in the office is made by a bare NP, while reference to the single book in the office is made by a demonstrative NP. This is because the computer is inherently unique in that situation, while the book is only accidentally unique there, as highlighted by the formulas.
 
@@ -381,11 +377,10 @@ The present paper offers a novel perspective of two traditionally distinguished 
 &\\
 \end{tabularx}
 
-\section*{Acknowledgements}
+\section*{Acknowledgments}
 I'm grateful to the audiences of the workshop \textit{Semantics of noun phrases,} which was organized as part of FDSL 13 in Göttingen in December 2018, for their valuable feedback. I also profited greatly from the comments of Olav Mueller-Reichau, the anonymous reviewers of this paper, and the editors/proofeaders Jovana Gajić, Nicole Hockmann, and Freya Schumann. All errors are mine. The research was supported by the \ili{German} Research Foundation (DFG) via the grant \textit{Definiteness in articleless \ili{Slavic} languages} and by the Primus program of the Charles University (PRIMUS/19/HUM/008).
 
-\sloppy
-\printbibliography[heading=subbibliography,notkeyword=this]
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
 
 % \section*{Responses to the reviewer}
 
