@@ -1,8 +1,4 @@
-\documentclass[output=paper,
-colorlinks,
-citecolor=brown,
-newtxmath
-]{langscibook}
+\documentclass[output=paper]{langscibook}
 
 \author{Elena Karagjosova\affiliation{Freie Universität Berlin}}
 \title{Mirativity and the Bulgarian evidential system}
@@ -13,6 +9,7 @@ newtxmath
 
 
 \begin{document}
+\SetupAffiliations{mark style=none}
 \maketitle
 
 \section{Introduction}\label{sec:intro}
@@ -21,7 +18,7 @@ The \ili{Bulgarian} evidential system is an ongoing topic of discussion both wit
 
 Thus, it has largely remained unnoticed that the admirative (i) only allows for imperfect past participles which in admiratives receive a present tense interpretation, (ii) does not only encode direct evidence but may also be based on inferential and hearsay evidence, and (iii) is not only used in exclamatives but also in declaratives and is thus not tied to the exclamatory illocutionary force.
 
-Based on these facts, I suggest an analysis of the admirative construction in terms of a semantic operator which captures the evidential, temporal, aspectual, and modal properties of the construction in a compositional fashion, combining insights from \citeposst{Bustamante2013} analysis of the mirative extension of the \ili{Spanish} imperfect and \citeauthor{Smirnova2011a}'s (\citeyear{Smirnova2011a}; \citeyear{Smirnova2011b}; \citeyear{Smirnova2013}) analysis of the \ili{Bulgarian} evidential. According to my analysis, admirative sentences are assertions based on evidence of some type (reportative, inferential, or direct) which are contrasted against the set of beliefs held by the speaker up to the point of receiving the evidence. The speaker's past beliefs entail a proposition which clashes with the assertion, triggering belief revision and resulting in a sense of surprise.
+Based on these facts, I suggest an analysis of the admirative construction in terms of a semantic operator which captures the evidential, temporal, aspectual, and modal properties of the construction in a compositional fashion, combining insights from \citeposst{Bustamante2013} analysis of the mirative extension of the \ili{Spanish} imperfect and \citeauthor{Smirnova2011a}'s (\citeyear{Smirnova2011a}, \citeyear{Smirnova2011b}, \citeyear{Smirnova2013}) analysis of the \ili{Bulgarian} evidential. According to my analysis, admirative sentences are assertions based on evidence of some type (reportative, inferential, or direct) which are contrasted against the set of beliefs held by the speaker up to the point of receiving the evidence. The speaker's past beliefs entail a proposition which clashes with the assertion, triggering belief revision and resulting in a sense of surprise.
 The crucial idea adopted from \citeauthor{Bustamante2013} is related to the role of the tense and aspect morphology: the fact that the past tense morphology in admiratives is interpreted as referring to the present is accounted for by the assumption that tense is displaced and interpreted not within the assertion but under the admirative operator.
 The analysis distinguishes further between mirativity as a semantic category and exclamatory force as an illocutionary category and suggests that although mirativity and evidentiality can be seen as separate semantic categories, the \ili{Bulgarian} admirative shows a cross-linguistically relevant case where evidential verbal forms acquire additional mirative meanings.
 
@@ -35,23 +32,21 @@ The paper is organized as follows. \sectref{sec:BG_evid_syst} provides some back
 
 Traditionally, two different evidential paradigms are distinguished, morphologically and historically \citep[see][]{Andrejcin1944,Aronson1967}
 %Some authors take them as part of the verbal mood system, others like \citet{Bojadziev.etal1999} take them to constitute a different system based on the observation that renarrative forms can be combined with imperative forms, as in \textit{Neka pi\v{s}el.} (`Let him write, it is said'). }
-related to the present perfect, each encoding different evidential sources: the \textit{renarrative} expressing reportative \REF{report} and the \textit{conclusive} expressing inferential \REF{concl} evidence (see, e.g., \citealt{Bojadziev.etal1999,Pasov1999,Nicolova2008}; and \citealt{Jacobson1971}, who was among the first to call these forms evidential):\footnote{``Inferential'' refers both to inference from observable facts and from knowledge. %contra Smirnova who claims that inferential (conclusive) only possible with inference from observable facts
+related to the present perfect, each encoding different evidential sources: the \textit{renarrative} expressing reportative \REF{report} and the \textit{conclusive} expressing inferential \REF{concl} evidence (see, e.g., \citealt{Bojadziev.etal1999,Pasov1999,Nicolova2008}, and \citealt{Jacobson1971}, who was among the first to call these forms evidential):\footnote{``Inferential'' refers both to inference from observable facts and from knowledge. %contra Smirnova who claims that inferential (conclusive) only possible with inference from observable facts
 }
 
 \ea\label{report}
 \gll Ivan rabotil / rabotel. \\
 Ivan work.\textsc{aor.ptcp} {} work.\textsc{ipf.ptcp} \\
 \glt `Ivan worked/works, it is said.'
-\z
-
-\ea \label{concl}
+\ex \label{concl}
 \gll Ivan e rabotil / rabotel. \\
  Ivan is work.\textsc{aor.ptcp} {} work.\textsc{ipf.ptcp}\\
 \glt `Ivan has worked, I infer.'
 \z
 
 \noindent This view, reflected in \tabref{tab:traditional}, is based on two assumptions: (i) the two evidential paradigms and the present perfect are formally composed of the present tense form of the auxiliary \textit{săm} `be' and a past \textit{l}-participle that may be based on both imperfect and aorist stems, and (ii) the renarrative differs formally from the conclusive and the perfect in terms of auxiliary drop in the 3\textsuperscript{rd} person singular and plural.
-In addition to the tense marking of the \textit{l}-participles (aorist or imperfect),\footnote{Note however that some verbs-- 3\textsuperscript{rd} conjugation verbs as well as verbs like \textit{znaja} `know',
+In addition to the tense marking of the \textit{l}-participles (aorist or imperfect),\footnote{Note however that some verbs -- 3\textsuperscript{rd} conjugation verbs as well as verbs like \textit{znaja} `know',
 % \textit{mladeja} (`look young'),
  \textit{săm} `be' -- only have one past participle, see e.g. \citet{Nicolova2017}.}
 %both PAST (not past and present as in Smirnova): minalo svarsheno/ne- dejatelno prichastie; minalo because of the -l!
@@ -60,36 +55,33 @@ the participle stems usually encode either perfective or imperfective verbal/lex
 \ea\label{ex:aorist-imperf-imperf}
 \gll Pisal / pišel săm.\\
 write.\textsc{aor.ipfv} {} write.\textsc{ipf.ipfv} am \\
-\glt `I have written' / `I have been writing'
-\z
-
-\ea \label{ex:aorist-imperf-perf}
+\glt `I have written'\slash`I have been writing'
+\ex \label{ex:aorist-imperf-perf}
 \gll Napisal / napišel săm. \\
 write.\textsc{aor.pfv} {} write.\textsc{ipf.pfv} am \\
-\glt `I have finished writing' / `I have been finishing writing'
+\glt `I have finished writing'\slash`I have been finishing writing'
 \z}
 
 \begin{table}[h]
 \centering
- \begin{tabularx}{\textwidth}{XXXXXXX}
+ \begin{tabular}{lllllll}
  \lsptoprule
- \multicolumn{2}{c}{renarrative} & \multicolumn{2}{c}{conclusive} & \multicolumn{2}{c}{present perfect}\\
+ \multicolumn{2}{c}{renarrative} & \multicolumn{2}{c}{conclusive} & \multicolumn{2}{c}{present perfect}\\\cmidrule(lr){1-2}\cmidrule(lr){3-4}\cmidrule(lr){5-6}
 aorist	    & imperfect	   & aorist  & imperfect & aorist & imperfect\\
  \midrule
 pisal săm    & pišel săm	    & pisal săm  & pišel săm & pisal săm & pišel săm\\
 pisal $\varnothing$	 & pišel $\varnothing$	 & pisal e	 & pišel e & pisal e & pišel e\\
  \lspbottomrule
- \end{tabularx}
- \caption{The traditional Bulgarian evidential forms and the\\ present perfect of the verb \textit{piša} (`write') in \textsc{1sg} and \textsc{3sg}}
- \label{tab:traditional}
+ \end{tabular}
+ \caption{The traditional Bulgarian evidential forms and the present perfect of the verb \textit{piša} (`write') in \textsc{1sg} and \textsc{3sg}\label{tab:traditional}}
 \end{table}
 
-Especially assumption (ii) above has been considered problematic, e.g. in work by \citet{Gerdzikov1984}, \citet{Ivancev1988}, \citet{Levin-Steinmann2004}, or \citet{Sonnenhauser2013}, where the different evidential forms are seen as belonging to one common paradigm (called \textsc{perfect-like complex}; see \citealt{Ivancev1988}), and the usage or omission of the 3\textsuperscript{rd} person auxiliary (called \textsc{auxiliary variation}) as guided by discourse-pragmatic factors such as the coding of the point of view of the narrator vs. some non-narrator (\citealt{Sonnenhauser2013}; see also \citealt{Friedman1981,Lindstedt1994,Fielder99}). Formal semantic work, on the other hand, assumes a single evidential construction called \textsc{perfect of evidentiality} \citep{Izvorski1997} or \textsc{the evidential morpheme/marker} (\citealt{Smirnova2011a,Smirnova2011b}; \citeyear{Smirnova2013}; \citealt{Koev2017}), formally uniquely characterized by a 3\textsuperscript{rd} person auxiliary drop.
+Especially assumption (ii) above has been considered problematic, e.g. in work by \citet{Gerdzikov1984}, \citet{Ivancev1988}, \citet{Levin-Steinmann2004}, or \citet{Sonnenhauser2013}, where the different evidential forms are seen as belonging to one common paradigm (called \textsc{perfect-like complex}; see \citealt{Ivancev1988}), and the usage or omission of the 3\textsuperscript{rd} person auxiliary (called \textsc{auxiliary variation}) as guided by discourse-pragmatic factors such as the coding of the point of view of the narrator vs. some non-narrator (\citealt{Sonnenhauser2013}; see also \citealt{Friedman1981,Lindstedt1994,Fielder99}). Formal semantic work, on the other hand, assumes a single evidential construction called \textsc{perfect of evidentiality} \citep{Izvorski1997} or \textsc{the evidential morpheme/marker} (\citealt{Smirnova2011a,Smirnova2011b}, \citeyear{Smirnova2013}, \citealt{Koev2017}), formally uniquely characterized by a 3\textsuperscript{rd} person auxiliary drop.
 
 
 As far as the interpretation of the evidential forms is concerned, formal analyses range from their encoding (i) indirect (reportative, inferential) evidence \citep[see][]{Izvorski1997}, (ii) indirect or direct evidence depending on the context (see \citeauthor{Smirnova2013}), and (iii) not encoding evidence at all (see \citealt{Koev2017}). Thus \citeauthor{Koev2017} argues that the evidential forms merely indicate a spatio-temporal distance between the event described by the sentence and the event of the speaker acquiring the evidence for his claim, from which the evidential meaning is pragmatically derived. \citeauthor{Smirnova2013}, on the other hand, assumes that the evidential encodes a temporal relation between the \textsc{evidence acquisition time} (EAT) and the \textsc{speech time} (ST) that, depending on context, is that of precedence (in reportative and inferential contexts) or coincidence (in direct contexts with exclamatory intonation), thus providing a formal account of the compatibility of the evidential forms with the expression of direct evidence.
 
-In the grammatical tradition, uses of evidential forms in direct evidential contexts are dealt with by assuming a further evidential category or paradigm \citep[see][]{Stankov1969} called the \textsc{(ad)mirative}, involving auxiliary drop in the 3\textsuperscript{rd} person and expressing surprise over some suddenly discovered fact or event, see \REF{admir}.\footnote{In addition, a fourth evidential category is sometimes assumed, the \textsc{dubitative}. It involves two further forms of the auxiliary -- present (\textit{săm}) and the past participle (\textit{bil}) -- and auxiliary drop in the 3\textsuperscript{rd} person. It expresses the speaker's doubt with respect to the truth of some renarrated proposition, see, e.g., \citet{Bojadziev.etal1999}; \citet{Pasov1999}. I assume for now that the dubitative is an additional interpretation of the renarrative in accordance with \citet{Bojadziev.etal1999} and do not deal with it in this paper.}
+In the grammatical tradition, uses of evidential forms in direct evidential contexts are dealt with by assuming a further evidential category or paradigm \citep[see][]{Stankov1969} called the \textsc{(ad)mirative}, involving auxiliary drop in the 3\textsuperscript{rd} person and expressing surprise over some suddenly discovered fact or event, see \REF{admir}.\footnote{In addition, a fourth evidential category is sometimes assumed, the \textsc{dubitative}. It involves two further forms of the auxiliary -- present (\textit{săm}) and the past participle (\textit{bil}) -- and auxiliary drop in the 3\textsuperscript{rd} person. It expresses the speaker's doubt with respect to the truth of some renarrated proposition, see, e.g., \citet{Bojadziev.etal1999}, \citet{Pasov1999}. I assume for now that the dubitative is an additional interpretation of the renarrative in accordance with \citet{Bojadziev.etal1999} and do not deal with it in this paper.}
 
 \ea\label{admir}
 \gll Ivan rabotel! \\
@@ -104,9 +96,8 @@ Finally, while the evidential source indicated by the admirative is generally as
 \textit{Context:} Ivan thought that Stojan did not work. (i) direct evidence: Ivan sees Stojan working.
 (ii) inference: Ivan notices that the door to Stojan's study is closed.
 (iii) hearsay: Petăr tells Ivan that Stojan is working.
-Ivan believes it and exclaims:\vspace{-6pt}
-\z
-\begin{exe}
+Ivan believes it and exclaims:
+
 \exi{}{\gll Toj rabotel! \\
 he work.\textsc{ipf.ptcp}\\ \\
 \glt `He works!'\hfill \citep[3; slightly modified]{Simeonova2015}}
@@ -122,26 +113,26 @@ It seems that mirativity and evidentiality are closely intertwined also in the c
 
 Previous accounts of the admirative do not take these properties into consideration. This concerns first and foremost the aspectual restrictions of the admirative. Although \citet[505]{Smirnova2013} argues that only the ``present tense form of the indirect evidential'' can yield a direct evidential interpretation, she does not account for this property in her analysis.\footnote{Moreover, describing the imperfect \textit{l}-participles in the evidential forms in terms of ``present tense forms'' is not entirely correct, since, as will be shown in \sectref{sec:BG-admirative}, the temporal contribution of the renarrative imperfect participles may, depending on the context, involve reference to the present or the past, due to the well-known syncretism between the participle forms for the present and the imperfect (e.g. \textit{pišel săm}), as well as present perfect and pluperfect (e.g. \textit{bil săm pišel}), and future perfect and past future perfect (e.g. \textit{štjal săm da săm pišel}); see \citet[266]{Andrejcin1944}. This syncretism has been dealt with both in terms of homonymy \citep[e.g.][]{Andrejcin1944} and polysemy or ambiguity \citep[e.g.][]{Demina1959}.} On the contrary, \citeauthor{Smirnova2013} argues that the evidential stems do not encode aspectual difference but carry temporal information only. In addition, there is evidence that the much debated question  of the aspectual properties of the imperfect and the aorist and their relation to the morphological opposition perfective/imperfective (see, e.g., \citealt{Demina1976,Sonnenhauser2006}) is highly relevant for the analysis of the \ili{Bulgarian} evidential system in general and the admirative in particular.
 
-Secondly, earlier accounts rely on the assumption that the admirative is tied to exclamatory mood. Thus, \citet{Aleksova2003}, \citet{Simeonova2015}, and \citet{Sonnenhauser2015} treat all auxiliary-less evidential forms in exclamatives as admiratives.\footnote{See also \citet{Guentcheva2017} who argues that admirative constructions are marked by exclamatory intonation and indicate discrepancy between what is expected and what is observed.} Similarly, \citeauthor{Smirnova2013}'s analysis of the interpretation of evidential forms in direct contexts relies on the assumption that the expression of direct evidence is related to exclamative mood. Instead, I argue with \citet{Bustamante2013} that a distinction must be made between mirativity as a semantic category encoded by various linguistic means (intonation, mirative predicates, verbal morphology) on the one hand and exclamations/exclamatives as illocutionary categories on the other: while both exclamations (declaratives with intonation marking exclamatory force) and exclamatives (special constructions with exclamatory force) can mark the speaker's surprise due to unexpected information,\footnote{\citet{Rett2011} points out that exclamations and mirativity markers both refer to speaker expectations.} there are several properties that distinguish them from mirative constructions in general, such as intonation pattern (which can both be falling and rising with miratives; see more details in \citealt[152-153]{Bustamante2013}), force (declarative for miratives vs. exclamatory for exclamations/exclamatives), and embeddability under certain predicates. Moreover, while miratives indicate a clash with previous beliefs, %Bustamante argues with \citet{Gutierrez-Rexach1996} that
+Secondly, earlier accounts rely on the assumption that the admirative is tied to exclamatory mood. Thus, \citet{Aleksova2003}, \citet{Simeonova2015}, and \citet{Sonnenhauser2015} treat all auxiliary-less evidential forms in exclamatives as admiratives.\footnote{See also \citet{Guentcheva2017} who argues that admirative constructions are marked by exclamatory intonation and indicate discrepancy between what is expected and what is observed.} Similarly, \citeauthor{Smirnova2013}'s analysis of the interpretation of evidential forms in direct contexts relies on the assumption that the expression of direct evidence is related to exclamative mood. Instead, I argue with \citet{Bustamante2013} that a distinction must be made between mirativity as a semantic category encoded by various linguistic means (intonation, mirative predicates, verbal morphology) on the one hand and exclamations/exclamatives as illocutionary categories on the other: while both exclamations (declaratives with intonation marking exclamatory force) and exclamatives (special constructions with exclamatory force) can mark the speaker's surprise due to unexpected information,\footnote{\citet{Rett2011} points out that exclamations and mirativity markers both refer to speaker expectations.} there are several properties that distinguish them from mirative constructions in general, such as intonation pattern (which can both be falling and rising with miratives; see more details in \citealt[152--153]{Bustamante2013}), force (declarative for miratives vs. exclamatory for exclamations/exclamatives), and embeddability under certain predicates. Moreover, while miratives indicate a clash with previous beliefs, %Bustamante argues with \citet{Gutierrez-Rexach1996} that
 exclamations/exclamatives express a general emotive attitude towards the proposition (surprise, admiration, amazement), which is demonstrated by the acceptability of exclamations in contexts in which the speaker already believes the information expressed but is exclaiming in order to point it out, such as \textit{You overslept again! Which was also to be expected.} \citep[149, 154--155]{Bustamante2013}. In contrast, miratives are not felicitous in contexts in which the speaker already knows or believes the information and are thus
 %. \citet[159]{Bustamante2013} takes this evidence as an indication that miratives are
 assertions expressing that the speaker has just discovered something unexpected, as will also be shown for the \ili{Bulgarian} admirative. This property indicates that miratives are modalized propositions rather than a kind of speech act \citep[159]{Bustamante2013}.
 
 In addition to disregarding the use of admiratives in declarative sentences, \citeauthor{Smirnova2013}'s account of the use of evidential forms in contexts of direct evidence is further inadequate because it is based on an operator \textsc{excl} which has no illocutionary semantics but is specifically designed to fix the desired temporal relation between the evidence acquisition time EAT and the speech time ST, which in direct evidence contexts is that of coincidence ($\text{EAT}=\text{ST}$) and in indirect evidence contexts one of precedence ($\text{EAT}<\text{ST}$).\footnote{In addition, applying \citeauthor{Smirnova2013}'s analysis to admiratives in declarative sentences would falsely tie the admirative to indirect evidence, as the illocutionary operator \textsc{decl} she defines would lead to an indirect evidence interpretation.} But even genuine illocutionary operators (such as \textsc{e-force} in \citealt[429]{Rett2011}) are unable to account for the relation between the morphological form and the semantic properties of the admirative that will be discussed in \sectref{sec:BG-admirative} and that distinguish the admirative from exclamatory uses of the other two evidential forms, the renarrative and the conclusive.
 
-Finally, considering the \ili{Bulgarian} evidential system as a whole, the assumption of a single evidential morpheme expressing various evidential sources is a simplification that does not account for the actual usage of the \ili{Bulgarian} evidential forms. As will be shown in \sectref{sec:BG-admirative}, it is far from settled that the conclusive involves auxiliary drop. The fact that the admirative is restricted with respect to the form of the \textit{l}-participle militates against such a view as well. In addition, formal analyses like \citet{Izvorski1997} and \citet{Koev2017} are unable to accommodate the admirative since they are not compatible with direct evidence: \citeauthor{Izvorski1997}'s analysis relies exclusively on indirect evidence and \citeauthor{Koev2017}'s analysis on spatio-temporal distance between EAT and the event, which is not true for direct evidence. The auxiliary variation hypothesis is not tenable either once the admirative enters the picture: an explanation in terms of pragmatic effects related to points of view would falsely predict that the auxiliary-less admirative forms are tied to a non-narrator.
+Finally, considering the \ili{Bulgarian} evidential system as a whole, the assumption of a single evidential morpheme expressing various evidential sources is a simplification that does not account for the actual usage of the \ili{Bulgarian} evidential forms. As will be shown in \sectref{sec:BG-admirative}, it is far from settled that the conclusive involves auxiliary drop. The fact that the admirative is restricted with respect to the form of the \textit{l}-participle militates against such a view as well. In addition, formal analyses like \citet{Izvorski1997} and \citet{Koev2017} are unable to accommodate the admirative since they are not compatible with direct evidence: \citeauthor{Izvorski1997}'s analysis relies exclusively on indirect evidence and \citeauthor{Koev2017}'s analysis on spatio-temporal distance between EAT and the event, which is not true for direct evidence. The auxiliary variation hypothesis is not tenable either once the admirative enters the picture: an explanation in terms of pragmatic effects related to points of view would falsely predict that the auxiliary-less admirative forms are tied to a non-narrator.\largerpage
 
 In the next section, I provide evidence for the properties of the \ili{Bulgarian} admirative discussed above which strongly suggests an analysis in terms of a mirative extension of evidential verbal forms.
 
-\section{The Bulgarian admirative}\label{sec:BG-admirative}
+\section{The Bulgarian admirative}\label{sec:BG-admirative}\largerpage
 
 The \ili{Bulgarian} admirative differs from renarrative and conclusive evidentials in a number of morphological and semantic properties:
 
 \begin{itemize}
-    \item While the admirative (which may, similar to the conclusive, be based on inferential evidence) always involves auxiliary drop, the auxiliary of the conclusive may be omitted under certain conditions that will be discussed below.
+    \item While the admirative (which may, similar to the conclusive, be based on inferential evidence) always involves auxiliary drop, the auxiliary of the conclusive may be omitted under certain conditions (discussed below).
     \item Whereas renarrative and conclusive evidentials both use aorist and imperfect participles, the forms of the admirative are restricted to imperfect participles.
     \item The admirative is not only used in exclamations but also in declarative sentences with declarative illocutionary force.
-    \item While the admirative expresses speaker commitment to the underlying proposition, the renarrative is underspecified in this respect.\footnote{I do not exclude though that the renarrative expresses the commitment of the reporter towards the reported proposition; see also Smirnova (\citeyear{Smirnova2011a}; \citeyear{Smirnova2013}).}
+    \item While the admirative expresses speaker commitment to the underlying proposition, the renarrative is underspecified in this respect.\footnote{I do not exclude though that the renarrative expresses the commitment of the reporter towards the reported proposition; see also Smirnova (\citeyear{Smirnova2011a}, \citeyear{Smirnova2013}).}
     \item Whereas in the case of the admirative the past morphology expresses reference to present events, the temporal interpretation of the renarrative may vary between past and present depending on participle type and context.
     \item Admirative sentences are always related to a clash of beliefs, whereas renarrative and conclusive evidentials (and the present perfect for that matter) used in exclamations may express a wider range of emotive attitudes next to (or beyond) surprise.
 \end{itemize}
@@ -149,25 +140,20 @@ The \ili{Bulgarian} admirative differs from renarrative and conclusive evidentia
 \subsection{Admiratives based on inferential evidence and conclusives with and without auxiliary}
 
 Formal research on the \ili{Bulgarian} evidential system is based on the assumption that the conclusive involves auxiliary drop and is thus formally indistinguishable from the renarrative and the admirative. While \citet{Izvorski1997} and \citet{Koev2017} adopt a single-morpheme assumption without discussing any data or the possibility of auxiliary variation,\footnote{\citet[3, fn. 2]{Koev2017} mentions that ``the use of evidential forms in inferential contexts is somewhat more restricted than their use in reportative contexts'', possibly due to dialectal variation, however without elaborating on any evidence for this contrast. In fact, no data on this topic can be found in what may be considered the main work on \ili{Bulgarian} dialectology, \citet{Stoykov2002}. \citet{Izvorski1997}, on the other hand, seems to assume that evidential forms that retain the auxilary in the 3\textsuperscript{rd} person are ambiguous between the conclusive and the present perfect.}
-\citeauthor{Smirnova2013}'s (\citeyear{Smirnova2011a}; \citeyear{Smirnova2011b}; \citeyear{Smirnova2013}) analysis of the evidential is based on data which partly runs against native speakers' intuitions. Thus, examples like \REF{smirnova:infer-acceptability}, intended to demonstrate the use of the auxiliary-less evidential form in inferential contexts, were rejected by all 11 informants in a small-scale acceptability judgement task in favor of an alternative form (imperfect or aorist participle) containing the auxiliary; see \REF{smirnova:infer-acceptability:alternative1} and \REF{smirnova:infer-acceptability:alternative2}.\footnote{The survey involved 11 native speakers born and living in Sofia, 3 male, 8 female, aged between 20 and 80, 10 of them university graduates, 1 high-school graduate. The survey was designed as a forced-choice task, with 5 alternatives to choose from for the target utterance: the verb in its indicative present form, aorist participle with auxiliary, aorist participle without auxiliary, imperfect participle with and imperfect participle without auxiliary. As a reviewer pointed out to me, the fact that the participants could not choose more than one answer could have obscured cases where the version with the auxiliary was possible but less preferred. Still, the survey shows that the preferred forms are the ones containing the auxiliary.}
+\citeauthor{Smirnova2013}'s (\citeyear{Smirnova2011a}, \citeyear{Smirnova2011b}, \citeyear{Smirnova2013}) analysis of the evidential is based on data which partly runs against native speakers' intuitions. Thus, examples like \REF{smirnova:infer-acceptability}, intended to demonstrate the use of the auxiliary-less evidential form in inferential contexts, were rejected by all 11 informants in a small-scale acceptability judgement task in favor of an alternative form (imperfect or aorist participle) containing the auxiliary; see \REF{smirnova:infer-acceptability:alternative1} and \REF{smirnova:infer-acceptability:alternative2}.\footnote{The survey involved 11 native speakers born and living in Sofia, 3 male, 8 female, aged between 20 and 80, 10 of them university graduates, 1 high-school graduate. The survey was designed as a forced-choice task, with 5 alternatives to choose from for the target utterance: the verb in its indicative present form, aorist participle with auxiliary, aorist participle without auxiliary, imperfect participle with and imperfect participle without auxiliary. As a reviewer pointed out to me, the fact that the participants could not choose more than one answer could have obscured cases where the version with the auxiliary was possible but less preferred. Still, the survey shows that the preferred forms are the ones containing the auxiliary.}
 
 \eanoraggedright \textit{Inferential context:} Your late aunt Maria spent the
 last months of her life in Paris. No one knows why. After the
-funeral, you found a first chapter of an unauthored manuscript about Paris in Maria’s papers. You inferred that Maria was writing a book. When one of the relatives asks you how Maria spent the last months of her life, you say:\vspace{-6pt}\label{smirnova:infer-acceptability}
-\z
-\begin{exe}
+funeral, you found a first chapter of an unauthored manuscript about Paris in Maria’s papers. You inferred that Maria was writing a book. When one of the relatives asks you how Maria spent the last months of her life, you say:\label{smirnova:infer-acceptability}
+
 \exi{}{\gll Maria pisala kniga. \\
 Maria write.\textsc{aor.ptcp.ipfv} book\\
 \glt `Maria was writing a book, [I inferred].' \hfill \citep[497; my glosses]{Smirnova2013}}
-\end{exe}
-
-\ea \label{smirnova:infer-acceptability:alternative1}
+\ex \label{smirnova:infer-acceptability:alternative1}
 \gll Maria e pisala kniga. \\
 Maria is write.\textsc{aor.ptcp.ipfv} book\\
 \glt `Maria was writing a book, [I inferred].'
-\z
-
-\ea \label{smirnova:infer-acceptability:alternative2}
+\ex \label{smirnova:infer-acceptability:alternative2}
 \gll Maria e pišela kniga. \\
 Maria is write.\textsc{ipf.ptcp.ipfv} book\\
 \glt ‘Maria was writing a book, [I inferred].’
@@ -180,25 +166,25 @@ These observations show not only that the usage of \ili{Bulgarian} evidential fo
 At the same time, it seems that the acceptance of auxiliary-less conclusives may not merely be influenced by context but related to some aspectual properties of the evidential form. Thus it seems that the auxiliary may be omitted when the \textit{l}-participle is based on the aorist form of a perfective verb (or a verb like \textit{săm} `be' which is underspecified with respect to aspectual distinctions), while the temporal interpretation of the form remains the same in both versions:
 
 \eanoraggedright\label{stanalo}
-\textit{Context:} Ivan, looking at his watch:\vspace{-6pt}
-\z
-\begin{exe}
+\textit{Context:} Ivan, looking at his watch:
+
 \exi{}{\gll To \minsp{(} e) stanalo veče mnogo kăsno.\\
 it {} is become.\textsc{aor.ptcp.pfv} already very late\\
 \glt `It has already become very late.'}
 \end{exe}
 
+\begin{sloppypar}
 \noindent For comparison, the insertion of the auxiliary into an admirative sentence changes the temporal interpretation from present to past and renders the sentence infelicitous in the mirative context:
+\end{sloppypar}
 
 % % %     \largerpage[2]
 
 \eanoraggedright
-\textit{Inferential mirative context:} Ivan thought that Stojan was not working, but then he notices that the light in Stojan's study is on and exclaims:\vspace{-6pt}
-\z
-\begin{exe}
+\textit{Inferential mirative context:} Ivan thought that Stojan was not working, but then he notices that the light in Stojan's study is on and exclaims:
+
 \exi{}{\gll Stojan rabotel! / \minsp{\#} Stojan e rabotel!\\
 Stojan work.\textsc{ipf.ptcp.ipfv} {} {} Stojan is work.\textsc{ipf.ptcp.ipfv}\\
-\glt `Stojan is working! / Stojan has been working!'}
+\glt `Stojan is working!\slash Stojan has been working!'}
 \end{exe}
 
 \noindent What seems to distinguish the two versions in \REF{stanalo} is what can be described as the emotional intensity of the utterance which is greater without the auxiliary. This effect is neutralized when the conclusive is used in an exclamation:
@@ -233,11 +219,11 @@ As already pointed out, mirative constructions are not tied to exclamatory illoc
 To se okaza ošte po-lošo -- toj rabotel. \\
 \textsc{neg} was right when wrote that Košlukov \textsc{neg} work.\textsc{prs}
  it \textsc{refl} turned.out more worse {} he work.\textsc{ipf.ptcp}\\
-\glt `I was not right when I wrote that Košlukov wasn't working. It turned out to be worse -- he obviously IS working.'
+\glt `I was not right when I wrote that Košlukov wasn't working. It turned out to be worse -- he obviously \emph{is} working.'
 \z
 
 \noindent In \REF{ex:koslukov}, the admirative sentence is semantically embedded under the mirative predicate \textit{okazva se} `it turns out' which already makes the mirative meaning of the admirative sentence salient: the speaker indicates that, prior to the discovery of facts suggesting the opposite, her belief base contained the proposition ``Košlukov is not working''.\footnote{Entire example: \textit{Ne bjah prava, kogato pisah, če programnijat direktor v BNT Emil Košlukov ne raboti, zaštoto godinata veče si teče, a vse ošte njama programna shema. To se okaza ošte po-lošo -- toj rabotel. I kato ne moža da ``izraboti'' dobroto predavane ``Denjat započva s kultura'', kompensira s drugi dve predavanija}.
-`I was not right when I wrote that the program director of the \ili{Bulgarian} National Television Emil Košlukov wasn't working, since the year has already begun and yet no program plan exists. It turned out to be worse -- he obviously IS working. And since he did not manage to ruin the good show `The day begins with culture', he did it to two other shows instead.' \hfill (\url{http://e-vestnik.bg/27704/})} Since the admirative sentence asserts that Košlukov is working, it suggests that the speaker's belief base has been revised as a result of receiving some evidence. The evidence which causes the belief clash may be of any kind: reported, inferred, or directly observed. Note that neither the presence nor the form (past aorist) of the mirative predicate \textit{okaza se} have an impact on the mirative interpretation: it does not change if \textit{okaza se} is dropped. A sequence of tenses effect can be excluded here since neither the interpretation nor the acceptability of the sentence change when the predicate of the admirative sentence is set to present tense (\textit{raboti} `works'). A past generic reading can also be excluded, since this reading requires the use of the auxiliary. %it is about particular things he did which
+`I was not right when I wrote that the program director of the \ili{Bulgarian} National Television Emil Košlukov wasn't working, since the year has already begun and yet no program plan exists. It turned out to be worse -- he obviously \emph{is} working. And since he did not manage to ruin the good show ``The day begins with culture'', he did it to two other shows instead.' \hfill (\url{http://e-vestnik.bg/27704/})} Since the admirative sentence asserts that Košlukov is working, it suggests that the speaker's belief base has been revised as a result of receiving some evidence. The evidence which causes the belief clash may be of any kind: reported, inferred, or directly observed. Note that neither the presence nor the form (past aorist) of the mirative predicate \textit{okaza se} have an impact on the mirative interpretation: it does not change if \textit{okaza se} is dropped. A sequence of tenses effect can be excluded here since neither the interpretation nor the acceptability of the sentence change when the predicate of the admirative sentence is set to present tense (\textit{raboti} `works'). A past generic reading can also be excluded, since this reading requires the use of the auxiliary. %it is about particular things he did which
 %Ne bjah prava, ce, zastoto (se okaz(v)a ce), toj e rabotel/rabotil HA!
 
 A close example is \REF{ex:misleh} where the admirative is used in a belief revision context similar to the one in \REF{ex:koslukov}. This example stems from \citet[68]{Andrejcin1938} and is used to illustrate what he calls the ``inopinative'' use of the forms of the renarrative for the purpose of expressing facts unexpected to the speaker.
@@ -265,7 +251,7 @@ think.\textsc{1sg.ipf} that be.\textsc{3sg.prs} work.\textsc{ipf.ptcp} {} \texts
 \glt `I thought he was/has been working, but he was not/has not been working.'
 \z
 
-\noindent Here, the sentence suggests that the belief revision has occurred further back in the past and does not have any bearing on the present. In order for a construction to express mirativity, the evidence causing the belief revision must have been acquired recently and have bearing on the present.%\footnote{See also the \textsc{recency restriction} in \citet[459-460]{Rett.Murray2013} saying that ``mirative interpretations are only available relatively recently after the speaker's learning that $p$.'' \citep[464]{Rett.Murray2013}.}
+\noindent Here, the sentence suggests that the belief revision has occurred further back in the past and does not have any bearing on the present. In order for a construction to express mirativity, the evidence causing the belief revision must have been acquired recently and have bearing on the present.%\footnote{See also the \textsc{recency restriction} in \citet[459--460]{Rett.Murray2013} saying that ``mirative interpretations are only available relatively recently after the speaker's learning that $p$.'' \citep[464]{Rett.Murray2013}.}
 \footnote{See also \citeposst{Rett.Murray2013} \textsc{recency restriction} according to which ``mirative interpretations are only available relatively recently after the speaker's learning that $p$.'' \citep[464]{Rett.Murray2013}.}
 
 %Examples like the ones above are treated by some authors not as admiratives (or renarratives) but in terms of conclusives with auxiliary drop, using them as evidence for the existence of such a phenomenon. Thus, \citet{Levin-Steinmann2004} discusses examples of what she takes to be instances of the conclusive\footnote{Which she defines in terms of a "Wiedergabe einer Schlußfolgerung" (`expression of a conclusion'), \citet[19]{Levin-Steinmann2004}.} with auxiliary drop which on closer examination turn out to be cases of mirativity realized by means of admirative forms in declarative or exclamative contexts involving belief change in view of some recent evidence of some sort (often indicated also by mirative predicates like \textit{izliza \v{c}e} and \textit{okaz(v)a se \v{c}e} `it turns/turned out that'). %(übersetzt ins Deutsche mit "erwies sich"
@@ -290,7 +276,7 @@ think.\textsc{1sg.ipf} that be.\textsc{3sg.prs} work.\textsc{ipf.ptcp} {} \texts
 %\glt `As for the police, [...] you can be calm. They won't have me alive [...] What a misery it is to be a real conspirator!'
 %\z
 
-\subsection{Admiratives and renarratives in exclamations}\label{sec:renarr_admir}
+\subsection{Admiratives and renarratives in exclamations}\label{sec:renarr_admir}\largerpage
 
 As already pointed out in \sectref{sec:BG_evid_syst}, most researchers assume that admirative forms and/or mirative interpretations are only licensed when the forms are used in exclamative sentences. I showed in the previous section that this assumption does not correspond to the linguistic facts. In this section, I argue that it is possible to distinguish between admirative forms having mirative (i.e. clash of beliefs) interpretations, on the one hand, and uses of renarrative forms with renarrative semantics used in exclamations where they indicate surprise or other emotive attitudes, on the other. I pointed earlier at evidence suggesting that mirative constructions differ from exclamations/exclamatives with regard to a number of properties. Thus, exclamatory force is not merely related to surprise in terms of clash of beliefs but covers a wider range of emotive attitudes. Consequently, a renarrative form used in an exclamation or exclamative should be expected to have a greater range of meanings than surprise.
 %, contra \citet{Smirnova2013} who argues that an evidential form in reportative contexts with exclamatory intonation automatically gets a mirative interpretation. Besides, this does not explain why only imperfect forms with present tense interpretation are licensed in admiratives as compared to exclamatory renarratives.
@@ -303,14 +289,13 @@ Another difference is that while the admirative forms (imperfect evidential form
 \textit{Context:} Ivan thought that Stojan was not working. (i) direct evidence: Ivan sees Stojan working.
 (ii) inference: Ivan notices that the door to Stojan's study is closed.
 (iii) hearsay: Petăr tells Ivan that Stojan is working.
-Ivan believes it and exclaims:\vspace{-6pt}
-\z
-\begin{exe}
+Ivan believes it and exclaims:
+
 \exi{}{\gll Toj rabotel / \minsp{*} rabotil! \minsp{\#} Tova ne e vjarno. / \minsp{\#} Tova se očakvaše.\\
 %alternatively: Kakva laza!
 %alternatively: Tova ne me iznedadva
 he work.\textsc{ipf.ptcp} {} {} \textsc{aor.ptcp} {} this \textsc{neg} is true {} {} this \textsc{refl} expected\\
-\glt `He is working! This is not true. / This was to be expected.'}
+\glt `He is working! This is not true.\slash This was to be expected.'}
 \end{exe}
 
 
@@ -319,9 +304,8 @@ he work.\textsc{ipf.ptcp} {} {} \textsc{aor.ptcp} {} this \textsc{neg} is true {
 \eanoraggedright
 \textit{Context:} Ivan thought that Stojan was not working. (i) direct evidence (not possible).
 (ii) inference: Ivan notices a pile of newly printed paper on Stojan's desk.
-(iii) Petăr tells Ivan that Stojan was working. Ivan believes it and exclaims:\vspace{-6pt}
-\z
-\begin{exe}
+(iii) Petăr tells Ivan that Stojan was working. Ivan believes it and exclaims:
+
 \exi{}{\gll Toj e rabotel / rabotil!\\
 he is work.\textsc{ipf.ptcp} {} \textsc{aor.ptcp}\\
 \glt `He was/has been working!'}
@@ -334,12 +318,11 @@ Now consider the case of the exclamative use of the renarrative in \REF{ex:renar
 
 \eanoraggedright\label{ex:renarr-excl}
 \textit{Context:} Petăr tells Ivan that Stojan is/was working.
-Ivan exclaims:\vspace{-6pt}
-\z
-\begin{exe}
+Ivan exclaims:
+
 \exi{}{\gll Toj rabotel! Kakva iznenada! / Tova ne e vjarno! / Tova se očakvaše!\\
 he work.\textsc{ipf.ptcp} what surprise {} this \textsc{neg} is true {} this \textsc{refl} expected\\
-\glt `He is/was working! What a surprise! / This is not true! / This was to be expected!'}
+\glt `He is/was working! What a surprise!\slash This is not true!\slash This was to be expected!'}
 \end{exe}
 
 \noindent Also the aorist participle can be used within an exclamative renarrative, as shown in \REF{ex:renarr-excl-aorist}. Here, however, the aorist participle unambiguously shows that the report on which the evidence is based refers to a past eventuality. Apart from this, the observations from the imperfect participle case hold: the attitude expressed may be surprise (and thus commitment), disbelief, or some other emotive attitude:
@@ -347,12 +330,11 @@ he work.\textsc{ipf.ptcp} what surprise {} this \textsc{neg} is true {} this \te
 
 \eanoraggedright\label{ex:renarr-excl-aorist}
 \textit{Context:} Petăr tells Ivan that Stojan worked (yesterday).
-Ivan exclaims:\vspace{-6pt}
-\z
-\begin{exe}
+Ivan exclaims:
+
 \exi{}{\gll Toj rabotil! Kakva iznenada! {/} Tova ne e vjarno! {/} Tova se očakvaše!\\
 he work.\textsc{aor.ptcp} what surprise {} this \textsc{neg} is true {} this \textsc{refl} expected\\
-\glt `He worked! What a surprise! / This is not true! / This was to be expected!'}
+\glt `He worked! What a surprise!\slash This is not true!\slash This was to be expected!'}
 \end{exe}
 
 \noindent The different behavior of the imperfect participle forms in the case of the admirative as compared to the renarrative shows that a simple explanation in terms of a mere ambiguity of forms
@@ -366,13 +348,13 @@ does not suffice, and an account of the admirative needs to capture these facts.
 %\z
 %
 Furthermore, it was shown in \REF{ex:renarr-excl} and \REF{ex:renarr-excl-aorist} that the speaker may use renarrative forms even though she does not believe the reported information, or when she already believes that the proposition is true.
-This contradicts earlier accounts like \citet{Smirnova2013} and \citet{Koev2017}. Thus, \citeauthor{Smirnova2013} argues that her evidential operator \textsc{Ev} has a modal component because \textsc{Ev} is infelicitous in reportative contexts when the speaker knows that the proposition $p$ is true or when the speaker knows that $p$ is false.\footnote{\citeauthor{Smirnova2013} assumes more specifically that in inferential and direct evidential contexts the speaker must be committed to the truth of $p$, where the commitment is weaker than in non-modals.} However, she does not consider renarratives used in exclamatives. Contrary to \citeauthor{Smirnova2013}, \citeauthor{Koev2017} argues that the evidential commits the speaker to $p$, explaining dubitative cases in terms of pragmatic weakening through perspective shift (see \citealt[20-25]{Koev2017}). As shown in the above examples, renarrative forms used in exclamations do not require a perspective shift in order to be interpreted as non-committing, nor are they infelicitous in contexts where the speaker already knows that $p$ is false. Moreover, it can be shown that also in declaratives, the renarrative is felicitous in contexts where $p$ is considered false and where no perspective shift is suggested. Thus, the renarrative can be embedded under the predicate \textit{znaja} `know' with the sole interpretation that the speaker knows of the existence of the claim made by some reporter, either without taking a stance as to the truth of the claim, or in a context in which the speaker knows that the reported proposition is false, as shown by the felicitous continuations of the renarrative sentence in \REF{ex:znam}. If the speaker knows that a reported proposition is true, the renarrative is indeed infelicitous and an indicative form must be used.
+This contradicts earlier accounts like \citet{Smirnova2013} and \citet{Koev2017}. Thus, \citeauthor{Smirnova2013} argues that her evidential operator \textsc{Ev} has a modal component because \textsc{Ev} is infelicitous in reportative contexts when the speaker knows that the proposition $p$ is true or when the speaker knows that $p$ is false.\footnote{\citeauthor{Smirnova2013} assumes more specifically that in inferential and direct evidential contexts the speaker must be committed to the truth of $p$, where the commitment is weaker than in non-modals.} However, she does not consider renarratives used in exclamatives. Contrary to \citeauthor{Smirnova2013}, \citeauthor{Koev2017} argues that the evidential commits the speaker to $p$, explaining dubitative cases in terms of pragmatic weakening through perspective shift (see \citealt[20--25]{Koev2017}). As shown in the above examples, renarrative forms used in exclamations do not require a perspective shift in order to be interpreted as non-committing, nor are they infelicitous in contexts where the speaker already knows that $p$ is false. Moreover, it can be shown that also in declaratives, the renarrative is felicitous in contexts where $p$ is considered false and where no perspective shift is suggested. Thus, the renarrative can be embedded under the predicate \textit{znaja} `know' with the sole interpretation that the speaker knows of the existence of the claim made by some reporter, either without taking a stance as to the truth of the claim, or in a context in which the speaker knows that the reported proposition is false, as shown by the felicitous continuations of the renarrative sentence in \REF{ex:znam}. If the speaker knows that a reported proposition is true, the renarrative is indeed infelicitous and an indicative form must be used.\largerpage[-1]
 
 \ea\label{ex:znam}
 \gll Znaja, če Petăr pušel. No ne znam dali naistina puši. {/} No toj văobšte ne puši.\\
 %= I know of this claim/act ASSERT(p)\\ %it does not follow P is smoking right now
 know.\textsc{1sg.prs} that Petăr smoke.\textsc{ipf.ptcp} but \textsc{neg} know if really smoke.\textsc{3sg.prs} {} but he {at all} \textsc{neg} smoke.\textsc{3sg.prs}\\
-\glt `I know that it is claimed that Petăr smokes/smoked. But I don't know if he really does. / But he doesn't smoke at all.'
+\glt `I know that it is claimed that Petăr smokes/smoked. But I don't know if he really does.\slash But he doesn't smoke at all.'
 \z
 
 \noindent Similarly, if the renarrative is embedded under the negation of the predicate \textit{znaja} `know' in its past tense form, the only possible interpretation is that the speaker didn't know about the existence of such a claim made by some reporter. At the same time, the sentence is felicitous when the speaker is ignorant with respect to the truth of $p$ or when she knows that $p$ is false.
@@ -381,24 +363,20 @@ know.\textsc{1sg.prs} that Petăr smoke.\textsc{ipf.ptcp} but \textsc{neg} know 
 \gll Ne znaeh, če Petăr pušel. Az lično njamam predstava dali puši / e pušil ili ne. / Az lično znam, če ne puši / ne e pušil.\\
 %I hadn't heard ASSERT(p) (a speech act, or judgement) before
 \textsc{neg} know.\textsc{1sg.aor} that Petăr smoke.\textsc{ipf.ptcp} I personally do.not.have idea if smoke.\textsc{3sg.prs} {} is smoke.\textsc{aor.ptcp} or \textsc{neg} {} I personally know that \textsc{neg} smoke.\textsc{3sg.prs} {} \textsc{neg} is smoke.\textsc{aor.ptcp}\\
-\glt `I didn't know that Petăr supposedly smokes/smoked. I personally have no idea if he does/did or not. / I personally know that he doesn't/didn't smoke.'
+\glt `I didn't know that Petăr supposedly smokes/smoked. I personally have no idea if he does/did or not.\slash I personally know that he doesn't/didn't smoke.'
 \z
 
-\noindent Renarratives behave the same way in exclamatory sentences: they are felicitous both in contexts in which the speaker believes the reported information and is surprised, as in \REF{ex:lazy-guy} which can be continued by an utterance like `Can you imagine, this lazy guy!', and in contexts like \REF{ex:what-a-lie} where the speaker is rather outraged by a claim she knows doesn't correspond to the truth and where the sentence with the renarrative can be continued by an utterance like `What a lie!'.
+\noindent Renarratives behave the same way in exclamatory sentences: they are felicitous both in contexts in which the speaker believes the reported information and is surprised, as in \REF{ex:lazy-guy} which can be continued by an utterance like ``Can you imagine, this lazy guy!'', and in contexts like \REF{ex:what-a-lie} where the speaker is rather outraged by a claim she knows doesn't correspond to the truth and where the sentence with the renarrative can be continued by an utterance like ``What a lie!''.\largerpage[-2]
 
-\eanoraggedright\label{ex:lazy-guy}
- \textit{Context:} A learns from B that Ivan worked the previous day which happens to be a Sunday. A is surprised over this fact ($+$\textsc{belief clash}, \hspace{0pt}$+$\textsc{commitment}) and later tells C:\vspace{-6pt}
- \z
-\begin{exe}
+\eanoraggedright\label{ex:lazy-guy}\sloppy
+ \textit{Context:} A learns from B that Ivan worked the previous day which happens to be a Sunday. A is surprised over this fact ($+$\textsc{belief clash}, \hspace{0pt}$+$\textsc{commitment}) and later tells C:
+
 \exi{}{\gll Ivan rabotil včera! \\
 Ivan work.\textsc{aor.ptcp} yesterday\\
 \glt `Ivan worked yesterday!'}
-\end{exe}
+\ex\label{ex:what-a-lie}
+\textit{Context:} A learns from B that Ivan worked the previous day. A does not believe it because she knows the truth but finds the commitment of the reporter B surprising ($-$\textsc{belief clash}, $-$\textsc{commitment}) and later tells C:
 
-\eanoraggedright\label{ex:what-a-lie}
-\textit{Context:} A learns from B that Ivan worked the previous day. A does not believe it because she knows the truth but finds the commitment of the reporter B surprising ($-$\textsc{belief clash}, $-$\textsc{commitment}) and later tells C:\vspace{-6pt}
-\z
-\begin{exe}
 \exi{}{\gll Ivan rabotil včera! \\
 Ivan work.\textsc{aor.ptcp} yesterday\\
 \glt `Ivan worked yesterday!'}
@@ -410,24 +388,28 @@ Ivan work.\textsc{aor.ptcp} yesterday\\
 \tabref{properties-admir} summarizes the findings in this section.\footnote{Since auxiliary-less conclusives are difficult to distinguish from inference-based admiratives, I leave the question open whether the former may express reference to the present.}
 
 \begin{table}
-\small
-\caption{Properties of the admirative by comparison}
-\label{properties-admir}
-\begin{tabularx}{\textwidth}{lcccccccccc}
+\caption{Properties of the admirative by comparison\label{properties-admir}}
+\begin{tabular}{ll ccc}
 \lsptoprule
-& \multirow{2}{*}{\small auxiliary} & \multicolumn{2}{c}{ \small{participle}} & \multicolumn{3}{c}{ \small{evidential source}} & \small{speaker} & \small{belief} & \multicolumn{2}{c}{ \small{time reference}}\\
-& & \textsc{aor} &\textsc{ipf} & \small{report} & \small{infer.} & \small{dir.} & \small{commitment} & \small{clash}& \small{present} & \small{past}\\
- \midrule
-renarr.& $-$ & $+$ & $+$ & $+$ & $-$ & $-$ & $-$ & $-$ & $+$ & $+$\smallskip\\
-%  \midrule
-concl.& $+/-$ & $+$ & $+$ & $-$ & $+$ & $-$ & $+$ & $-$ & ? & $+$\smallskip\\
-%  \midrule
-admir.& $-$ & $-$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $-$ \\
- \lspbottomrule
-\end{tabularx}
+& & renarr. & concl. & admir.\\\midrule
+\multicolumn{2}{l}{auxilary} & $-$ & $\pm$ & $-$\\
+\multicolumn{2}{l}{participle} \\
+& \textsc{aor} & $+$ & $+$ & $-$\\
+& \textsc{ipf} & $+$ & $+$ & $+$\\
+\multicolumn{2}{l}{evidential source} \\
+& report & $+$ & $-$ & $+$ \\
+& infer. & $-$ & $+$ & $+$ \\
+& dir.   & $-$ & $-$ & $+$ \\
+\multicolumn{2}{l}{speaker commitment} & $-$ & $+$ & $+$\\
+\multicolumn{2}{l}{belief clash} & $-$ & $-$ & $+$\\
+\multicolumn{2}{l}{time preference}\\
+& present & $+$ & ?   &$+$\\
+& past    & $+$ & $+$ &$-$\\
+\lspbottomrule
+\end{tabular}
 \end{table}
 
-\section{The admirative operator}\label{sec:admirative-analysis}
+\section{The admirative operator}\label{sec:admirative-analysis}\largerpage
 
 %The evidence presented in the previous section leads to the conclusion that the admirative is a category separate from renarrative and conclusive evidentials in contemporary \ili{Bulgarian}. I suggest that the admirative can be viewed as a semantic extension of the renarrative, either already grammaticalized or in the process of grammaticalization (cf. \citet{Iliev2017} who claims that the renarrative is still in the process of grammaticalization): in contexts like \REF{ex:lazy-guy} where the speaker expresses surprise due to a clash between old beliefs and new reportative evidence and commitment to the asserted proposition, the imperfect participle forms of the renarrative acquired a mirative evidential meaning which further expanded to include not only reportative but also inferencial and direct evidential sources.
 %%only ipf ptcp since only they can have a present tense interpretation
@@ -493,9 +475,7 @@ The second crucial assumption is that the main contribution of the mirative oper
 %I.e., the speaker's beliefs holding at an interval that precedes the utterance time are past beliefs up to the discovery of facts (ibid.).
 %
 
-The syntactic assumptions capturing the displacement of the tense morpheme include a feature-checking relationship between interpretable features of functional projections that need to be checked against the corresponding uninterpretable features of lexical projections (via Agree, following \citealt{Chomsky2000,Chomsky2001}; see details in \citealt[Ch.\,3]{Bustamante2013}). In miratives, the tense feature is displaced such that T (or V) bears the morphologically realized but uninterpretable u[past] feature, whereas C bears the interpretable i[past] feature.\footnote{See \citet[38]{Bustamante2013}: \\
-%\includegraphics[scale=0.5]{displacement_of_tense_Bustamante.pdf}.
- \begin{forest}
+The syntactic assumptions capturing the displacement of the tense morpheme include a feature-checking relationship between interpretable features of functional projections that need to be checked against the corresponding uninterpretable features of lexical projections (via Agree, following \citealt{Chomsky2000,Chomsky2001}; see details in \citealt[Ch.\,3]{Bustamante2013}). In miratives, the tense feature is displaced such that T (or V) bears the morphologically realized but uninterpretable u[past] feature, whereas C bears the interpretable i[past] feature.\footnote{See \citet[38]{Bustamante2013}: \begin{forest}
  for tree={s sep=1cm, inner sep=0, l=0}
  [CP
   [C,
@@ -548,7 +528,7 @@ The modal mirative operator \textsc{m}\textsubscript{op} is defined below, where
 $R=\lambda t \lambda w \lambda w' [w'$ is compatible with speaker's beliefs in $w$ at $t]$
 \z
 
-\noindent The derivation of the mirative meaning under the assumption of the displaced tense feature i[past] and the mirative operator \textsc{m}\textsubscript{op} applied to the assertion (TP) is shown in \figref{fig:displaced} and \figref{fig:full} below.\footnote{\citet[61-62]{Bustamante2013} suggests an alternative version of \textsc{m}\textsubscript{op} where the meaning of i[past] is incorporated into the operator and \textsc{m}\textsubscript{op} combines directly with the accessibility relation $R$: \\
+\noindent The derivation of the mirative meaning under the assumption of the displaced tense feature i[past] and the mirative operator \textsc{m}\textsubscript{op} applied to the assertion (TP) is shown in Figures~\ref{fig:displaced} and \ref{fig:full} below.\footnote{\citet[61--62]{Bustamante2013} suggests an alternative version of \textsc{m}\textsubscript{op} where the meaning of i[past] is incorporated into the operator and \textsc{m}\textsubscript{op} combines directly with the accessibility relation $R$: \\
 %\includegraphics[scale=0.5]{Bustamante_M_version_2_SHORT.pdf}
 \ea
 $\textsc{m}_{OP}=\lambda R \lambda Q \lambda t_1 \lambda w_1 [\lambda t_1 [R(t_2) t_2 \wedge \underline{t_2 < t_1}] (w_1)(t_1] \subseteq \lambda w \neg Q(w)(t_1) \wedge Q(w_1)(t_1)]$\\
@@ -625,7 +605,7 @@ Crucially, \citet[112--114]{Bustamante2013} uses this immediate precedence relat
 %in (30a).
 %This means that "the contextually salient past interval miratives ask for must abut the discovery time.
 ``We need a [past] tense feature that makes reference to an interval whose right boundary is the discovery time.''
-She argues that only the [past] tense associated with imperfective (and some perfect) forms is able to do so, due to the properties of events it is associated with, such as durative, continuous, and indefinite, in contrast to the perfective which is associated with properties like terminative, punctual, and definite (see also \citealt[300]{Cipria.Roberts2000}). With the perfective, the event is seen as a subset of the reference time and thus completed or punctional, hence the perfective does not provide the right interval for the modal base to hold.\footnote{As an additional argument \citet[112--113]{Bustamante2013} points out the observation made in \citet{Iatridou2000} that the `fake' past in counterfactuals is accompanied by imperfective aspect and that putting perfective aspect in counterfactuals makes the past become real. From this Bustamante concludes that ``there is an incompatibility between `fake' past tense or, in our terms, displaced real tense and perfective aspect.'' The aspectual properties of the two tenses and the requirement of the modal base on the right interval for the past beliefs are shown below (where t* is the utterance time); see \citet[114]{Bustamante2013}:\\
+She argues that only the [past] tense associated with imperfective (and some perfect) forms is able to do so, due to the properties of events it is associated with, such as durative, continuous, and indefinite, in contrast to the perfective which is associated with properties like terminative, punctual, and definite (see also \citealt[300]{Cipria.Roberts2000}). With the perfective, the event is seen as a subset of the reference time and thus completed or punctional, hence the perfective does not provide the right interval for the modal base to hold.\footnote{As an additional argument \citet[112--113]{Bustamante2013} points out the observation made in \citet{Iatridou2000} that the ``fake'' past in counterfactuals is accompanied by imperfective aspect and that putting perfective aspect in counterfactuals makes the past become real. From this Bustamante concludes that ``there is an incompatibility between ``fake'' past tense or, in our terms, displaced real tense and perfective aspect.'' The aspectual properties of the two tenses and the requirement of the modal base on the right interval for the past beliefs are shown below (where t* is the utterance time); see \citet[114]{Bustamante2013}:\\
        %%%
 \begin{center}
 \begin{tikzpicture}[thick]
@@ -651,16 +631,16 @@ She argues that only the [past] tense associated with imperfective (and some per
 
 \citet[115]{Bustamante2013} implements this ``aspectual requirement on the past tense'' in the \ili{Spanish} mirative in terms of the set of syntactic features such that C asks for a i[past, unbounded] feature, where the [unbounded] feature is the
 contribution of the imperfective aspect, following \citet{Pancheva2003} who defines [unbounded] as setting up the event time as a superset of the reference time ($\text{RT}\subseteq\text{ET}$). In contrast, [bounded], the feature of the perfective, is defined as setting up the event time as a subset of the reference time ($\text{ET}\subseteq\text{RT}$).
-Given this constraint on the aspectual morphology of the participle, \citet[51]{Bustamante2013} assumes that aspect contributes its usual interpretation to the assertion.\footnote{\label{fn:34} \citet[51--52]{Bustamante2013} claims that the aspectual contribution of the imperfect is the imperfective aspect. Following \citet{Kratzer1998}, she assumes the latter to locate the reference time within the event time (RT$\subseteq$ET); see \REF{def:imperfect}:
+Given this constraint on the aspectual morphology of the participle, \citet[51]{Bustamante2013} assumes that aspect contributes its usual interpretation to the assertion.\footnote{\label{fn:34} \citet[51--52]{Bustamante2013} claims that the aspectual contribution of the imperfect is the imperfective aspect. Following \citet{Kratzer1998}, she assumes the latter to locate the reference time within the event time (RT\,$\subseteq$\,ET); see \REF{def:imperfect}:
 \ea\label{def:imperfect}
 \sib{imperfective} $ = \lambda P.\lambda t.\lambda w. \exists e [t \subseteq \tau(e) \wedge P(e)(w)=1]$.
 \z}
 
 %aspect has an impact on the mirative interpretation exerted through the assertion.
 
-%Comparing the aspectual properties of the imperfect in the Peninsular \ili{Spanish} mirative and the pluperfect in the Andean \ili{Spanish} mirative, \cite[10-11]{Bustamante2013} concludes that the imperfective aspect of the former is associated with generic and habitual eventualities, whereas the pluperfect mirative is used for eventualities that are seen as culminated.\footnote{\cite[11,65-72]{Bustamante2013} argues further that this distinction is reflected by the nature of the surprise expressed by the two constructions, unlikelyhood vs. counter expectation respectively, thus arguing that also aspect contributes to the mirative meaning.}
+%Comparing the aspectual properties of the imperfect in the Peninsular \ili{Spanish} mirative and the pluperfect in the Andean \ili{Spanish} mirative, \cite[10--11]{Bustamante2013} concludes that the imperfective aspect of the former is associated with generic and habitual eventualities, whereas the pluperfect mirative is used for eventualities that are seen as culminated.\footnote{\cite[11,65--72]{Bustamante2013} argues further that this distinction is reflected by the nature of the surprise expressed by the two constructions, unlikelyhood vs. counter expectation respectively, thus arguing that also aspect contributes to the mirative meaning.}
 
-%The speaker's beliefs should be relevant to the topic of the assertion. Therefore, the assertion should be sensitive to the distinction episodic-generic p. 14-15
+%The speaker's beliefs should be relevant to the topic of the assertion. Therefore, the assertion should be sensitive to the distinction episodic-generic p. 14--15
 
 Finally, \citet[14]{Bustamante2013} points out that the \ili{Spanish} mirative is not a direct expression of surprise in that the mirative operator does not encode surprise by itself. Instead, surprise is pragmatically derived from the clash between the recently discovered facts and what the past beliefs imply. This distinguishes the \ili{Spanish} mirative from exclamations and exclamatives which can express a wider range of speaker emotions. Being compatible with the expression of surprise, though, the mirative can be embedded under an exclamatory illocutionary operator (\textsc{exc}; defined in \citealt{Gutierrez-Rexach1996}), assuming the structure in \figref{fig:excl-mir}.
 
@@ -681,8 +661,6 @@ Finally, \citet[14]{Bustamante2013} points out that the \ili{Spanish} mirative i
 
 %Bustamante p. 162: 36 speech act applied to CP where CP may be modified by an INOP or another evidential operator
 
-\bigskip
-
 As compared to the \ili{Spanish} mirative, the \ili{Bulgarian} admirative has not only modal, temporal, and aspectual, but also evidential properties that need to be accounted for. I therefore suggest that in addition to a modal base of past beliefs, the \ili{Bulgarian} admirative explicitly introduces an evidential component in terms of (i) the evidence acquisition time (EAT) that precedes (in inferential and reportative contexts) or coincides with (in direct evidence contexts) the speech time ($\text{EAT}\leq\text{ST}$) and (ii) the requirement that the speaker's belief base at discovery time entails the asserted proposition, i.e. the speaker has some evidence for the assertion prior to or at the time the assertion is made.\footnote{Idea (i) is adopted from \citeposst{Smirnova2011b} definition of the evidential modal operator \textsc{ev}.}
 %\footnote{Alternatively, the admirative operator may introduce an additional proposition representing the evidence for the assertion that the speaker acquires at t'. The content of this proposition would be supplied by the context.}
 Although \ili{Spanish} miratives do not have evidential morphology,
@@ -695,8 +673,8 @@ The operator is defined in \REF{def:admir}, where $P$ is the modal base specifie
 %w$_1$ is the actual world, t$_1$ is the speech time,
 $t'$ is the EAT introduced by the admirative, and $Q$ represents the assertion.
 
-\ea\label{def:admir}
-$\textsc{admir} = \lambda P \lambda Q \lambda t_1 \lambda w_1 \exists t' [ (t' \leq t_1 ) \wedge [ P(w_1)(t_1) \subseteq \lambda w \neg Q(w)(t_1)] \wedge Q(w_1)(t_1)] \newline \wedge [\lambda w'[ w'$ is compatible with speaker's beliefs in $w_1$ at $t'] \subseteq Q(w_1)(t')]$
+\eanoraggedright\label{def:admir}
+\textsc{admir} = $\lambda P \lambda Q \lambda t_1 \lambda w_1 \exists t' [ (t' \leq t_1 ) \wedge \allowbreak [ P(w_1)(t_1) \subseteq \lambda w \neg Q(w)(t_1)] \wedge \allowbreak Q(w_1)(t_1)] \allowbreak \wedge [\lambda w'[ w'$ is compatible with speaker's beliefs in $w_1$ at $t'] \allowbreak \subseteq Q(w_1)(t')]$
 \z
 
 \noindent When applied to the assertion, the operator \textsc{admir} yields the following interpretation of the admirative construction: admirative sentences are assertions based on evidence of some sort (reportative, inferential, direct) contrasted against the speaker beliefs that hold up to the speech time which may coincide with the discovery time or succeed it.
@@ -704,7 +682,7 @@ $\textsc{admir} = \lambda P \lambda Q \lambda t_1 \lambda w_1 \exists t' [ (t' \
 The speaker's past beliefs entail a conclusion that clashes with the assertion, which triggers belief revision, while the actual current beliefs at $t'$ entail the assertion.
 I further assume that, similar to the \ili{Spanish} mirative, the \ili{Bulgarian} admirative does not encode surprise itself, but the sense of surprise associated with it is rather a result of the clash between what the past beliefs imply and the recently acquired new belief. Its compatibility with the expression of surprise makes the exclamatory environment especially suitable for the admirative, which is accounted for by assuming a structure like the one presented in \figref{fig:excl-mir} for the \ili{Spanish} mirative.
 
-In terms of the aspectual makeup of the participle and the reason why it is restricted to unbounded eventualities, similar assumptions can be made for the \ili{Bulgarian} admirative as for the \ili{Spanish} mirative. However, additional assumptions are needed for the distinction between \textsc{morphological aspect} related to the opposition imperfect : aorist and \textsc{situation} or \textsc{viewpoint aspect} related to the distinction between imperfective and perfective lexical forms in \ili{Bulgarian}. With \citet{Rivero.Slavkov2014} I distinguish between morphologically imperfect past participles like, e.g., \textit{pišel} and morphologically perfective (aorist) past participles like \textit{pisal}. In addition, I adopt their assumption that ``the morphological contrast between imperfect tense and aorist tense inflections (imperfect \textit{-še} vs. aorist \textit{-a}) systematically encodes imperfective vs. perfective Viewpoints in the semantics'' \citep[235]{Rivero.Slavkov2014}. This applies to both indicative imperfects and aorists and their participles, where I assume the same semantics for the imperfective and perfective as in \citeauthor{Bustamante2013} (see fn. \ref{fn:34}). Consequently, \ili{Bulgarian} imperfect imperfective participles have the two features [past] and [unbounded], which is the required combination to feed the temporal argument of the modal base, as shown above. The ban on aorist and perfective forms in admirative sentences is explained by the introduction of the feature [bounded] by the aorist and perfective participles which always entails a past eventuality and disallows the displacement of the [past] feature.
+In terms of the aspectual makeup of the participle and the reason why it is restricted to unbounded eventualities, similar assumptions can be made for the \ili{Bulgarian} admirative as for the \ili{Spanish} mirative. However, additional assumptions are needed for the distinction between \textsc{morphological aspect} related to the opposition imperfect : aorist and \textsc{situation} or \textsc{viewpoint aspect} related to the distinction between imperfective and perfective lexical forms in \ili{Bulgarian}. With \citet{Rivero.Slavkov2014} I distinguish between morphologically imperfect past participles like, e.g., \textit{pišel} and morphologically perfective (aorist) past participles like \textit{pisal}. In addition, I adopt their assumption that ``the morphological contrast between imperfect tense and aorist tense inflections (imperfect \textit{-še} vs. aorist \textit{-a}) systematically encodes imperfective vs. perfective viewpoints in the semantics'' \citep[235]{Rivero.Slavkov2014}. This applies to both indicative imperfects and aorists and their participles, where I assume the same semantics for the imperfective and perfective as in \citeauthor{Bustamante2013} (see fn. \ref{fn:34}). Consequently, \ili{Bulgarian} imperfect imperfective participles have the two features [past] and [unbounded], which is the required combination to feed the temporal argument of the modal base, as shown above. The ban on aorist and perfective forms in admirative sentences is explained by the introduction of the feature [bounded] by the aorist and perfective participles which always entails a past eventuality and disallows the displacement of the [past] feature.
 
 A further reason why the \ili{Bulgarian} admirative construction is restricted to morpholgically imperfect and lexically imperfective participles seems to be related to the fact that a participle combining perfective aspect with imperfect tense like \textit{napišel} in \REF{ex:napisel} is restricted to specific, repetitive contexts.
 
@@ -718,17 +696,13 @@ every time when write.\textsc{ipf.pfv.ptcp} one sentence Petăr go.\textsc{ipf.i
 
 % % %     \largerpage[-1]
 
-\eanoraggedright\label{ex:napisala} \textit{Context:} I see a picture of my good old friend Maria on a book in a window of a book shop and conclude that Maria has published a book. I say to myself:\vspace{-6pt}
-\z
-\begin{exe}
+\eanoraggedright\label{ex:napisala} \textit{Context:} I see a picture of my good old friend Maria on a book in a window of a book shop and conclude that Maria has published a book. I say to myself:
+
 \exi{}{\gll Maria \minsp{*(} e) napisala kniga! \\
 Maria {} is write.\textsc{aor.pfv.ptcp} book\\
 \glt `Maria has written a book!'}
-\end{exe}
+\ex\label{ex:napisala2} \textit{Context:} Ivan tells me that Maria has written a book. I find this exciting and later tell Petăr:
 
-\eanoraggedright\label{ex:napisala2} \textit{Context:} Ivan tells me that Maria has written a book. I find this exciting and later tell Petăr:\vspace{-6pt}
-\z
-\begin{exe}
 \exi{}{\gll Ti ču li? Maria napisala kniga! \\
 you hear.\textsc{aor.2sg} \textsc{q} Maria write.\textsc{aor.pfv.ptcp} book\\
 \glt `Did you hear? Maria has written a book, they say!'}
@@ -736,9 +710,8 @@ you hear.\textsc{aor.2sg} \textsc{q} Maria write.\textsc{aor.pfv.ptcp} book\\
 
 \noindent As a matter of fact, admiratives allow for the combination of secondary imperfective verbs and imperfect participle, as shown in \REF{ex:izmisljal}.
 
-\eanoraggedright\label{ex:izmisljal} \textit{Context:} Ivan tells me that Maria has written a bestseller. Later, I meet Maria who denies that she has ever written a book. I suddenly realize that Ivan may have acquired a bad habit of making things up and exclaim:\vspace{-6pt}
-\z
-\begin{exe}
+\eanoraggedright\label{ex:izmisljal} \textit{Context:} Ivan tells me that Maria has written a bestseller. Later, I meet Maria who denies that she has ever written a book. I suddenly realize that Ivan may have acquired a bad habit of making things up and exclaim
+
 \exi{}{\gll Znači toj si izmisljal!\\
 mean.\textsc{3sg.prs} he \textsc{refl} make.up.\textsc{ipf.pfv.ptcp}\\
 \glt `So he is making up things!'}
@@ -786,10 +759,10 @@ In addition, appropriateness conditions need to be specified that govern the app
 %Mention \citet{Ivanova-Sullivan2007}
 
 %Like Izvorski, Smirnova analyses the \ili{Bulgarian} evidential in terms of an epistemic modal operator. In order to incorporate the direct evidential contexts into her analysis, however, she takes a different approach in which the meaning of the evidential construction is defined compositionally in terms of a tripartite, i.e., temporal, modal and evidential, semantic contribution.
-%Unlike traditional grammarians (and simiarly to Izvorski), Smirnova distinguishes morphologically between present \textit{l}-participles, as in the evidential forms \textit{pi\v{s}e-l} (‘written’), \textit{svire-l} (`played'), glossed (\textsc{pres.ple}), and past \textit{l}-participles, as in the evidential forms \textit{pisa-l} (`written') or \textit{sviri-l} (`played'), glossed \textsc{past.ple} (cf. e.g. \citep[278-279]{Smirnova2011a}).
+%Unlike traditional grammarians (and simiarly to Izvorski), Smirnova distinguishes morphologically between present \textit{l}-participles, as in the evidential forms \textit{pi\v{s}e-l} (‘written’), \textit{svire-l} (`played'), glossed (\textsc{pres.ple}), and past \textit{l}-participles, as in the evidential forms \textit{pisa-l} (`written') or \textit{sviri-l} (`played'), glossed \textsc{past.ple} (cf. e.g. \citep[278--279]{Smirnova2011a}).
 
 %According to Smirnova, the present/past tense marking of the participle stems encodes what she calls "evidential tense", arguing that the evidential stems do not encode aspectual difference but carry temporal information that she specifies in terms of a relation between some contextually salient reference time (RT in the neo-Reichenbachian framework of \citet{Klein1994}) and the time the speaker acquires the evidence (EAT, evidence acquisition time, originally introduced in \citet{Lee2011}).
-%She argues further that the evidential tense of the participle stems, together with the (imperfective/perfective) verbal aspect, "jointly entail how the eventuality is located with respect to the EAT". Thus, past imperfective forms such as \textit{pisala} specify that the eventuality of writing is ongoing at RT (imperfective aspect: RT$\subseteq$ET, where $\subseteq$ is a relation of temporal inclusion) located in the past of EAT (past stem: RT$<$EAT, where $<$ is a precedence relation), from which it follows that the eventuality is in the past with respect to EAT, \citet[499-500]{Smirnova2011a}. %DOES SHE GIVE EXAMPLES WITH PAST PERFECTIVE forms? YES: exp. 38 p. 499 2011a
+%She argues further that the evidential tense of the participle stems, together with the (imperfective/perfective) verbal aspect, "jointly entail how the eventuality is located with respect to the EAT". Thus, past imperfective forms such as \textit{pisala} specify that the eventuality of writing is ongoing at RT (imperfective aspect: RT$\subseteq$ET, where $\subseteq$ is a relation of temporal inclusion) located in the past of EAT (past stem: RT$<$EAT, where $<$ is a precedence relation), from which it follows that the eventuality is in the past with respect to EAT, \citet[499--500]{Smirnova2011a}. %DOES SHE GIVE EXAMPLES WITH PAST PERFECTIVE forms? YES: exp. 38 p. 499 2011a
 %A present evidential stem like \textit{pi\v{s}ela} signals on the other hand that the two times coincide (RT=EAT).
 %In sum, Smirnova argues that \textsc{Ev} encodes the following complex information as part of its truth-conditional meaning:
 %(i) external evidence (hearsay, direct evidence, inference from observation) as information source; (ii) universal modal force: the proposition is evaluated with respect to a modal base (the set of propositions believed to be true) of the speaker (in direct/inferential contexts) or reporter (in reportative contexts), and (iii) a temporal relation EAT$\leq$ST, where the correct relation is resolved when \textsc{Ev} interacts with sentence mood: EAT$<$ST when under DECL and EAT=ST when under EXCL.
@@ -802,9 +775,8 @@ In addition, appropriateness conditions need to be specified that govern the app
 
 Third, allowing the temporal relation between discovery time and speech time to be one of either precedence or coincidence accounts for the fact that admiratives can be based not only on direct but also inferential and reportative evidence where the discovery time temporally precedes the speech time ($\text{EAT}<\text{ST}$). This is the case in \REF{ex:izmisljal} above. A further example illustrating this is \citeposst{Koev2017} deferred relalization example cited in \REF{ex:late-realization}, where the speaker ``has direct evidence for the described event but the realization that she does comes at a later time'' \citep[4]{Koev2017}:\footnote{\citeauthor{Koev2017}'s glosses are kept.}
 
-\eanoraggedright\label{ex:late-realization}\textit{Context:} One of Nixon's aides vividly recalls walking into the Oval Office and seeing the President erase some tapes. She later learns about the Watergate scandal from the media and makes sense of what she had seen. When asked what happened on that day, she says:\vspace{-6pt}
-\z
-\begin{exe}
+\eanoraggedright\label{ex:late-realization}\textit{Context:} One of Nixon's aides vividly recalls walking into the Oval Office and seeing the President erase some tapes. She later learns about the Watergate scandal from the media and makes sense of what she had seen. When asked what happened on that day, she says:
+
 \exi{}{\gll Kogato vljazo-x, Niksăn trie-še njakakv-i zapis-i. Toj zaličava-l ulik-i-te.\\
 when enter-\textsc{past} Nixon erase-\textsc{past} some-\textsc{pl} tape-\textsc{pl}. he remove-\textsc{ev} clue-\textsc{pl-def}\\ \\
 \glt ‘When I walked in, I saw Nixon erase some tapes. He was covering up the clues, as I learned later.’ \hfill \citep[4]{Koev2017}}
@@ -842,7 +814,7 @@ Interestingly, the form of the participle in \REF{ex:late-realization} is the sa
 Finally, a residual question that needs to be addressed in future work concerns the origin of the admirative. \citet{Nicolova2013} argues that the admirative originated from the perfect in its function to ascertain the existence of results from non-observed actions. This fits the crosslinguistic observation in \citet[73--74]{Bybee.Dahl1989} of indirect evidential uses licensed by the perfect due to its property of expressing past actions with present results: The indirect evidential uses can be viewed as extensions of ``known by its results'' to ``action known by inference/reports'' (see also \citet{Lau.Rooryck2017} who talk about knowledge of an event by indirect means). However, this path would immediately explain the emergence of the inferential and hearsay uses of the admirative out of the present perfect, but not the direct evidence uses. To shed more light on this issue, diachronic and typological data need to be thoroughly examined.
 
 \section*{Abbreviations}
-\begin{tabularx}{.45\textwidth}{lQ}
+\begin{tabularx}{.5\textwidth}{@{}lQ}
 \textsc{admir} & admirative operator\\
 \textsc{aor} & aorist\\
 \textsc{acc} & accusative\\
@@ -853,8 +825,7 @@ Finally, a residual question that needs to be addressed in future work concerns 
 \textsc{inf} & infinitive\\
 \textsc{ipf} & imperfect \\
 \textsc{ipfv} & imperfective aspect\\
-\end{tabularx}
-\begin{tabularx}{.45\textwidth}{lQ}
+\end{tabularx}\begin{tabularx}{.5\textwidth}{lQ@{}}
 \textsc{m}\textsubscript{op} & mirative operator \\
 \textsc{neg} & negation\\
 \textsc{pfv} & perfective aspect\\
@@ -870,8 +841,7 @@ Finally, a residual question that needs to be addressed in future work concerns 
 \section*{Acknowledgements}
 I would like to thank the participants of the \textit{13th European Conference on
 Formal Description of \ili{Slavic} Languages} in Göttingen for discussing an earlier version of this work, as well as Torgrim Solstad and two anonymous reviewers for valuable comments and suggestions. A special thanks goes to my informants for their native speaker judgements.
-%
-\sloppy
-\printbibliography[heading=subbibliography,notkeyword=this]
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
 
 \end{document}
