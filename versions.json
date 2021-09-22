@@ -1,8 +1,8 @@
 {"versions": [{"versiontype": "first_edition",
--n		"title": "Advances in formal Slavic linguistics 2018",
--n 		"authors": [{"name": "Andreas Blümel and Jovana Gajić and Ljudmila Geist and Uwe Junghanns and Hagen Pitsch"}],
-	"license": "CC-BY-4.0",
--n 	"publishedAt":"2021-09-22T14:11:02.000Z"
+"title": "Advances in formal Slavic linguistics 2018",
+"authors": [{"name": "Andreas Blümel and Jovana Gajić and Ljudmila Geist and Uwe Junghanns and Hagen Pitsch"}],
+"license": "CC-BY-4.0",
+"publishedAt":"2021-09-22T14:11:02.000Z"
 }
 	]
 }
